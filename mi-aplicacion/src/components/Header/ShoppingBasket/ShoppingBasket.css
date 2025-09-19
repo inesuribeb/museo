@@ -1,0 +1,130 @@
+.shopping-basket {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+.shopping-basket:has(.shopping-basket-badge) {
+    opacity: 1;
+}
+
+.shopping-basket:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.shopping-basket:focus {
+    outline: none;
+}
+
+.shopping-basket-icon {
+    color: var(--dark-color);
+    transition: color 0.3s ease;
+    font-size: 1.6rem !important;
+}
+
+.shopping-basket.light .shopping-basket-icon {
+    color: var(--light-color);
+    transition-delay: 0.2s;
+}
+
+.shopping-basket-badge {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    background-color: var(--corporative-color);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 50%;
+    min-width: 1.05rem;
+    height: 1.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: all 0.2s ease;
+}
+
+.shopping-basket.animate {
+    animation: basketPulse 0.6s ease-out;
+}
+
+@keyframes basketPulse {
+    0% { 
+        transform: scale(1); 
+    }
+    25% { 
+        transform: scale(1.15); 
+    }
+    50% { 
+        transform: scale(1.05); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+.shopping-basket.animate .shopping-basket-badge {
+    animation: badgeBounce 0.6s ease-out;
+}
+
+@keyframes badgeBounce {
+    0% { 
+        transform: scale(1); 
+    }
+    30% { 
+        transform: scale(1.3); 
+    }
+    60% { 
+        transform: scale(0.9); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+@media (max-width: 768px) {
+    .shopping-basket {
+        padding: 0.4rem;
+    }
+    
+    .shopping-basket-icon {
+        font-size: 1.6rem !important;
+    }
+    
+    .shopping-basket-badge {
+        min-width: 1rem;
+        height: 1rem;
+        font-size: 0.7rem;
+        top: -1px;
+        right: -1px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shopping-basket {
+        padding: 0.3rem;
+        top: -6px;
+    }
+    
+    .shopping-basket-icon {
+        font-size: 1.4rem !important;
+    }
+    
+    .shopping-basket-badge {
+        min-width: 0.9rem;
+        height: 0.9rem;
+        font-size: 0.65rem;
+        top: -1px;
+        right: -1px;
+    }
+}

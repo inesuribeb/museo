@@ -1,0 +1,74 @@
+.intro-residencies-section {
+    position: relative;
+    width: 100%;
+}
+
+.intro-viewport-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    will-change: transform, top;
+    z-index: -1; 
+}
+
+.intro-viewport-container.clipped {
+    clip-path: inset(0 0 0 0); 
+}
+
+.left-column-intro {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-content-wrapper {
+    padding: 9rem 2rem 0rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    will-change: transform;
+}
+
+.right-column-intro {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 9rem; 
+    padding-right: 1.8rem;
+}
+
+.intro-titles {
+    margin-bottom: 4rem;
+}
+/* .intro-titles h2{
+font-family: var(--serif-font);
+}
+
+.intro-text-I{
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+} */
+
+.right-column-intro img {
+    height: auto; 
+    width: 90%;
+    max-height: calc(100vh - 9rem);
+    object-fit: contain;
+    padding-bottom: 3rem;
+}
+
+.intro-text-I {
+    width: 92%;
+}

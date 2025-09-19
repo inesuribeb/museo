@@ -1,0 +1,50 @@
+.galley-colab-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    /* gap: 3rem; */
+    align-items: flex-end; /* ← Centra las imágenes verticalmente */
+    justify-content: space-between;
+    background-color: transparent; /* ← Temporal para ver el padding */
+    margin-top: 4rem;
+}
+
+.colab-image-g {
+    max-width: 40%;
+    height: auto; /* ← Mantiene proporción original */
+    object-fit: contain; /* ← Mantiene imagen completa sin recortar */
+    border-radius: 0px;
+}
+
+/* Media Query para Móvil (hasta 768px) */
+@media (max-width: 768px) {
+    .galley-colab-section {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        min-height: auto;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .colab-image-g {
+        max-width: 90%;
+        width: 100%;
+    }
+}
+
+/* Media Query para móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .galley-colab-section {
+        padding: 1rem 0.75rem;
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .colab-image-g {
+        max-width: 100%;
+    }
+}

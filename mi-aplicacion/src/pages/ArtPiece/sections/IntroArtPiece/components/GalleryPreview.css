@@ -1,0 +1,18 @@
+.gallery-preview {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.gallery-preview-image {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.gallery-preview-image.single-image {
+    width: 100%; 
+}

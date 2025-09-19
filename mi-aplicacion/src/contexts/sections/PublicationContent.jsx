@@ -1,0 +1,113 @@
+export const publicationTranslations = {
+    es: {
+        addToCart: 'Añadir a la cesta',
+        soldOut: 'Agotado',
+
+        details: 'Detalles',
+        pages: 'Páginas',
+        format: 'Formato',
+        year: 'Año',
+        type: 'Tipo',
+        designBy: 'Diseño y maquetación',
+
+        shipping: 'Envíos',
+        spain: 'España',
+        spainDetails: '3-5 días laborables',
+        europe: 'Europa',
+        europeDetails: '5-10 días laborables',
+        international: 'Internacional',
+        internationalDetails: '7-21 días laborables',
+        freeShipping: 'Envío gratuito',
+        freeDetails: 'en pedidos superiores a €50',
+
+        viewCart: 'Ver Cesta',
+        checkout: 'Finalizar pedido',
+        yourCart: 'Tu Cesta',
+        delete: 'Borrar',
+        emptyCart: 'Tu cesta está vacía',
+
+        shippingZone: "Zona de envío",
+        spain: "España",
+        europe: "Europa",
+        international: "Internacional",
+        shippingNote: "Los gastos de envío se añadirán al total",
+        subtotal: "Subtotal:",
+        shipping: "Envío:",
+        total: "Total:",
+
+
+    },
+    en: {
+        addToCart: 'Add to cart',
+        soldOut: 'Sold Out',
+
+        details: 'Details',
+        pages: 'Pages',
+        format: 'Format',
+        year: 'Year',
+        type: 'Type',
+        designBy: 'Design and Layout',
+
+        shipping: 'Shipping',
+        spain: 'Spain',
+        spainDetails: '3-5 business days',
+        europe: 'Europe',
+        europeDetails: '5-10 business days',
+        international: 'International',
+        internationalDetails: '7-21 business days',
+        freeShipping: 'Free Shipping',
+        freeDetails: 'on orders over €50',
+
+        viewCart: 'View Cart',
+        checkout: 'Checkout',
+        yourCart: 'Your Cart',
+        delete: 'Delete',
+        emptyCart: 'Your cart is empty',
+
+        shippingZone: "Shipping Zone",
+        spain: "Spain",
+        europe: "Europe",
+        international: "International",
+        shippingNote: "Shipping costs will be added to the total",
+        subtotal: "Subtotal:",
+        shipping: "Shipping:",
+        total: "Total:",
+
+    },
+    pt: {
+        addToCart: 'Adicionar ao carrinho',
+        soldOut: 'Esgotado',
+
+        details: 'Detalhes',
+        pages: 'Páginas',
+        format: 'Formato',
+        year: 'Ano',
+        type: 'Tipo',
+        designBy: 'Design e Diagramação',
+
+        shipping: 'Envio',
+        spain: 'Espanha',
+        spainDetails: '3-5 dias úteis',
+        europe: 'Europa',
+        europeDetails: '5-10 dias úteis',
+        international: 'Internacional',
+        internationalDetails: '7-21 dias úteis',
+        freeShipping: 'Envio grátis',
+        freeDetails: 'em encomendas superiores a €50',
+
+        viewCart: 'Ver carrinho',
+        checkout: 'Finalizar compra',
+        yourCart: 'Teu carrinho',
+        delete: 'Excluir',
+        emptyCart: 'Seu carrinho está vazio',
+
+        shippingZone: "Zona de Envio",
+        spain: "Espanha",
+        europe: "Europa",
+        international: "Internacional",
+        shippingNote: "Os custos de envio serão adicionados ao total",
+        subtotal: "Subtotal:",
+        shipping: "Envio:",
+        total: "Total:",
+    }
+};

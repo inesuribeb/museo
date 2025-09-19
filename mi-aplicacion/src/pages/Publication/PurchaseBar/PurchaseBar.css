@@ -1,0 +1,138 @@
+.pub-page-purchase-bar {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 4rem);
+    border: 1px solid var(--dark-color);
+    background: var(--light-color);
+    height: 45px;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 100;
+}
+
+.pub-page-price {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--neutral-color);
+    border-right: 1px solid var(--dark-color);
+    background: var(--light-color);
+
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+}
+
+.pub-page-spacer {
+    flex: 1; 
+    height: 100%;
+    background: var(--light-color);
+    border-right: 1px solid var(--dark-color);
+}
+
+.pub-page-quantity {
+    flex: 0 0 auto;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--dark-color);
+    background: var(--light-color);
+    position: relative;
+
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+}
+
+.pub-quantity-selector {
+    padding: 0;
+    border: none;
+    background: var(--light-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    appearance: none;
+    color: var(--dark-color);
+
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+}
+
+.pub-page-quantity::after {
+    content: '⌄';
+    position: absolute;
+    right: 1.5rem;
+    top: 42%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 0.8rem;
+    color: var(--neutral-color);
+}
+
+.pub-quantity-selector:focus {
+    outline: none;
+}
+
+.pub-page-cart-btn {
+    flex: 0 0 auto; 
+    width: auto;
+    min-width: 200px; 
+    background: var(--dark-blue);
+    color: var(--light-color);
+    border: none;
+    height: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    letter-spacing: 0.5px;
+    padding: 0 3rem; 
+
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+}
+
+.pub-page-cart-btn:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+    .pub-page-purchase-bar {
+        width: calc(100% - 1rem);
+        left: 0.5rem;
+        bottom: 0.5rem;
+        height: 50px;
+    }
+
+    .pub-page-price {
+        width: 130px;
+        font-size: 1rem;
+    }
+
+    .pub-page-spacer {
+        border: transparent;
+    }
+
+    .pub-page-quantity {
+        width: 60px;
+    }
+
+    .pub-page-quantity::after {
+        right: 1rem;
+    }
+
+    .pub-page-cart-btn {
+        min-width: 150px;
+        font-size: 1rem;
+        padding: 0 1.5rem;
+    }
+}

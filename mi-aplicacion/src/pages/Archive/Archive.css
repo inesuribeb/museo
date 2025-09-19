@@ -1,0 +1,36 @@
+.archive-container {
+    display: flex;
+    flex-direction: column;
+    padding: 13rem 2rem;
+}
+
+.azar-archive {
+    text-align: center;
+}
+
+/* .azar-archive::after {
+    content: '▼';
+    margin-left: 0.4rem;
+    font-size: 0.8em;
+} */
+
+@media (max-width: 768px) {
+    .archive-container {
+        padding: 0rem 1rem;
+    }
+
+    .azar-archive {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .archive-container {
+        padding: 0;
+    }
+
+    .render-especific-grid{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

@@ -1,0 +1,212 @@
+/* .section-cover-colab {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cover-colab-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%; 
+}
+
+.cover-colab-content,
+.cover-colab-image {
+    flex: 1;
+    display: flex;
+    
+}
+
+.cover-colab-image{
+    align-items: center;
+    justify-content: center; 
+}
+
+.cover-colab-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.cover-colab-content {
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+.cover-colab-content h1 {
+    font-size: clamp(2rem, 4vw, 4.5rem);
+    font-weight: 100;
+    line-height: 1.1;
+    color: var(--dark-color);
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--serif-font);
+} */
+
+/* 1. Contenedor principal */
+.section-cover-colab {
+    position: relative;
+    width: 100%;
+}
+
+/* 2. Contenedor único que cambia de fixed a absolute */
+.cover-colab-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    will-change: transform, top;
+    z-index: -1;
+}
+
+/* 3. Columnas principales */
+.cover-colab-content,
+.cover-colab-image {
+    flex: 1;
+    display: flex;
+    min-width: 0;
+}
+
+
+/* 4. Columna de imagen */
+.cover-colab-image {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 5. Wrapper de imagen que se mueve */
+.image-wrapper-colab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper-colab img {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    object-fit: cover;
+    display: block;
+
+    transform: scale(1.05);
+    transition: transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: center center;
+}
+
+.image-wrapper-colab img.loaded {
+    transform: scale(1); /* Vuelve al tamaño normal */
+}
+
+/* 6. Columna de contenido (fija) */
+.cover-colab-content {
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.cover-colab-content h1 {
+    font-size: clamp(2rem, 4vw, 4.5rem);
+    font-weight: 100;
+    line-height: 1.1;
+    color: var(--dark-color);
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--serif-font);
+    width: 90%;
+}
+
+/* Media Query para Móvil (hasta 768px) */
+@media (max-width: 768px) {
+    .section-cover-colab {
+        height: 100vh !important; /* Sobrescribir el height dinámico */
+        position: static;
+    }
+    
+    .cover-colab-container {
+        position: static !important; /* Sobrescribir el position fixed del JS */
+        display: flex !important; /* Sobrescribir posibles display: none del JS */
+        flex-direction: column; /* Cambiar a columna: título arriba, imagen abajo */
+        height: 100vh;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+    }
+    
+    /* Título arriba */
+    .cover-colab-content {
+        order: 1;
+        flex: 0 0 auto;
+        height: auto;
+        padding: 2rem 1rem 1rem 1rem;
+        align-items: center;
+        justify-content: center;
+        background: var(--light-color);
+    }
+    
+    .cover-colab-content h1 {
+        font-size: clamp(1.8rem, 6vw, 3rem);
+        text-align: center;
+        width: 100%;
+        line-height: 1.2;
+    }
+    
+    /* Imagen abajo */
+    .cover-colab-image {
+        order: 2;
+        flex: 1;
+        height: auto;
+        min-height: 60vh;
+    }
+    
+    .image-wrapper-colab {
+        position: static !important; /* Sobrescribir el positioning del JS */
+        height: 100%;
+        transform: none !important; /* Sobrescribir las transformaciones del JS */
+    }
+    
+    .image-wrapper-colab img {
+        width: 100%;
+        height: 80%;
+        min-height: 60vh;
+        padding: 1rem;
+        object-fit: cover;
+        transform: scale(1) !important; /* Sobrescribir animación de zoom */
+        transition: none; /* Quitar transición en móvil */
+    }
+}
+
+/* Media Query para móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .cover-colab-content {
+        padding: 8rem 0.75rem 0rem 0.75rem;
+    }
+    
+    .cover-colab-content h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+    
+    .cover-colab-image {
+        height: 30vh;
+    }
+    
+    .image-wrapper-colab img {
+        min-height: 30vh;
+    }
+}

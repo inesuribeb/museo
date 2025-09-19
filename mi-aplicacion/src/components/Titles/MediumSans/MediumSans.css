@@ -1,0 +1,45 @@
+.medium-sans-title {
+    font-family: var(--main-font);
+    font-weight: 100;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-color);
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+    font-size: 2.8rem;
+    line-height: 1.4;
+}
+
+.medium-sans-title.large {
+    font-size: 3.5rem;
+}
+
+.medium-sans-title.medium {
+    font-size: 2rem;
+}
+
+.medium-sans-title.small {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .medium-sans-title {
+        font-size: 2rem;
+    }
+    
+    .medium-sans-title.large {
+        font-size: 2.5rem;
+    }
+    
+    .medium-sans-title.medium {
+        font-size: 1.7rem;
+    }
+    
+    .medium-sans-title.small {
+        font-size: 1.3rem;
+    }
+}

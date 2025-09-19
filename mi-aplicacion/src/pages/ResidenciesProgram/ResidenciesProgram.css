@@ -1,0 +1,31 @@
+.residencies-program-content {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 1rem;
+}
+
+.RP-sections {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .residencies-program-content {
+        margin-bottom: 0rem;
+    }
+    
+    .RP-sections > div {
+        padding: 1rem 0;
+    }
+}

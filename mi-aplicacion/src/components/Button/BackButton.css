@@ -1,0 +1,78 @@
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    background: none;
+    margin-top: 4rem;
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+}
+
+.back-button--default {
+    background: transparent;
+    color: var(--dark-color);
+    padding: 0.75rem 1.5rem;
+}
+.back-button--default:hover {
+    transform: translateX(-2px);
+}
+
+.back-button--minimal {
+    background: transparent;
+    color: var(--dark-color);
+    padding: 0.5rem 1rem;
+}
+.back-button--minimal:hover {
+    transform: translateX(-2px);
+}
+
+.back-button--floating {
+    position: fixed;
+    top: 2rem;
+    left: 0.8rem;
+    background: transparent;
+    color: var(--dark-color);
+    padding: 0.75rem 1rem;
+    text-decoration: underline;
+    border-radius: 50px;
+    z-index: 1000;
+    text-underline-offset: 4px; 
+    text-decoration-thickness: 1px;
+}
+
+.back-button--floating:hover {
+    transform: translateX(-2px);
+}
+
+
+@media (max-width: 768px) {
+    .back-button--floating {
+        top: 1rem;
+        left: 1rem;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .back-button--default,
+    .back-button--minimal {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+.back-button:hover::before {
+    animation: arrowBounce 0.3s ease;
+}
+
+@keyframes arrowBounce {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}

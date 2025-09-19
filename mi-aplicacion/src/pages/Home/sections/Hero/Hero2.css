@@ -1,0 +1,108 @@
+/* 1. Contenedor principal */
+.hero2-section {
+    position: relative;
+    width: 100%;
+}
+
+/* 2. Contenedor único que cambia de fixed a absolute */
+.hero2-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    will-change: transform, top;
+    z-index: -1;
+}
+
+/* 3. Background que se mueve */
+.hero2-background {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(/Images/Home/HomePage.jpg); */
+    /* background-image: url(/Images/Home/PutaSeccion/PutaSeccion-res.jpg); */
+    /* background-image: url(/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-2.jpg); */
+    /* background-image: url(/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-4.jpg); */
+    /* background-image: url(/Images/Home/Pruebas/1.JPG); */
+    background-image: url(/Images/Home/NewBg.jpg);
+    background-size: cover;  
+    background-position: center center; 
+    background-repeat: no-repeat;
+    will-change: background-position;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* 4. Logo fijo */
+.hero2-background img {
+    width: 100%;
+    height: auto;
+    margin-top: -19.5rem;
+    margin-left: -10rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive */
+/* @media (max-width: 1024px) {
+    .hero2-background img {
+        width: 90%;
+        margin-top: -12rem;
+        margin-left: -6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero2-section {
+        height: auto;
+        height: 80dvh;
+        overflow: hidden;
+    }
+    
+    .hero2-container {
+        position: relative;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .hero2-background {
+        position: relative;
+        background-position: center center !important;
+        min-height: 100vh;
+    }
+    
+    .hero2-background img {
+        width: 80%;
+        margin-top: -8rem;
+        margin-left: -4rem;
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero2-background img {
+        width: 85%;
+        margin-top: -6rem;
+        margin-left: -2rem;
+        display: none;
+    }
+
+    .hero2-section {
+        height: 100svh;
+        overflow: hidden;
+    }
+} */
+
+
+.header-logo.in-hero-section {
+    /* Tus estilos específicos para cuando esté en hero */
+    opacity: 0.8;
+    transform: scale(1.9);
+    /* etc... */
+}

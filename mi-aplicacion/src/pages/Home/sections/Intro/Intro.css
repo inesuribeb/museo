@@ -1,0 +1,126 @@
+.intro-section {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: transparent;
+    padding: 2rem;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.i-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    width: 60%;
+    text-align: center;
+}
+
+.intro-text-home {
+    text-align: center;
+    width: 60%;
+    /* font-family: var(--futura-font);
+    font-weight: var(--futura-book); */
+    /* color: var(--corporative-color); */
+
+}
+
+.intro-text-home2 {
+    text-align: center;
+    width: 100%;
+    /* color: var(--corporative-color); */
+}
+
+
+/* Media Queries para Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .intro-section {
+        padding: 1.5rem;
+        gap: 3rem;
+        min-height: 90vh;
+        /* Reducimos ligeramente la altura en tablet */
+    }
+
+    .intro-text-home {
+        width: 70%;
+        /* Aumentamos el ancho del texto en tablet */
+    }
+
+    .intro-text-home2 {
+        width: 90%;
+        /* Reducimos ligeramente para mejor legibilidad */
+    }
+}
+
+/* Media Queries para Tablet pequeña/Portrait (481px - 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+    .intro-section {
+        padding: 1.25rem;
+        gap: 2.5rem;
+        min-height: 100vh;
+    }
+
+    .intro-text-home {
+        width: 100%;
+    }
+
+    .intro-text-home2 {
+        width: 95%;
+    }
+}
+
+/* Media Queries para Móvil (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .intro-section {
+        padding: 1rem;
+        gap: 2rem;
+        /* height:  */
+        min-height: 100vh;
+        /* Altura mínima para contenido */
+    }
+
+    .intro-text-home {
+        width: 100%;
+        /* Casi todo el ancho disponible */
+        padding-bottom: 1.5rem;
+
+    }
+
+    .intro-text-home2 {
+        width: 100%;
+    }
+}
+
+/* Media Queries para móviles muy pequeños (menos de 320px) */
+@media screen and (max-width: 319px) {
+    .intro-section {
+        padding: 0.75rem;
+        gap: 1.5rem;
+        height: 75vh;
+        min-height: 500px;
+    }
+
+    .intro-text-home {
+        width: 100%;
+    }
+
+    .intro-text-home2 {
+        width: 100%;
+    }
+}
+
+/* Media Query específica para orientación landscape en móvil */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .intro-section {
+        min-height: 100vh;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+}

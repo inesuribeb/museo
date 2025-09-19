@@ -1,0 +1,187 @@
+/* CartFooter.css */
+
+.cart-footer {
+    background: transparent;
+    padding: 1.5rem 2rem;
+    flex-shrink: 0;
+}
+
+.cart-footer-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+}
+
+.cart-footer-total-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.cart-footer-total-price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.cart-footer-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+}
+
+.cart-footer-btn {
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    border-radius: 0px;
+
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+}
+
+.cart-footer-btn-view {
+    background: transparent;
+    border: 1.5px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
+
+.cart-footer-btn-view:hover {
+    background: var(--dark-blue);
+    color: var(--light-color);
+}
+
+.cart-footer-btn-checkout {
+    background: var(--dark-blue);
+    color: var(--light-color);
+    border: 1.5px solid var(--blue-color);
+}
+
+.cart-footer-btn-checkout:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 767.98px) {
+    .cart-footer {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .cart-footer-total-label {
+        font-size: 1.1rem;
+    }
+
+    .cart-footer-total-price {
+        font-size: 1.3rem;
+    }
+
+    .cart-footer-btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+        letter-spacing: 0.3px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .cart-footer {
+        padding: 1rem 1rem;
+    }
+
+    .cart-footer-total {
+        margin-bottom: 0.875rem;
+        padding-bottom: 0.875rem;
+    }
+
+    .cart-footer-total-label {
+        font-size: 1rem;
+    }
+
+    .cart-footer-total-price {
+        font-size: 1.2rem;
+    }
+
+    .cart-footer-actions {
+        flex-direction: row;
+        gap: 0.625rem;
+    }
+
+    .cart-footer-btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+        letter-spacing: 0.2px;
+    }
+}
+
+@media (max-width: 375px) {
+    .cart-footer {
+        padding: 0.875rem 0.75rem;
+    }
+
+    .cart-footer-total {
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .cart-footer-total-label {
+        font-size: 0.95rem;
+    }
+
+    .cart-footer-total-price {
+        font-size: 1.1rem;
+    }
+
+    .cart-footer-actions {
+        gap: 0.5rem;
+    }
+
+    .cart-footer-btn {
+        padding: 0.65rem 0.875rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.1px;
+    }
+}
+
+
+
+.cart-footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0;
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+    /* border-bottom: 1px solid var(--light-neutral-color); */
+}
+
+.cart-footer-label {
+    font-size: 0.8rem;
+    color: var(--dark-color);
+}
+
+.cart-footer-price {
+    font-size: 0.85rem;
+    color: var(--dark-color);
+    font-weight: 400;
+}
+
+/* Añadir al CartFooter.css */
+.cart-footer-btn-checkout:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.cart-footer-btn-checkout:disabled:hover {
+    opacity: 0.5;
+    background: var(--dark-blue);
+}

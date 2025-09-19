@@ -1,0 +1,140 @@
+.finca-section {
+    display: flex;
+    width: 100%;
+    min-height: 100dvh;
+    flex-direction: column;
+    position: relative;
+    background-color: transparent;
+    padding: 2rem 2rem;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.first-line-finca {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    flex: 1; 
+}
+
+.other-pictures {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-top: 2rem;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+
+.column-left-finca,
+.column-right-finca {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.column-right-finca {
+    padding-top: 0rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: flex-start; 
+    flex: 1; 
+    gap: 5rem;
+}
+.finca-section-title {
+    text-align: right;
+}
+.finca-text {
+    width: 90%;
+}
+
+
+
+
+/* Estilos para la imagen principal */
+.main-image-container {
+    width: 90%;
+    /* aspect-ratio: 0.9/1; */
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.main-finca-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+
+
+/* Estilos para los thumbnails */
+.thumbnail-container {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 0px;
+    overflow: visible;
+    margin-top: 25px; 
+}
+
+.thumbnail-container:hover .thumbnail-image {
+    filter: grayscale(0%); 
+    /* transform: translateY(-5px); */
+}
+
+.thumbnail-container.active .thumbnail-image {
+    filter: grayscale(0%);
+}
+
+.thumbnail-image {
+    /* width: 140px; */
+    width: 220px;
+    /* aspect-ratio: 0.85/1; */
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease; 
+}
+
+.thumbnail-number {
+    position: absolute;
+    top: -23px;
+    left: 0;
+    background-color: transparent;
+    color: var(--neutral-color);
+    padding: 0;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.thumbnail-container.active .thumbnail-number {
+    color: var(--dark-color);
+}
+
+
+.thumbnail-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-container:hover::after,
+.thumbnail-container.active::after {
+    opacity: 0;
+}

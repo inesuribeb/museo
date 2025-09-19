@@ -1,0 +1,81 @@
+@import url('https://use.typekit.net/vzo1ixs.css');
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+
+
+  --dark-color: black;
+  /* --dark-color: #084495; */
+
+  /* --light-color: #EDECEB; */
+  --light-color: white;
+  /* --light-color: #f3f3f3; */
+
+  --neutral-color: #999999;
+  --light-neutral-color: #D9D9D9;
+  --light-header-color: #f3f3f3;
+  --corporative-color: #084495;
+  --dark-blue: rgb(7, 36, 73);
+  --accent-color: #87ACDD;
+
+  --main-font: 'Futura', Helvetica, Arial, sans-serif;
+  --serif-font: 'EB Garamond', serif;
+
+
+  --futura-font: "futura-pt", sans-serif;
+  
+  --futura-light: 300;
+  --futura-light-style: 300 normal "futura-pt", sans-serif;
+  --futura-light-oblique-style: 300 italic "futura-pt", sans-serif; 
+  
+  --futura-book: 400;
+  --futura-book-style: 400 normal "futura-pt", sans-serif;
+  --futura-book-oblique-style: 400 italic "futura-pt", sans-serif; 
+
+
+  --futura-medium: 500;
+  --futura-medium-style: 500 normal "futura-pt", sans-serif;
+  --futura-medium-oblique-style: 500 italic "futura-pt", sans-serif; 
+  
+  --futura-normal: normal;
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--light-color);
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+  /* margin-top: 80px;  */
+
+  /* background-image: 
+    repeating-radial-gradient(circle at 0 0, rgba(0,0,0,0.02) 0, rgba(0,0,0,0.02) 1px, transparent 1px, transparent 100%);
+  background-size: 3px 3px; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+b {
+  font-weight: 600;
+}
