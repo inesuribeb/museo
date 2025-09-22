@@ -15,6 +15,46 @@ function Success() {
 
 
     useEffect(() => {
+        const fetchOrderData = async (sessionId) => {
+            try {
+                // Si es mock, usar datos de prueba
+                if (sessionId === 'mock') {
+                    const mockData = {
+                        customer_email: "cliente@ejemplo.com",
+                        customer_name: "María García",
+                        amount_total: 63.00,
+                        currency: "eur",
+                        payment_status: "paid",
+                        shipping: {
+                            name: "María García",
+                            address: {
+                                line1: "Calle Mayor 123",
+                                line2: "Piso 2A",
+                                city: "Madrid",
+                                postal_code: "28001",
+                                country: "ES"
+                            }
+                        }
+                    };
+                    setOrderData(mockData);
+                    return;
+                }
+    
+                const response = await fetch(`${API_BASE_URL}/session-status/${sessionId}`);
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    setOrderData(data);
+                } else {
+                    setError('Error al obtener los datos del pedido');
+                }
+            } catch (err) {
+                console.error('Error fetching order data:', err);
+                setError('Error de conexión');
+            } finally {
+                setLoading(false);
+            }
+        };
         const sessionId = searchParams.get('session_id');
         
         if (sessionId && sessionId !== 'mock') {
@@ -27,7 +67,7 @@ function Success() {
             setLoading(false);
             setError('No se encontró información del pedido');
         }
-    }, [searchParams, clearCart]);
+    }, [searchParams]);
 
     // const fetchOrderData = async (sessionId) => {
     //     try {
@@ -47,46 +87,7 @@ function Success() {
     //     }
     // };
 
-    const fetchOrderData = async (sessionId) => {
-        try {
-            // Si es mock, usar datos de prueba
-            if (sessionId === 'mock') {
-                const mockData = {
-                    customer_email: "cliente@ejemplo.com",
-                    customer_name: "María García",
-                    amount_total: 63.00,
-                    currency: "eur",
-                    payment_status: "paid",
-                    shipping: {
-                        name: "María García",
-                        address: {
-                            line1: "Calle Mayor 123",
-                            line2: "Piso 2A",
-                            city: "Madrid",
-                            postal_code: "28001",
-                            country: "ES"
-                        }
-                    }
-                };
-                setOrderData(mockData);
-                return;
-            }
-
-            const response = await fetch(`${API_BASE_URL}/api/checkout-session/${sessionId}`);
-            
-            if (response.ok) {
-                const data = await response.json();
-                setOrderData(data);
-            } else {
-                setError('Error al obtener los datos del pedido');
-            }
-        } catch (err) {
-            console.error('Error fetching order data:', err);
-            setError('Error de conexión');
-        } finally {
-            setLoading(false);
-        }
-    };
+   
 
     if (loading) {
         return (
