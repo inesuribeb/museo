@@ -1,20 +1,3 @@
-// import Requirements from './Requirements';
-// import Jurado from './Jurado';
-// import SelectionProcess from './components/SelectionProcess';
-// import './OpenCallR.css'
-
-// function OpenCallR({ t }) {
-//     return (
-//         <section className='open-call-section'>
-//             <Requirements t={t} />
-//             <Jurado t={t} />
-//             <SelectionProcess t={t} />
-//         </section>
-//     )
-// }
-
-// export default OpenCallR;
-
 import { useEffect, useRef } from 'react';
 import Requirements from './Requirements';
 import Jurado from './Jurado';

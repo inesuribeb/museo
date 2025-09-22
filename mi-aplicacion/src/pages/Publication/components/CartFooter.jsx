@@ -35,20 +35,19 @@ function CartFooter({ subtotalPrice, shippingCost, totalPrice, onViewCart, onChe
                 >
                     {t('viewCart')}
                 </button>
-                {/* <button
+                <button
                     className="cart-footer-btn cart-footer-btn-checkout"
                     onClick={onCheckout}
                     disabled={!hasShippingSelected}
                 >
                     {t('checkout')}
-                </button> */}
-                <button
+                </button>
+                {/* <button
                     className="cart-footer-btn cart-footer-btn-checkout"
-                    // onClick={onCheckout}
                     disabled={true}
                 >
                     {t('soon')}
-                </button>
+                </button> */}
             </div>
         </div>
     );

@@ -65,3 +65,67 @@
     width: 100%;
     color: var(--dark-blue);
 }
+
+.require-phone-button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* espacio entre selección de idioma y botón */
+    margin-top: 1rem;
+}
+
+/* Contenedor de los botones de idioma */
+.phone-pdf-language-selection {
+    display: flex;
+    gap: 0.5rem; /* espacio entre ES y PT */
+}
+
+/* Botones de idioma */
+.phone-pdf-language-button {
+    flex: 1; /* que ocupen todo el ancho disponible de forma igual */
+    background-color: var(--light-color);
+    border: 1px solid var(--dark-blue);
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+    cursor: pointer;
+    color: var(--dark-blue);
+    transition: all 0.2s ease-in-out;
+}
+
+.phone-pdf-language-button.active {
+    background-color: var(--dark-blue);
+    color: var(--light-color);
+}
+
+/* Botón de descarga */
+.require-phone-button {
+    background-color: var(--light-color);
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+    cursor: pointer;
+    width: 100%;
+    color: var(--dark-blue);
+    transition: all 0.2s ease-in-out;
+}
+
+.require-phone-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .phone-pdf-language-button {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .require-phone-button {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+}

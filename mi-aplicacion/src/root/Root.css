@@ -1,8 +1,16 @@
 .outlet-desktop {
     animation: fadeInDesktop 1s ease-in forwards;
+    /* padding-top: 4rem; */
   }
   
   @keyframes fadeInDesktop {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+  .outlet-desktop {
+  animation: fadeInDesktop 1s ease-in forwards;
+  padding-top: 5rem;
+  }
 }

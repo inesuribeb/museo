@@ -16,11 +16,12 @@ app.use(cors({
 
 //app.use("/", webhookRoutes);
 
-app.use(express.json());
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/", router);
 
 
-app.listen(process.env.APP_PORT || 3010, () => {
+app.listen(process.env.APP_PORT || 3001, () => {
     console.log(`Server running on port ${process.env.APP_PORT}`);
 });

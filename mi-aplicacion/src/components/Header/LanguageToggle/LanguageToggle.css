@@ -1,6 +1,6 @@
 .language-toggle {
     position: absolute;
-    top: 0.75rem;
+    top: 3.75rem;
     right: 11rem;
     display: flex;
     background: var(--light-color);

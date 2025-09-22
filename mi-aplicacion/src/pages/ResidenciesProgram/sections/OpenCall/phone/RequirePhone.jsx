@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useLanguage } from '../../../../../contexts/LanguageContext';
 import MediumSans from '../../../../../components/Titles/MediumSans/MediumSans';
 import Texts from '../../../../../components/Texts/Texts';
@@ -6,6 +7,20 @@ import './RequirePhone.css';
 
 function RequirePhone({ t, residency }) {
     const { language } = useLanguage();
+    const [selectedLanguage, setSelectedLanguage] = useState(null);
+
+
+    const handleDownloadPDF = () => {
+        if (!selectedLanguage) return;
+        const fileName =
+          selectedLanguage === 'es'
+            ? 'Fantasmata-ESP.pdf'
+            : 'Fantasmata-PT.pdf';
+        const link = document.createElement("a");
+        link.href = '/Images/Residencies/NextResidency/pdf/${fileName}';
+        link.download = fileName;
+        link.click();
+      };
 
     return (
         <div className='require-phone'>
@@ -22,8 +37,31 @@ function RequirePhone({ t, residency }) {
                         dangerouslySetInnerHTML={{ __html: residency?.artDescription?.[language] }}
                     />
                 </div>
-                <div className='require-phone-button-container'>
+                {/* <div className='require-phone-button-container'>
                     <button className='require-phone-button'>
+                        {t('downloadPDF')}
+                    </button>
+                </div> */}
+                <div className='require-phone-button-container'>
+                    <div className='phone-pdf-language-selection'>
+                        <button
+                            className={`phone-pdf-language-button ${selectedLanguage === 'es' ? 'active' : ''}`}
+                            onClick={() => setSelectedLanguage('es')}
+                        >
+                            ES
+                        </button>
+                        <button
+                            className={`phone-pdf-language-button ${selectedLanguage === 'pt' ? 'active' : ''}`}
+                            onClick={() => setSelectedLanguage('pt')}
+                        >
+                            PT
+                        </button>
+                    </div>
+                    <button
+                        className='require-phone-button'
+                        onClick={handleDownloadPDF}
+                        disabled={!selectedLanguage}
+                    >
                         {t('downloadPDF')}
                     </button>
                 </div>

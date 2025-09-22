@@ -65,6 +65,10 @@ const router = createBrowserRouter([
                 path: "/cancel", 
                 element: <Cancel />
             },
+            // {
+            //     path: "/jurado/:id", 
+            //     element: <Cancel />
+            // },
 
 
             {

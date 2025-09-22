@@ -63,18 +63,23 @@
 .pdf-button-container {
     width: 100%;
     border-top: 1px solid var(--dark-blue);
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .pdf-button {
     background-color: var(--light-color);
     border: none;
     padding-left: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
     font-size: 1.8rem;
     font-family: var(--futura-font);
     font-weight: var(--futura-book);
     cursor: pointer;
+
 }
 
 
@@ -156,3 +161,29 @@
     height: auto;
     flex-shrink: 0;
 } */
+
+.pdf-language-selection {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0rem;
+}
+
+.pdf-language-button {
+    background-color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-family: var(--futura-font);
+    font-weight: var(--futura-book);
+    cursor: pointer;
+}
+
+.pdf-language-button.active {
+    background-color: var(--dark-blue);
+    color: var(--light-color);
+}
+
+.pdf-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
