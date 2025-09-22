@@ -10,17 +10,18 @@ import router from "./routes/checkoutRoutes.js";
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5175',
+    origin: 'http://localhost:5173',
   }))
 
 
 //app.use("/", webhookRoutes);
 
-app.use(express.json());
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/", router);
 
 
-app.listen(process.env.APP_PORT || 3010, () => {
+app.listen(process.env.APP_PORT || 3001, () => {
     console.log(`Server running on port ${process.env.APP_PORT}`);
 });

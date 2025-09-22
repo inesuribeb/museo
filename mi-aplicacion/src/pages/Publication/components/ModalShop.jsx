@@ -120,8 +120,16 @@ function ModalShop({ isOpen, onClose, cartItems = [], onUpdateCart, onRemoveItem
     const { t } = useLanguage();
     const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
     const [shippingCost, setShippingCost] = useState(0);
+    const [shippingRegion, setShippingRegion] = useState('');
     const [hasShippingSelected, setHasShippingSelected] = useState(false);
+    const [isProcessingCheckout, setIsProcessingCheckout] = useState(false);
 
+    // Mapeo de costos a regiones
+    const SHIPPING_REGIONS = {
+        8: 'spain',
+        15: 'europe', 
+        25: 'international'
+    };
 
     useEffect(() => {
         const handleEscape = (e) => {
@@ -145,7 +153,9 @@ function ModalShop({ isOpen, onClose, cartItems = [], onUpdateCart, onRemoveItem
     useEffect(() => {
         if (!isOpen) {
             setShippingCost(0);
+            setShippingRegion('');
             setHasShippingSelected(false);
+            setIsProcessingCheckout(false);
         }
     }, [isOpen]);
 
@@ -172,49 +182,76 @@ function ModalShop({ isOpen, onClose, cartItems = [], onUpdateCart, onRemoveItem
     };
 
     const handleCheckout = async () => {
-        if (!hasShippingSelected) {
-          return;
+        if (!hasShippingSelected || !shippingRegion) {
+            console.error('No shipping option selected');
+            return;
         }
+
+        if (isProcessingCheckout) {
+            return; // Evitar múltiples clicks
+        }
+
+        setIsProcessingCheckout(true);
       
         try {
-          const items = cartItems.map(item => ({
-            id: item.id,
-            currency: 'eur',
-            name: item.title,
-            price: parseFloat(item.price.replace('€', '').replace(',', '.')) * 100,
-            quantity: item.quantity,
-          }));
-      
-        //   const response = await fetch(`http://localhost:3010/api/create-checkout-session`, {
+            const items = cartItems.map(item => ({
+                id: item.id,
+                currency: 'eur',
+                quantity: item.quantity,
+            }));
+
+            const requestBody = {
+                items: items,
+                shipping: {
+                    region: shippingRegion
+                }
+            };
+
+            console.log('Sending checkout request:', requestBody);
+
             const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/create-checkout-session`, {
- 
-        method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              items: items,
-              shippingCost: shippingCost * 100,
-            }),
-          });
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestBody),
+            });
+
             const data = await response.json();
 
+            if (!response.ok) {
+                throw new Error(data.error || `HTTP error! status: ${response.status}`);
+            }
 
-            if (data.checkout_url) {
+            if (data.success && data.checkout_url) {
+                console.log('Checkout session created successfully:', {
+                    sessionId: data.session_id,
+                    shipping: data.shipping
+                });
                 // Redirigir a Stripe Checkout
                 window.location.href = data.checkout_url;
             } else {
-                console.error('Error:', data.error);
+                throw new Error(data.error || 'Unknown error occurred');
             }
         } catch (error) {
             console.error('Error al procesar checkout:', error);
+            alert(`Error al procesar el pago: ${error.message}`);
+        } finally {
+            setIsProcessingCheckout(false);
         }
     };
 
-
     const handleShippingChange = (cost) => {
         setShippingCost(cost);
-        setHasShippingSelected(cost > 0);
+        const region = SHIPPING_REGIONS[cost];
+        setShippingRegion(region || '');
+        setHasShippingSelected(cost > 0 && region);
+        
+        console.log('Shipping changed:', {
+            cost,
+            region,
+            hasValidRegion: !!region
+        });
     };
 
     return (
@@ -245,6 +282,7 @@ function ModalShop({ isOpen, onClose, cartItems = [], onUpdateCart, onRemoveItem
                         shippingCost={shippingCost}
                         totalPrice={totalPrice}
                         hasShippingSelected={hasShippingSelected}
+                        isProcessingCheckout={isProcessingCheckout}
                         onViewCart={handleViewCart}
                         onCheckout={handleCheckout}
                         t={t}

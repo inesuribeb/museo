@@ -2,6 +2,15 @@ import stripe from "../utils/stripe.js";
 import { promises as fs } from "fs";
 import { checkProductExists, updateProduct, getProduct } from "../utils/helpers.js";
 
+// Configuración de costos de envío (en centavos)
+const SHIPPING_COSTS = {
+  spain: 800,        // 8€
+  europe: 1500,      // 15€  
+  international: 2500 // 25€
+};
+
+const VALID_SHIPPING_REGIONS = Object.keys(SHIPPING_COSTS);
+
 /**
  * Retrieves product information based on the product ID provided in the request parameters.
  * @async
@@ -50,15 +59,44 @@ export const getProductInfo = async (req, res) => {
  * Creates a Stripe Checkout Session for a product purchase.
  * @async
  * @function createCheckoutSession
- * @param {import('express').Request} req - Express request object. Expects `quantity` in body and `product` in request (set by middleware).
+ * @param {import('express').Request} req - Express request object. Expects `items` and `shipping` in body.
  * @param {import('express').Response} res - Express response object.
  * @returns {Promise<void>} Responds with JSON containing checkout session URL on success; error message on failure.
  */
 export const createCheckoutSession = async (req, res) => {
   try {
-    const { items, shippingCost } = req.body;
-    console.log(items);
+    const { items, shipping } = req.body;
 
+    // Validar que items exista y no esté vacío
+    if (!items || !Array.isArray(items) || items.length === 0) {
+      return res.status(400).json({
+        error: "Items are required and must be a non-empty array",
+      });
+    }
+
+    // Validar shipping
+    if (!shipping || !shipping.region) {
+      return res.status(400).json({
+        error: "Shipping region is required",
+        validRegions: VALID_SHIPPING_REGIONS,
+      });
+    }
+
+    if (!VALID_SHIPPING_REGIONS.includes(shipping.region)) {
+      return res.status(400).json({
+        error: "Invalid shipping region",
+        providedRegion: shipping.region,
+        validRegions: VALID_SHIPPING_REGIONS,
+      });
+    }
+
+    // Obtener el costo de envío desde la configuración del backend
+    const shippingCost = SHIPPING_COSTS[shipping.region];
+
+    console.log('Processing checkout for items:', items);
+    console.log('Shipping region:', shipping.region, 'Cost:', shippingCost);
+
+    // Crear line items para los productos
     const line_items = await Promise.all(items.map(async (item) => {
       const productResult = await getProduct(item.id);
       if (!productResult.success) {
@@ -68,7 +106,7 @@ export const createCheckoutSession = async (req, res) => {
       console.log(`Product price for ${product.name}: ${product.amount}`);
       return {
         price_data: {
-          currency: item.currency,
+          currency: item.currency || 'eur',
           product_data: {
             name: product.name
           },
@@ -78,18 +116,19 @@ export const createCheckoutSession = async (req, res) => {
       };
     }));
     
-
+    // Añadir el costo de envío como line item
     line_items.push({
       price_data: {
         currency: 'eur',
         product_data: {
-          name: 'Shipping',
+          name: `Shipping - ${shipping.region.charAt(0).toUpperCase() + shipping.region.slice(1)}`,
         },
-        unit_amount: shippingCost, // Asegúrate de que shippingCost sea un número entero en centavos
+        unit_amount: shippingCost,
       },
       quantity: 1,
     });
 
+    // Crear sesión de Stripe
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
@@ -99,35 +138,36 @@ export const createCheckoutSession = async (req, res) => {
       metadata: {
         items: JSON.stringify(items),
         shippingCost: shippingCost.toString(),
+        shippingRegion: shipping.region,
       },
       customer_creation: "always",
       invoice_creation: {
         enabled: true,
       },
-      shipping_address_collection: {
-        allowed_countries: ['US', 'CA', 'ES'], // Especifica los códigos de país permitidos
-      },
-      phone_number_collection: {
-        enabled: true,
-      },
     });
-
 
     res.json({
       success: true,
       checkout_url: session.url,
       session_id: session.id,
       items: items,
-      shippingCost: shippingCost,
-    });;
-    console.log(session.id)
+      shipping: {
+        region: shipping.region,
+        cost: shippingCost,
+        costInEuros: shippingCost / 100
+      },
+    });
+    
+    console.log('Checkout session created:', session.id);
   } catch (error) {
     console.error("Error creating checkout session:", error);
     return res.status(500).json({
       error: "Error creating checkout session",
+      details: error.message,
     });
   }
 };
+
 async function getProductById(productId) {
   try {
     const productData = await fs.readFile(`/Users/inesuribebarron/Desktop/Activos/AzarFundacion/stripe-checkout-api/src/products/${productId}.json`, 'utf-8');
@@ -137,6 +177,7 @@ async function getProductById(productId) {
     return null;
   }
 }
+
 /**
  * Retrieves the status of a Stripe Checkout Session.
  * @async
@@ -211,39 +252,50 @@ export const handleWebhook = async (req, res) => {
       const session = event.data.object;
       console.log("✅ Checkout completed:", session.id);
 
-      //TODO: Hay una funcion llamada updateProduct que no se esta usando, deberia usarse aqui para actualizar el stock del producto
-      const productId = session.metadata.product_id;
-      const quantityPurchased = parseInt(session.metadata.quantity, 10);
-      const productUpdateResult = await updateProduct(
-        productId,
-        async (currentProduct) => {
-          currentProduct.stock -= quantityPurchased;
-          return currentProduct;
+      // Actualizar stock de productos
+      try {
+        const items = JSON.parse(session.metadata.items);
+        
+        // Procesar cada item del carrito
+        for (const item of items) {
+          const productUpdateResult = await updateProduct(
+            item.id,
+            async (currentProduct) => {
+              currentProduct.stock -= item.quantity;
+              return currentProduct;
+            }
+          );
+          
+          if (!productUpdateResult.success) {
+            console.error(
+              `Error updating product stock for ${item.id}:`,
+              productUpdateResult.error
+            );
+          } else {
+            console.log(`Product ${item.id} stock updated successfully. Quantity reduced: ${item.quantity}`);
+          }
         }
-      );
-      if (!productUpdateResult.success) {
-        console.error(
-          "Error updating product stock:",
-          productUpdateResult.error
-        );
-      } else {
-        console.log(`Product ${productId} stock updated successfully.`);
+        
+        console.log(`Shipping applied: ${session.metadata.shippingRegion} - Cost: ${session.metadata.shippingCost} cents`);
+        
+      } catch (parseError) {
+        console.error("Error parsing items from session metadata:", parseError);
       }
 
-      // Aquí puedes agregar lógica para:
+      // Aquí puedes agregar lógica adicional para:
       // - Generar factura
-      // - Actualizar inventario
+      // - Enviar email de confirmación
       // - Crear cuenta de usuario
       // - Etc.
 
       break;
     case "payment_intent.succeeded":
       const paymentIntent = event.data.object;
-      console.log(" Payment successful:", paymentIntent.id);
+      console.log("💳 Payment successful:", paymentIntent.id);
       break;
     case "payment_intent.payment_failed":
       const failedPayment = event.data.object;
-      console.log(" Payment failed:", failedPayment.id);
+      console.log("❌ Payment failed:", failedPayment.id);
       break;
     default:
       console.log(`Unhandled event type ${event.type}`);
@@ -257,5 +309,4 @@ export default {
   createCheckoutSession,
   getCheckoutStatus,
   handleWebhook,
-
 };
