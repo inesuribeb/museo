@@ -105,6 +105,15 @@
     opacity: 0.9;
 }
 
+.is-sold-out {
+    background: var(--dark-blue);
+    opacity: 0.7;
+}
+.is-sold-out:hover {
+    background: var(--dark-blue);
+    opacity: 0.7;
+}
+
 @media screen and (max-width: 768px) {
     .pub-page-purchase-bar {
         width: calc(100% - 1rem);

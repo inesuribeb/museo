@@ -35,6 +35,8 @@ export const publicationTranslations = {
         shipping: "Envío:",
         total: "Total:",
 
+        soon: "Pronto disponible"
+
 
     },
     en: {
@@ -73,6 +75,9 @@ export const publicationTranslations = {
         shipping: "Shipping:",
         total: "Total:",
 
+        soon: "Available soon"
+
+
     },
     pt: {
         addToCart: 'Adicionar ao carrinho',
@@ -109,5 +114,7 @@ export const publicationTranslations = {
         subtotal: "Subtotal:",
         shipping: "Envio:",
         total: "Total:",
+
+        soon: "Disponível em breve"
     }
 };

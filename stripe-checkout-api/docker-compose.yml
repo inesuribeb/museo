@@ -13,6 +13,9 @@ services:
       - app_network
     environment:
       - NODE_ENV=${NODE_ENV:-development}
+      - VIRTUAL_HOST=api.azar.inesuribe.es
+      - LETSENCRYPT_HOST=api.azar.inesuribe.es
+      - LETSENCRYPT_EMAIL=email@inesuribe.es
     command: ${DOCKER_CMD:-npm run dev}
 
 volumes:
