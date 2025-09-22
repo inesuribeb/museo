@@ -23,6 +23,7 @@
 @media (max-width: 768px) {
     .residencies-program-content {
         margin-bottom: 0rem;
+        padding-top: 1rem;
     }
     
     .RP-sections > div {

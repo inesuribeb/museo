@@ -133,7 +133,7 @@ function AppContent() {
 
     return (
         <div className="app">
-            {/* <Banner /> */}
+            <Banner />
             {isMobile ? <HeaderPhone /> : <Header />}
 
             <main className="outlet-desktop" key={location.pathname}>

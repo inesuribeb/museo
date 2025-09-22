@@ -33,9 +33,9 @@ export const mockNextResidencia = [
       pt: 'Dança, matemática e natureza',
     },
     artDescription: {
-      es: 'En un olvidado tratado de danza del siglo XV de Doménico da Piacenza, el maestro enumera los elementos fundamentales de cualquier arte. Memoria, agilidad, manera, cálculo y “fantasmata”.<br><br> A saber, ese momento único de detención de un movimiento justo antes de un nuevo movimiento, un instante en el que todo se paraliza, en el que todo se congela, para entonces emprender otra vez el movimiento. Cuando el viento en la naturaleza se detiene, como el cuerpo en la danza o el pensamiento tras la idea, aparece una inspiradora constelación llena de tensiones.',
+      es: 'En un olvidado tratado de danza del siglo XV de Doménico da Piacenza, el maestro enumera los elementos fundamentales de cualquier arte. Memoria, agilidad, manera, cálculo y «fantasmata». A saber, ese momento único de detención justo antes de un movimiento, un instante en el que todo se paraliza, en el que todo se congela, para emprender otra vez el movimiento.<br><br>Cuando el viento en la naturaleza se detiene, como el cuerpo en la danza o el pensamiento tras la idea, aparece una inspiradora constelación llena de tensiones.',
       en: 'In a forgotten 15th-century dance treatise by Doménico da Piacenza, the master lists the fundamental elements of any art: memory, agility, manner, calculation, and “fantasmata.”<br><br>  Namely, that unique moment of pause in a movement just before a new movement begins, an instant in which everything freezes, before resuming motion. When the wind in nature stops, as the body does in dance or thought does after an idea, an inspiring constellation full of tensions appears.',
-      pt: 'Num tratado de dança do século XV caído no esquecimento, Doménico da Piacenza enumera os elementos fundamentais de qualquer arte: memória, agilidade, maneira, cálculo e « fantasmata ». Este termo designa o momento de suspensão, imediatamente antes de um movimento, um instante em que tudo se imobiliza, em que tudo se cristaliza, para que o gesto possa então recomeçar.<br><brr>Quando o vento na natureza se detém, tal como o corpo na dança ou o pensamento após a ideia, revela-se uma inspiradora constelação carregada de tensões.'
+      pt: 'Num tratado de dança do século XV caído no esquecimento, Doménico da Piacenza enumera os elementos fundamentais de qualquer arte: memória, agilidade, maneira, cálculo e « fantasmata ». Este termo designa o momento de suspensão, imediatamente antes de um movimento, um instante em que tudo se imobiliza, em que tudo se cristaliza, para que o gesto possa então recomeçar.<br><br>Quando o vento na natureza se detém, tal como o corpo na dança ou o pensamento após a ideia, revela-se uma inspiradora constelação carregada de tensões.'
     },
     largeDescription: {
       es: '<em>Danza, matemática y naturalezas</em>, alude a estas áreas y disciplinas en su <b>sentido más amplio</b>. En este marco, se consideran posibles candidatos —aunque no de forma exclusiva— artistas y creadores cuyas prácticas se centren en la danza, las matemáticas, la arquitectura, la ingeniería o la programación para el desarrollo de obras artísticas, las instalaciones <em>site-specific</em>, las intervenciones en entornos naturales o los trabajos desarrollados a partir de materiales orgánicos.<br><br>La intención de esta residencia es invitar a los participantes a desarrollar una <b>obra colectiva</b> a partir del trabajo conjunto y el cruce de sus prácticas artísticas. Los residentes contribuirán con sus conocimientos, herramientas y miradas al desarrollo de esta pieza común. La obra colectiva resultante se presentará en Extremadura, Madrid y Portugal, con el objetivo de dar visibilidad tanto a los participantes como al proceso y resultado de esta residencia.<br><br>Fundación Azar cubrirá los gastos de transporte, alojamiento y manutención de cada residente, además de facilitar los espacios y materiales necesarios para el desarrollo y la presentación de la obra colectiva.<br><br>La residencia tendrá lugar en Finca El Azahar (Trujillo, Extremadura), del día <b>19 de enero al 15 de febrero de 2026</b>. Además, se organizará un encuentro previo entre los seleccionados a mediados de diciembre de 2025.',
@@ -46,7 +46,7 @@ export const mockNextResidencia = [
       {
         id: 1,
         name: 'Idoia Zabaleta Morán',
-        portrait: './Images/Residencies/NextResidency/Jury/Idoia.JPG',
+        portrait: '/Images/Residencies/NextResidency/Jury/Idoia.JPG',
         proffesion: {
           es: 'Artista y Coreógrafa',
           en: 'Artist and Choreographer',
@@ -61,7 +61,7 @@ export const mockNextResidencia = [
       {
         id: 2,
         name: 'Pedro G. Romero',
-        portrait: './Images/Residencies/NextResidency/Jury/Pedro.webp',
+        portrait: '/Images/Residencies/NextResidency/Jury/Pedro.webp',
         proffesion: {
           es: 'Premio Nacional de las BBAA 2024',
           en: 'National Fine Arts Award 2024',
@@ -76,7 +76,7 @@ export const mockNextResidencia = [
       {
         id: 3,
         name: 'Tânia Carvalho',
-        portrait: './Images/Residencies/NextResidency/Jury/Tania.jpg',
+        portrait: '/Images/Residencies/NextResidency/Jury/Tania.jpg',
         proffesion: {
           es: 'Coreógrafa',
           en: 'Choreographer',

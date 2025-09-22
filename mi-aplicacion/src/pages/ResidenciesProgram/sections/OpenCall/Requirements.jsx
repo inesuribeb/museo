@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useLanguage } from '../../../../contexts/LanguageContext';
 import BigSerif from '../../../../components/Titles/BigSerif/BigSerif';
 import MediumSans from '../../../../components/Titles/MediumSans/MediumSans';
@@ -6,6 +7,19 @@ import './Requirements.css'
 
 function Requirements({ t, residency }) {
     const { language } = useLanguage();
+    const [selectedLanguage, setSelectedLanguage] = useState(null);
+
+    const handleDownloadPDF = () => {
+        if (!selectedLanguage) return;
+        const fileName =
+          selectedLanguage === 'es'
+            ? 'Fantasmata-ESP.pdf'
+            : 'Fantasmata-PT.pdf';
+        const link = document.createElement("a");
+        link.href = '/Images/Residencies/NextResidency/pdf/${fileName}';
+        link.download = fileName;
+        link.click();
+      };
 
     return (
         <div className='requirements-section-of'>
@@ -19,11 +33,54 @@ function Requirements({ t, residency }) {
                         dangerouslySetInnerHTML={{ __html: residency?.artDescription?.[language] }}
                     />
                 </div>
-                <div className='pdf-button-container'>
+                {/* <div className='pdf-button-container'>
                     <button className='pdf-button'>
                         {t('downloadPDF')}
                     </button>
+                </div> */}
+                {/* <div className='pdf-button-container'>
+                    <div className='pdf-language-selection'>
+                        <button
+                            className={`pdf-language-button ${selectedLanguage === 'es' ? 'active' : ''}`}
+                            onClick={() => setSelectedLanguage('es')}
+                        >
+                            ES
+                        </button>
+                        <button
+                            className={`pdf-language-button ${selectedLanguage === 'pt' ? 'active' : ''}`}
+                            onClick={() => setSelectedLanguage('pt')}
+                        >
+                            PT
+                        </button>
+                    </div>
+                    <button className='pdf-button' onClick={handleDownloadPDF} disabled={!selectedLanguage}>
+                        {t('downloadPDF')}
+                    </button>
+                </div> */}
+                <div className='pdf-button-container'>
+                    <div className='pdf-language-selection'>
+                        <button
+                            className={`pdf-language-button ${selectedLanguage === 'es' ? 'active' : ''}`}
+                            onClick={() => setSelectedLanguage('es')}
+                        >
+                            ES
+                        </button>
+                        <button
+                            className={`pdf-language-button ${selectedLanguage === 'pt' ? 'active' : ''}`}
+                            onClick={() => setSelectedLanguage('pt')}
+                        >
+                            PT
+                        </button>
+                    </div>
+                    <button
+                        className='pdf-button'
+                        onClick={handleDownloadPDF}
+                        disabled={!selectedLanguage}
+                    >
+                        {t('downloadPDF')}
+                    </button>
                 </div>
+
             </div>
             <div className='NR-column-right'>
                 <div className='fantasmata-img'>
@@ -32,10 +89,10 @@ function Requirements({ t, residency }) {
                 <div className='application'>
                     <MediumSans className='sendUsTitle'>{t('sendUs')}</MediumSans>
                     <div className='appSending'>
-                        <img src="Icons/largeArrow.png" alt="arrow-icon" />
+                        <img src="/Icons/largeArrow.png" alt="arrow-icon" />
                         {t('whereToSend')}</div>
                     <div className='appSending'>
-                        <img src="Icons/largeArrow.png" alt="arrow-icon" />
+                        <img src="/Icons/largeArrow.png" alt="arrow-icon" />
                         {t('whenToSend')}
                     </div>
                 </div>
