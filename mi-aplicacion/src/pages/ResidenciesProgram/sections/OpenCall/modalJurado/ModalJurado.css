@@ -86,7 +86,7 @@
   @media screen and (max-width: 768px) {
     .jurado-modal-content {
       max-width: 90%;
-      height: 75vh;
+      height: 60dvh;
       padding: 1rem;
       gap: 1.5rem;
     }
