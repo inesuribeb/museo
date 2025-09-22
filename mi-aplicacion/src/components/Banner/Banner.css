@@ -1,0 +1,32 @@
+.banner-openCall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--corporative-color);
+    padding: 10px;
+    text-align: center;
+    color: var(--light-color);
+    font-family: var(--futura-font);
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.banner-openCall:hover{
+    background-color: var(--dark-blue);
+}
+
+@media screen and (max-width: 768px) {
+    .banner-openCall {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-openCall {
+        padding: 6px;
+        font-size: 1rem;
+    }
+}

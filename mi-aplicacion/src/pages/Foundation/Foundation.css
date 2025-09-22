@@ -83,5 +83,6 @@
 @media (max-width: 768px) {
     .team-container {
         padding: 1rem;
+        padding-top: 3rem;
     }
 }

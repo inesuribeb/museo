@@ -7,6 +7,8 @@ export const homeTranslations = {
         callDeadline: 'Cierre Convocatoria',
 
         latestStories: 'Últimas historias',
+
+        bannerText: "«fantasmata» — Convocatoria abierta: Residencia Danza, matemática y naturalezas. Envía candidatura antes del 12/10/2025 →",
     },
     en: {
         heroSubtitle: 'a different bet for<br />the arts',
@@ -15,6 +17,9 @@ export const homeTranslations = {
         callDeadline: 'Open Call deadline',
 
         latestStories: 'Latest Stories',
+
+        bannerText: "«fantasmata» — Open Call: Dance, Mathematics and Natures Residency. Submit your application before 12/10/2025 →",
+
     },
     pt: {
         heroSubtitle: 'Uma aposta diferente para<br />as artes',
@@ -23,5 +28,8 @@ export const homeTranslations = {
         callDeadline: 'Prazo da Chamada Aberta',    
 
         latestStories: 'Últimas notícias',
+
+        bannerText: "«fantasmata» — Convocatória Aberta: Residência Dança, Matemática e Naturezas. Envia a tua candidatura antes de 12/10/2025 →",
+
     }
 };

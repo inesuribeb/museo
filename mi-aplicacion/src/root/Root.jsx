@@ -103,6 +103,7 @@ import HeaderPhone from "../components/Header/HeaderPhone";
 import BottomNavigation from "../pages/ResidenciesProgram/components/BottomNavigation";
 import BottomNavPhone from "../pages/ResidenciesProgram/components/BottomNavPhone";
 import Footer from "../components/Footer/Footer";
+import Banner from '../components/Banner/Banner'
 import './Root.css'
 
 function AppContent() {
@@ -113,6 +114,7 @@ function AppContent() {
 
     const [isFooterVisible, setIsFooterVisible] = useState(false);
     const footerRef = useRef(null);
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -129,53 +131,14 @@ function AppContent() {
 
     const showBottomNavigation = isResidenciesPage();
 
-    // useEffect(() => {
-    //     if (!showBottomNavigation) return;
-
-    //     const observer = new IntersectionObserver(
-    //         ([entry]) => {
-    //             setIsFooterVisible(entry.isIntersecting);
-    //         },
-    //         {
-    //             threshold: 0,
-    //             rootMargin: '0px 0px -50px 0px' 
-    //         }
-    //     );
-
-    //     const footer = document.querySelector('.footer-content');
-    //     if (footer) {
-    //         observer.observe(footer);
-    //     }
-
-    //     return () => {
-    //         if (footer) observer.unobserve(footer);
-    //     };
-    // }, [showBottomNavigation, location.pathname]);
-
     return (
         <div className="app">
+            {/* <Banner /> */}
             {isMobile ? <HeaderPhone /> : <Header />}
 
             <main className="outlet-desktop" key={location.pathname}>
                 <Outlet />
             </main>
-
-            {/* {showBottomNavigation && (
-                isMobile ? (
-                    <BottomNavPhone
-                        t={t}
-                        activeSection={activeSection}
-                        onNavigate={setActiveSection}
-                    />
-                ) : (
-                    <BottomNavigation
-                        t={t}
-                        activeSection={activeSection}
-                        onNavigate={setActiveSection}
-                    />
-                )
-            )} */}
-            
 
             <Footer />
         </div>
@@ -190,7 +153,7 @@ function Root() {
                     <CartProvider>
                         <CartModalProvider>
                             <PresentationModalProvider>
-                                <AppContent />
+                                <AppContent />           
                             </PresentationModalProvider>
                         </CartModalProvider>
                     </CartProvider>

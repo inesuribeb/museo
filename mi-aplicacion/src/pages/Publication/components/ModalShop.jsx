@@ -185,8 +185,10 @@ function ModalShop({ isOpen, onClose, cartItems = [], onUpdateCart, onRemoveItem
             quantity: item.quantity,
           }));
       
-          const response = await fetch(`http://localhost:3010/api/create-checkout-session`, {
-            method: 'POST',
+        //   const response = await fetch(`http://localhost:3010/api/create-checkout-session`, {
+            const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/create-checkout-session`, {
+ 
+        method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },

@@ -166,7 +166,7 @@
 /* Estilos del header */
 .header-phone {
     position: fixed;
-    top: 0;
+    top: 5.5rem;
     left: 0;
     right: 0;
     height: 70px;

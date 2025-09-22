@@ -104,6 +104,12 @@ export const createCheckoutSession = async (req, res) => {
       invoice_creation: {
         enabled: true,
       },
+      shipping_address_collection: {
+        allowed_countries: ['US', 'CA', 'ES'], // Especifica los códigos de país permitidos
+      },
+      phone_number_collection: {
+        enabled: true,
+      },
     });
 
 
