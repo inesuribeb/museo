@@ -6,6 +6,7 @@ import { mockNextResidencia } from '../../utils/Data/NextResidencyData';
 import IntroResidencies from './sections/Intro/IntroResidencies';
 import IntroRPhone from './sections/Intro/IntroRPhone';
 import OpenCallR from './sections/OpenCall/OpenCallR';
+import OpenCallPhone from './sections/OpenCall/phone/OpenCallPhone';
 import Finca from './sections/Finca/Finca';
 import FincaPhone from './sections/Finca/FincaPhone';
 import PastResidencies from './sections/PastResidencies/PastResidencies';
@@ -164,7 +165,12 @@ function ResidenciesProgram() {
                 </div>
 
                 <div ref={openCallRef} id="opencall-section">
-                    <OpenCallR t={t} residency={currentResidency}/>
+                    {/* <OpenCallR t={t} residency={currentResidency}/> */}
+                    {isMobile ? (
+                        <OpenCallPhone t={t} residency={currentResidency}/>
+                    ) : (
+                        <OpenCallR t={t} residency={currentResidency}/>
+                    )}
                 </div>
 
                 <div ref={pastResidenciesRef} id="pastresidencies-section">

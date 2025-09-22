@@ -1,0 +1,101 @@
+.selection-phone-content {
+    padding: 0rem;
+    background-color: var(--dark-blue);
+    color: var(--light-color);
+    font-family: var(--futura-font);
+
+}
+
+.selection-phone-content h2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 20px;
+    /* font-family: var(--futura-font); */
+    font-weight: var(--futura-book);
+}
+
+.selection-phone-section {
+    margin-bottom: 40px;
+    padding: 0.5rem 1rem;
+}
+
+.selection-phone-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.selection-phone-title .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--light-color);
+    border-right: 2px solid var(--light-color);
+    transition: transform 0.3s ease;
+}
+
+.selection-phone-title .arrow.up {
+    transform: rotate(-45deg);
+}
+
+.selection-phone-title .arrow.down {
+    transform: rotate(135deg);
+}
+
+.selection-phone-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 3rem;
+}
+
+.selection-phone-list li {
+    margin-bottom: 5px;
+}
+
+.selection-phone-description {
+    margin-bottom: 10px;
+    margin-left: 2rem;
+}
+
+
+.application-phone {
+    background-color: var(--light-color);
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--futura-font);
+    gap: 0rem;
+    color: var(--dark-blue);
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+.sendUsTitle-phone {
+    text-transform: none;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0;
+}
+
+.appSending-phone {
+    padding: 0rem 1rem;
+    display: flex;
+    /* align-items: flex-start; */
+    font-size: 1.2rem;
+    gap: 0.8rem;
+    position: relative;
+
+}
+
+.appSending-phone img {
+    width: 60px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}

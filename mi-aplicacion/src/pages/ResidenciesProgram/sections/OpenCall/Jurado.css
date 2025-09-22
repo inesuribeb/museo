@@ -68,3 +68,24 @@
 .openCalltitle {
     padding-left: 2rem;
 } */
+
+@media screen and (max-width: 767px) {
+    .opencall-large {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .openCalltitle {
+        padding-left: 1rem;
+        font-size: 1.8rem;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .description-large {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
