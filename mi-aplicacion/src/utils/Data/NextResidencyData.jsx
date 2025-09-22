@@ -63,9 +63,9 @@ export const mockNextResidencia = [
         name: 'Pedro G. Romero',
         portrait: '/Images/Residencies/NextResidency/Jury/Pedro.webp',
         proffesion: {
-          es: 'Premio Nacional de las BBAA 2024',
-          en: 'National Fine Arts Award 2024',
-          pt: 'Prémio Nacional de Belas-Artes 2024'
+          es: 'Artista, comisario e investigador',
+          en: 'Artist, curator and researcher',
+          pt: 'Artista, curador e investigador'
         },
         bio: {
           es: 'Pedro G. Romero, Premio Nacional de las Bellas Artes 2024, desarrolla desde 1985 una obra singular en torno a la imagen, la iconoclastia, el flamenco y la cultura popular.<br><br>Entre 1999 y 2019 articuló dos grandes proyectos: el Archivo F.X., sobre imagen e iconoclastia, y la <em>Máquina P.H</em>., centrada en flamenco y cultura popular, presentados en instituciones como la Fundació Tàpies, el Museo Reina Sofía, el CA2M, la Kunstverein de Stuttgart o en citas como la Bienal de Venecia, la Bienal de São Paulo, la Bergen Assembly o Documenta14.<br><br>Ha comisariado exposiciones y ciclos fundamentales como <em>Inflamable, Vivir en Sevilla</em> o <em>La noche española. Flamenco, vanguardia y cultura popular (1865-1936)</em>, presentados en el MNCARS, la Casa Encendida, el Petit Palais de París, entre otros.<br><br>Su trabajo audiovisual incluye piezas de videoarte como <em>Sevillanas solteras</em> (1993), colaboraciones con Israel Galván, y largometrajes como <em>La pel.lícula</em> (2005), <em>Cristianas profanas</em> (2008), además de los recientes <em>Nueve Sevillas</em> (2020) y <em>Siete Jereles</em> (2021).<br><br>Es también fundador y director de la Plataforma Independiente de Estudios Flamencos Modernos y Contemporáneos (pie.flamenca) y de la colección <em>Flamenco y cultura popular</em> en la editorial Athenaica. Actualmente es artista residente en la Academia de España en Roma.',
