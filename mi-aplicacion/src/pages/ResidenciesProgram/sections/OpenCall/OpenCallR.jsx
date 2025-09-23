@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Requirements from './Requirements';
+import MediumSans from '../../../../components/Titles/MediumSans/MediumSans';
 import Jurado from './Jurado';
 import SelectionProcess from './components/SelectionProcess';
 import './OpenCallR.css'
@@ -38,7 +39,7 @@ function OpenCallR({ t, residency }) {
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
-        
+
         // Llamar una vez al montar para posicionar correctamente
         handleScroll();
 
@@ -48,10 +49,11 @@ function OpenCallR({ t, residency }) {
     return (
         <section className='open-call-section' ref={sectionRef}>
             <div className='main-content'>
-                <Requirements t={t} residency={residency}  />
-                <Jurado t={t} residency={residency}  />
+                
+                <Requirements t={t} residency={residency} />
+                <Jurado t={t} residency={residency} />
             </div>
-            
+
             <div className='selection-process-sidebar' ref={sidebarRef}>
                 <SelectionProcess t={t} />
             </div>

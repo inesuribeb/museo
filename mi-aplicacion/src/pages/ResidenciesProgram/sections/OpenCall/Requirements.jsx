@@ -22,6 +22,10 @@ function Requirements({ t, residency }) {
       };
 
     return (
+        <div className='requirments-total'>
+            {/* <div className='wrapper-oc-title-req'>
+            <MediumSans className='oc-title-req'>{t('openCall')}</MediumSans>
+            </div> */}
         <div className='requirements-section-of'>
             <div className='NR-column-left'>
                 <div>
@@ -97,6 +101,7 @@ function Requirements({ t, residency }) {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

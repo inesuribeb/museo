@@ -1,7 +1,29 @@
+.requirments-total {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper-oc-title-req {
+    display: flex;
+    /* border-top: 1px solid var(--dark-blue); */
+    align-items: right;
+    /* justify-content: right; */
+    /* text-align: right; */
+}
+
+.oc-title-req {
+    padding-left: 2rem;
+    /* padding-right: 0rem; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
 .requirements-section-of {
     display: flex;
     width: 100%;
-    height: 95vh;
+    /* height: 95vh; */
+    height: 90vh;
+
     flex-direction: row;
     padding: 0;
     margin: 0;
@@ -187,3 +209,12 @@
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+@media screen and (max-width: 768px) {
+    .oc-title-req {
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    /* font-size: 1.2rem; */
+    }
+    }

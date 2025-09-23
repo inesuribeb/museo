@@ -12,6 +12,7 @@ import FincaPhone from './sections/Finca/FincaPhone';
 import PastResidencies from './sections/PastResidencies/PastResidencies';
 import BottomNavigation from './components/BottomNavigation';
 import BottomNavPhone from './components/BottomNavPhone';
+import MediumSans from '../../components/Titles/MediumSans/MediumSans';
 import './ResidenciesProgram.css'
 
 function ResidenciesProgram() {
@@ -166,6 +167,11 @@ function ResidenciesProgram() {
 
                 <div ref={openCallRef} id="opencall-section">
                     {/* <OpenCallR t={t} residency={currentResidency}/> */}
+                    <div className='wrapper-oc-title-req'>
+                    <MediumSans className='oc-title-req'>{t('openCall')}</MediumSans>
+                    {/* <MediumSans className='oc-title-req'>:</MediumSans>
+                    <MediumSans className='oc-title-req'>{t('residency2026')}</MediumSans> */}
+                </div>
                     {isMobile ? (
                         <OpenCallPhone t={t} residency={currentResidency}/>
                     ) : (

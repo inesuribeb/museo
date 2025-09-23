@@ -16,6 +16,7 @@ export const residenciesProgramTranslations = {
         requirements: "Proceso de selección",
 
         contents: 'Contenido',
+        residency2026: 'Residencia2026',
     },
     en: {
         openCall: 'Open Call',
@@ -34,6 +35,7 @@ export const residenciesProgramTranslations = {
         requirements: "Selection process",
 
         contents: 'Contents',
+        residency2026: 'Residency2026',
     },
     pt: {
         openCall: 'Chamada Aberta',
@@ -52,5 +54,6 @@ export const residenciesProgramTranslations = {
         requirements: "Processo de seleção",
 
         contents: 'Conteúdo',
+        residency2026: 'Residência2026',
     }
 };

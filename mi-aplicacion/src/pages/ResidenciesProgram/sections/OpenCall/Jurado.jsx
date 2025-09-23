@@ -21,7 +21,7 @@ function Jurado({ t, residency }) {
     return (
         <div className='jurado-section'>
             <div className='opencall-large'>
-                <MediumSans className='openCalltitle'>{t('openCall')}</MediumSans>
+                <MediumSans className='openCalltitle'>{t('residency2026')}</MediumSans>
                 <Texts
                     size="medium"
                     className='description-large'
