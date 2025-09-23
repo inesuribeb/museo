@@ -69,22 +69,22 @@ function PurchaseBar({ publication, t }) {
                 {t('addToCart')}
             </button> */}
 
-            <button
+            {/* <button
                 className={`pub-page-cart-btn ${isAvailable ? '' : 'is-sold-out'}`}
                 onClick={handleAddToCart}
                 disabled={!isAvailable}
                 aria-disabled={!isAvailable}
             >
                 {isAvailable ? t('addToCart') : t('soldOut')}
-            </button>
+            </button> */}
 
-             {/* <button
+             <button
                 className={`pub-page-cart-btn  is-sold-out`}
                 // onClick={onCheckout}
                     disabled={true}
                 >
                     {t('soon')}
-                </button> */}
+                </button>
         </div>
     );
 }
