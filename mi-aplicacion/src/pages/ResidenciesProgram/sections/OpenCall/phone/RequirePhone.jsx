@@ -10,17 +10,26 @@ function RequirePhone({ t, residency }) {
     const [selectedLanguage, setSelectedLanguage] = useState(null);
 
 
+    // const handleDownloadPDF = () => {
+    //     if (!selectedLanguage) return;
+    //     const fileName =
+    //       selectedLanguage === 'es'
+    //         ? 'Fantasmata-ESP.pdf'
+    //         : 'Fantasmata-PT.pdf';
+    //     const link = document.createElement("a");
+    //     link.href = '/Images/Residencies/NextResidency/pdf/${fileName}';
+    //     link.download = fileName;
+    //     link.click();
+    //   };
     const handleDownloadPDF = () => {
         if (!selectedLanguage) return;
-        const fileName =
-          selectedLanguage === 'es'
-            ? 'Fantasmata-ESP.pdf'
-            : 'Fantasmata-PT.pdf';
-        const link = document.createElement("a");
-        link.href = '/Images/Residencies/NextResidency/pdf/${fileName}';
-        link.download = fileName;
-        link.click();
-      };
+
+        const fileUrl = selectedLanguage === 'es'
+            ? 'https://drive.google.com/file/d/1GHdhNaW_ppkzVzi3Dj_hh3Bb_p5P06Th/view?usp=drive_link'
+            : 'https://drive.google.com/file/d/1J2fJgdyxRfOJw4E6yC3g8FEh7REugKYn/view?usp=drive_link';
+
+        window.open(fileUrl, '_blank');
+    };
 
     return (
         <div className='require-phone'>

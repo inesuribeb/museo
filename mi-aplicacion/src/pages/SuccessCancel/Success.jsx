@@ -132,7 +132,7 @@ function Success() {
                 <h1 className="success-title">{t('successTitle')}</h1>
                 <p className="success-message">{t('successMessage')}</p>
                 
-                {orderData && (
+                {/* {orderData && (
                     <div className="success-order-details">
                         <h3>{t('successOrderDetails')}</h3>
                         <div className="order-info">
@@ -168,7 +168,7 @@ function Success() {
                             )}
                         </div>
                     </div>
-                )}
+                )} */}
                 
                 <div className="success-next-steps">
                     <h3>{t('successNextSteps')}</h3>

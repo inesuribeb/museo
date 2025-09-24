@@ -9,7 +9,8 @@ import ArtPiece from '../pages/ArtPiece/ArtPiece';
 import Publication from '../pages/Publication/Publication';
 import Collaboration from "../pages/Collaboration/Collaboration";
 import Success from "../pages/SuccessCancel/Success";
-import Cancel from "../pages/SuccessCancel/Cancel"
+import Cancel from "../pages/SuccessCancel/Cancel";
+import NotFound from "../components/NotFound/NotFound";
 import Root from "../root/Root";
 
 const router = createBrowserRouter([
@@ -161,6 +162,11 @@ const router = createBrowserRouter([
                 path: "/cancel", 
                 element: <Cancel />
             },
+            
+            {
+                path: "*",
+                element: <NotFound />
+            }
         ]
     }])
 
