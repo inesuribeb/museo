@@ -11,6 +11,7 @@ import Collaboration from "../pages/Collaboration/Collaboration";
 import Success from "../pages/SuccessCancel/Success";
 import Cancel from "../pages/SuccessCancel/Cancel";
 import NotFound from "../components/NotFound/NotFound";
+import JuradoInfo from "../pages/Jurado/JuradoInfo";
 import Root from "../root/Root";
 
 const router = createBrowserRouter([
@@ -66,10 +67,10 @@ const router = createBrowserRouter([
                 path: "/cancel", 
                 element: <Cancel />
             },
-            // {
-            //     path: "/jurado/:id", 
-            //     element: <Cancel />
-            // },
+            {
+                path: "/jurado/:id", 
+                element: <JuradoInfo />
+            },
 
 
             {
@@ -116,6 +117,11 @@ const router = createBrowserRouter([
                 path: "/cancel", 
                 element: <Cancel />
             },
+            {
+                path: "/jury/:id", 
+                element: <JuradoInfo />
+            },
+
 
 
             {
@@ -155,6 +161,11 @@ const router = createBrowserRouter([
                 element: <Collaboration />
             },
             {
+                path: "/pt/jurado/:id", 
+                element: <JuradoInfo />
+            },
+
+            {
                 path: "/success",
                 element: <Success />
             },
@@ -162,6 +173,8 @@ const router = createBrowserRouter([
                 path: "/cancel", 
                 element: <Cancel />
             },
+            
+
             
             {
                 path: "*",

@@ -89,7 +89,8 @@ const routes = {
     exposition: "/exposicion",
     artPiece: "/obra-colectiva",
     publication: "/publicacion",
-    collaboration: "/colaboracion" 
+    collaboration: "/colaboracion" ,
+    jury: "/jurado"
   },
   en: {
     home: "/home",
@@ -100,7 +101,8 @@ const routes = {
     exposition: "/exhibition",
     artPiece: "/collective-art-piece",
     publication: "/publication",
-    collaboration: "/collaboration"
+    collaboration: "/collaboration",
+    jury: "/jury"
   },
   pt: {
     home: "/pt/inicio",
@@ -111,7 +113,8 @@ const routes = {
     exposition: "/pt/exposicao",
     artPiece: "/pt/obra-coletiva",
     publication: "/pt/publicacao",
-    collaboration: "/pt/colaboracao"
+    collaboration: "/pt/colaboracao",
+    jury: "/pt/jurado"
   }
 };
 
@@ -126,6 +129,7 @@ const routeMap = {
   "/obra-colectiva": { es: "/obra-colectiva", en: "/collective-art-piece", pt: "/pt/obra-coletiva" },
   "/publicacion": { es: "/publicacion", en: "/publication", pt: "/pt/publicacao" },
   "/colaboracion": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" }, 
+  "/jurado": { es: "/jurado", en: "/jury", pt: "/pt/jurado" }, 
 
   // Inglés
   "/home": { es: "/inicio", en: "/home", pt: "/pt/inicio" },
@@ -137,6 +141,7 @@ const routeMap = {
   "/collective-art-piece": { es: "/obra-colectiva", en: "/collective-art-piece", pt: "/pt/obra-coletiva" },
   "/publication": { es: "/publicacion", en: "/publication", pt: "/pt/publicacao" },
   "/collaboration": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" }, 
+  "/jury": { es: "/jurado", en: "/jury", pt: "/pt/jurado" }, 
 
   // Portugués
   "/pt/inicio": { es: "/inicio", en: "/home", pt: "/pt/inicio" },
@@ -147,7 +152,8 @@ const routeMap = {
   "/pt/exposicao": { es: "/exposicion", en: "/exhibition", pt: "/pt/exposicao" },
   "/pt/obra-coletiva": { es: "/obra-colectiva", en: "/collective-art-piece", pt: "/pt/obra-coletiva" },
   "/pt/publicacao": { es: "/publicacion", en: "/publication", pt: "/pt/publicacao" },
-  "/pt/colaboracao": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" } 
+  "/pt/colaboracao": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" } ,
+  "/pt/jurado": { es: "/jurado", en: "/jury", pt: "/pt/jurado" }, 
 };
 
 const detectLanguageFromPath = (path) => {

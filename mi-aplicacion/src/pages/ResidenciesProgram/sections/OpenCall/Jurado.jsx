@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../../../contexts/LanguageContext';
 import MediumSans from '../../../../components/Titles/MediumSans/MediumSans';
 import Texts from '../../../../components/Texts/Texts';
@@ -8,15 +9,20 @@ import './JuradoSlider.css';
 
 function Jurado({ t, residency }) {
     const { language } = useLanguage();
-    const [selectedMember, setSelectedMember] = useState(null);
+    const navigate = useNavigate();
+    // const [selectedMember, setSelectedMember] = useState(null);
 
+
+    // const handleMemberClick = (member) => {
+    //     setSelectedMember(member);
+    // };
     const handleMemberClick = (member) => {
-        setSelectedMember(member);
+        navigate(`/jurado/${member.id}`);
     };
 
-    const closeModal = () => {
-        setSelectedMember(null);
-    };
+    // const closeModal = () => {
+    //     setSelectedMember(null);
+    // };
 
     return (
         <div className='jurado-section'>
@@ -53,13 +59,13 @@ function Jurado({ t, residency }) {
                     </div>
                 ))}
             </div>
-            {selectedMember && (
+            {/* {selectedMember && (
                 <ModalJurado 
                     member={selectedMember} 
                     language={language}
                     onClose={closeModal} 
                 />
-            )}
+            )} */}
         </div>
     )
 }
