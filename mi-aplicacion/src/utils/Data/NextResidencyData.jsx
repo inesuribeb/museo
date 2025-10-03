@@ -28,9 +28,9 @@ export const mockNextResidencia = [
 
     artTitle: '«fantasmata»',
     artDisciplines: {
-      es: 'Danza, matemática y naturaleza',
-      en: 'Dance, mathematics, and nature',
-      pt: 'Dança, matemática e natureza',
+      es: 'Danza, matemática y naturalezas',
+      en: 'Dance, mathematics, and natures',
+      pt: 'Dança, matemática e naturezas',
     },
     artDescription: {
       es: 'En un olvidado tratado de danza del siglo XV de Doménico da Piacenza, el maestro enumera los elementos fundamentales de cualquier arte. Memoria, agilidad, manera, cálculo y «fantasmata». A saber, ese momento único de detención justo antes de un movimiento, un instante en el que todo se paraliza, en el que todo se congela, para emprender otra vez el movimiento.<br><br>Cuando el viento en la naturaleza se detiene, como el cuerpo en la danza o el pensamiento tras la idea, aparece una inspiradora constelación llena de tensiones.',
