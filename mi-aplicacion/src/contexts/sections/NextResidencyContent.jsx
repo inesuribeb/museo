@@ -14,7 +14,7 @@ export const nextResidencyTranslations = {
         downloadPDF: "Descargar PDF",
         sendUs: 'Envíanos tu candidatura',
         whereToSend: 'A residencia@fundacionazar.com',
-        whenToSend: 'Antes del 12 de octubre a las 23.59',
+        whenToSend: 'Antes del 19 de octubre a las 23.59',
     },
     en: {
         selectionProcessTitle: "Selection Process",
@@ -31,7 +31,7 @@ export const nextResidencyTranslations = {
         downloadPDF: "Download PDF",
         sendUs: 'Send us your application',
         whereToSend: 'To residencia@fundacionazar.com',
-        whenToSend: 'Before October 12 at 11:59 p.m.'
+        whenToSend: 'Before October 19 at 11:59 p.m.'
     },
     pt: {
         selectionProcessTitle: "Processo de Seleção",
@@ -48,6 +48,6 @@ export const nextResidencyTranslations = {
         downloadPDF: "Baixar PDF",
         sendUs: 'Envie-nos a sua candidatura',
         whereToSend: 'Para residencia@fundacionazar.com',
-        whenToSend: 'Antes de 12 de outubro às 23h59'
+        whenToSend: 'Antes de 19 de outubro às 23h59'
     }
 };

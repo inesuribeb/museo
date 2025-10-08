@@ -8,7 +8,7 @@ export const homeTranslations = {
 
         latestStories: 'Últimas historias',
 
-        bannerText: "Convocatoria abierta Residencia2026: <em>«fantasmata»</em> Danza, matemática y naturalezas. Envia tu candidatura antes del 12 de octubre",
+        bannerText: "Convocatoria abierta Residencia2026: <em>«fantasmata»</em> Danza, matemática y naturalezas. Envia tu candidatura antes del 19 de octubre",
     },
     en: {
         heroSubtitle: 'a different bet for<br />the arts',
@@ -18,7 +18,7 @@ export const homeTranslations = {
 
         latestStories: 'Latest Stories',
 
-        bannerText: "Open Call Residency2026: <em>«fantasmata»</em> Dance, Mathematics and Natures. Submit your application before October 12",
+        bannerText: "Open Call Residency2026: <em>«fantasmata»</em> Dance, Mathematics and Natures. Submit your application before October 19",
 
     },
     pt: {
@@ -29,7 +29,7 @@ export const homeTranslations = {
 
         latestStories: 'Últimas notícias',
 
-        bannerText: "Convocatória Aberta Residência2026: <em>«fantasmata»</em> Dança, Matemática e Naturezas. Envia a tua candidatura antes de 12 de outubro",
+        bannerText: "Convocatória Aberta Residência2026: <em>«fantasmata»</em> Dança, Matemática e Naturezas. Envia a tua candidatura antes de 19 de outubro",
 
     }
 };

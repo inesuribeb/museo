@@ -11,21 +11,19 @@ function Requirements({ t, residency }) {
 
     // const handleDownloadPDF = () => {
     //     if (!selectedLanguage) return;
-    //     const fileName =
-    //         selectedLanguage === 'es'
-    //             ? 'FantasmataEspañol.pdf'
-    //             : 'FantasmataPortugues.pdf';
-    //     const link = document.createElement("a");
-    //     link.href = 'http://localhost:5173/Images/Residencies/NextResidency/pdf/${fileName}';
-    //     link.download = fileName;
-    //     link.click();
+
+    //     const fileUrl = selectedLanguage === 'es'
+    //         ? 'https://drive.google.com/file/d/1GHdhNaW_ppkzVzi3Dj_hh3Bb_p5P06Th/view?usp=drive_link'
+    //         : 'https://drive.google.com/file/d/1J2fJgdyxRfOJw4E6yC3g8FEh7REugKYn/view?usp=drive_link';
+
+    //     window.open(fileUrl, '_blank');
     // };
     const handleDownloadPDF = () => {
         if (!selectedLanguage) return;
 
         const fileUrl = selectedLanguage === 'es'
-            ? 'https://drive.google.com/file/d/1GHdhNaW_ppkzVzi3Dj_hh3Bb_p5P06Th/view?usp=drive_link'
-            : 'https://drive.google.com/file/d/1J2fJgdyxRfOJw4E6yC3g8FEh7REugKYn/view?usp=drive_link';
+            ? 'https://drive.google.com/file/d/14_MsrDJd8xhn1NuK0J0Wtt6f3U8M7CDX/view?usp=drive_link'
+            : 'https://drive.google.com/file/d/17uOOGBIKc7hIR2nb97s7YzR3d-0ebk-z/view?usp=drive_link';
 
         window.open(fileUrl, '_blank');
     };
