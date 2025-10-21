@@ -1,6 +1,6 @@
 export const residenciesProgramTranslations = {
     es: {
-        openCall: 'Convocatoria Abierta',
+        openCall: 'Convocatoria Cerrada',
         theEspace: 'Finca El Azahar',
         previousResidencies: 'Residencias Anteriores',
 
@@ -19,7 +19,7 @@ export const residenciesProgramTranslations = {
         residency2026: 'Residencia2026',
     },
     en: {
-        openCall: 'Open Call',
+        openCall: 'Call Closed',
         theEspace: 'Finca El Azahar',
         previousResidencies: 'Previous Residencies',
 
@@ -38,7 +38,7 @@ export const residenciesProgramTranslations = {
         residency2026: 'Residency2026',
     },
     pt: {
-        openCall: 'Chamada Aberta',
+        openCall: 'Chamada Encerrada',
         theEspace: 'Finca El Azahar',
         previousResidencies: 'Residências Anteriores',
 

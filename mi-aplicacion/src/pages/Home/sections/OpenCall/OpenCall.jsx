@@ -32,7 +32,8 @@ function OpenCall({ t, data }) {
                 onClick={handleImageClick}
                 style={{ cursor: 'pointer' }}
             />
-            <p className='o-p'>{t('callDeadline')}. {residencyData?.openCallDates}</p>
+            {/* <p className='o-p'>{t('callDeadline')}. {residencyData?.openCallDates}</p> */}
+            <p className='o-p'>{residencyData?.openCallDates}</p>
             <p className='o-p'>{residencyData?.title}. {residencyData?.residencyDates}</p>
         </section>
     )

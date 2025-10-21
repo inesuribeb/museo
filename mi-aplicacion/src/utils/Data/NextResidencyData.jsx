@@ -16,9 +16,9 @@ export const mockNextResidencia = [
     exposiciones: ["expo-1"],
     collectiveArtPiece: ["artPiece-1"],
     openCallDates: {
-      es: '12 OCT 2025',
-      en: '12 OCT 2025',
-      pt: '12 OUT 2025',
+      es: 'Convocatoria cerrada',
+      en: 'Call closed',
+      pt: 'Chamada encerrada',
     },
     residencyDates: {
       es: '19 ENE – 15 FEB 2026',
