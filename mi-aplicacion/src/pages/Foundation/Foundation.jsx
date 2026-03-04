@@ -3,6 +3,7 @@ import { useMobile } from '../../components/Hooks/useMobile';
 import Vision from './sections/Vision/Vision';
 import Team from './sections/Team/Team';
 import TeamPhone from './sections/Team/TeamPhone';
+import Collaborators from './sections/Team/collaborators/Collaborators';
 import './Foundation.css'
 
 function Foundation() {
@@ -30,6 +31,9 @@ function Foundation() {
                 ) : (
                     <Team t={t} />
                 )}
+            </section>
+            <section className='collabs-container'>
+                <Collaborators t={t} />
             </section>
         </div>
     )

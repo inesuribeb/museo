@@ -113,6 +113,7 @@ export const createCheckoutSession = async (req, res) => {
           unit_amount: product.amount, 
         },
         quantity: item.quantity,
+        tax_rates: ['txr_1T7B02IPsqdhT1tnrmMgQGg4'], // ← añadir esto
       };
     }));
     
