@@ -8,7 +8,7 @@
     background-color: transparent;
 
     align-items: center;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 
 .team-title {
@@ -18,9 +18,9 @@
 .team-pictures {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-top: 8rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     justify-content: center; 
     flex-wrap: wrap;
 }
@@ -30,7 +30,7 @@
     transition: all 0.4s ease;
     flex: 1;
     min-width: 150px; 
-    max-width: 240px; 
+    max-width: 320px; 
     aspect-ratio: 3/4; 
     object-fit: cover;
     opacity: 1;
@@ -73,16 +73,15 @@
     font-size: 1.8rem;
     color: var(--dark-color);
     font-family: var(--main-font);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.4;
     margin: 0;
     color: var(--corporative-color);
 }
 
-.team-bio,
+/* .team-bio,
 .team-intro {
     min-height: 100px; 
-    /* max-width: 800px; */
     width: 800px; 
     display: flex;
     justify-content: center;
@@ -90,7 +89,19 @@
     flex-direction: column;
     margin-top: 0rem;
 
+} */
+.team-bio,
+.team-intro {
+    height: 120px; /* o lo que ocupe el nombre + cargo en hover */
+    min-height: unset; /* quita el min-height anterior */
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
+
 .member-name {
     text-transform: capitalize;
     align-self: flex-start;

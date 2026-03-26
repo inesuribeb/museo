@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 200px;
+    min-width: 200px;
+    max-width: 300px;
     cursor: pointer;
 }
 
 .collab-img {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     aspect-ratio: 3 / 4;
     /* background-color: var(--accent-color); */
     background-color: transparent;
@@ -17,7 +18,7 @@
 }
 
 .collab-img:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--corporative-color);
 }
 
 .collab-img img {
@@ -47,10 +48,11 @@
     left: 0;
     z-index: 2;
     width: 100%;
+    color: var(--corporative-color);
 
     font-family: var(--main-font);
     font-size: 1.4rem;
-    font-weight: var(--futura-light) !important;
+    /* font-weight: var(--futura-light) !important; */
 }
 
 .collab-card:hover .collab-role {
@@ -66,7 +68,8 @@
     gap: 0.3rem;
     font-family: var(--main-font);
     font-size: 1.4rem;
-    font-weight: var(--futura-light) !important;
+    color: var(--corporative-color);
+    /* font-weight: var(--futura-light) !important; */
     /* font: var(--futura-light-style); */
 }
 
