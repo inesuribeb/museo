@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../../../contexts/LanguageContext';
+import { teamData } from "../../../../utils/membersData";
 import './TeamPhone.css';
 
 function TeamPhone({ t }) {
@@ -11,35 +12,11 @@ function TeamPhone({ t }) {
         return <div>Cargando información del equipo...</div>;
     }
 
-    const teamMembers = [
-        {
-            id: 'nathalie',
-            image: '/Images/Team/Nathalie.jpeg',
-            name: t('nathalieName'),
-            role: t('nathalieRole'),
-            slug: 'nathalie-trafford',
-        },
-        {
-            id: 'denis',
-            image: '/Images/Team/Dennis.jpeg',
-            name: t('denisName'),
-            role: t('denisRole'),
-            slug: 'denis-curty',
-        },
-        {
-            id: 'paula',
-            image: '/Images/Team/Paula.jpg',
-            name: t('paulaName'),
-            role: t('paulaRole'),
-            slug: 'paula-g-genner',
-        }
-    ];
+    const teamMembers = teamData(t);
 
     const handleMemberClick = (member) => {
         navigate(`${getRoute('foundation')}/${member.slug}`);
     };
-
-    // resto del return igual...
 
     return (
         <div className="team-phone">
@@ -63,7 +40,6 @@ function TeamPhone({ t }) {
                                     {member.name}
                                 </div>
                             </div>
-
                             <div className="image-section">
                                 <img 
                                     src={member.image} 
