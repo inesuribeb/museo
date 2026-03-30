@@ -1,0 +1,222 @@
+/* IndividualMember.css */
+
+.individual-member {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* padding: 0 30px; */
+    padding: 0 0px;
+    margin-top: 0rem;
+}
+
+/* TOP: nombre izquierda, foto derecha */
+.individual-member-top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 6rem;
+    height: 100vh;
+    /* padding-left: 30px; */
+}
+
+.individual-member-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    /* margin-left: 30px; */
+    /* padding-left: 30px;
+    box-sizing: border-box;  */
+}
+
+.individual-member-name h1 {
+    font-size: 5rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    line-height: 0.9;
+    margin: 0;
+    color: var(--dark-color);
+}
+
+.individual-member-role {
+    margin-top: 1.5rem;
+    border-bottom: 1px solid var(--dark-color);
+    padding-top: 0rem;
+    width: 70%;
+}
+
+.individual-member-name,
+.individual-member-role {
+    margin-left: 30px;
+}
+
+.individual-member-role p {
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: var(--dark-color);
+    margin: 0;
+}
+
+.individual-member-right {
+    flex: 1;
+    /* width: 60%; */
+}
+
+.individual-member-right img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* QUOTE */
+.individual-member-quote {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.individual-member-quote blockquote {
+    font-size: 1.8rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--dark-color);
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
+}
+
+/* BIO */
+.individual-member-bio {
+    width: 50%;
+    align-self: flex-end;
+    align-self: center;
+    margin-bottom: 8rem;
+    /* border-bottom: 1px solid var(--dark-color); */
+}
+
+.individual-member-bio p {
+    font-size: 1.3rem;
+    font-family: var(--serif-font);
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--dark-color);
+}
+
+
+
+.line-prueba {
+    display: flex;
+    border-top: 1px solid var(--dark-color);
+    margin: 30px;
+}
+.others {
+    /* border-top: 1px solid var(--dark-color); */
+    /* margin: 30px; */
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+
+.others-title {
+    font-size: 2rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 6rem;
+    padding: 0 80px;
+}
+
+.others-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem 1rem;
+    width: 100%;
+    padding: 0 80px;
+}
+
+
+@media (max-width: 768px) {
+    .individual-member-top {
+        margin-top: 8rem;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 3rem;
+        gap: 0;
+        width: 100%;
+    }
+
+    .individual-member-left {
+        margin-bottom: 2rem;
+    }
+
+    .individual-member-name,
+    .individual-member-role {
+        margin-left: 15px;
+    }
+
+    .individual-member-name h1 {
+        font-size: 3.5rem;
+    }
+
+    .individual-member-role {
+        width: 90%;
+    }
+
+    .individual-member-right img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+
+    .individual-member-quote blockquote {
+        width: 90%;
+        line-height: 1.3;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0 20px;
+    }
+
+    .individual-member-bio {
+        width: 100%;
+        align-self: center;
+        padding: 0 20px;
+        
+    }
+
+    .individual-member-bio p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .line-prueba {
+        padding: 0;
+        margin: 15px;
+    }
+    .others-title {
+        /* font-size: 1.8rem; */
+        margin-top: 0px;
+        padding: 0 0px;
+        margin-bottom: 3rem;
+        text-align: left;
+        /* line-height: 1; */
+
+        font-size: 1.8rem;
+    color: var(--corporative-color);
+    line-height: 1.2;
+    /* margin: 0; */
+    font-family: var(--futura-font);
+    font-weight: var(--futura-medium);
+    }
+
+    .others-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0px;
+        gap: 2rem 1rem;
+    }
+}

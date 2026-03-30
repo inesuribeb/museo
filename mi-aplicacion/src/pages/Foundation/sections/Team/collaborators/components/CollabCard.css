@@ -10,7 +10,7 @@
 .collab-img {
     width: 100%;
     max-width: 300px;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 5;
     /* background-color: var(--accent-color); */
     background-color: transparent;
     position: relative;
@@ -49,7 +49,7 @@
     z-index: 2;
     width: 100%;
     color: var(--corporative-color);
-
+    line-height: 1;
     font-family: var(--main-font);
     font-size: 1.4rem;
     /* font-weight: var(--futura-light) !important; */
@@ -86,4 +86,33 @@
 
 .collab-card p {
     margin-top: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .collab-card {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+    }
+
+    .collab-img {
+        max-width: unset;
+
+    }
+
+    .collab-surname {
+        opacity: 1;
+    }
+
+    /* .collab-fullname {
+        font-weight: 500;
+    } */
+    .collab-card:hover .collab-img img {
+        width: 40%;
+        height: auto;
+        top: 0;
+        right: auto;
+        left: 0;
+    }
 }

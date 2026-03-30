@@ -175,3 +175,14 @@
     font-weight: var(--futura-book);
     white-space: nowrap;
 }
+
+
+@media (max-width: 768px) {
+    .section-team {
+        display: none;
+    }
+
+    .team-phone {
+        display: block;
+    }
+}

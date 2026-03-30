@@ -63,3 +63,28 @@
     padding-top: 0rem;
     margin-right: 1rem;
 }
+
+
+
+@media (max-width: 768px) {
+    .collab-grid {
+        margin-top: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+        gap: 2rem 1rem;
+    }
+
+    .collab-title-placeholder {
+        grid-column: 1 / -1; /* ocupa toda la fila */
+    }
+
+    .collab-title-wrapper {
+        position: static; /* deja de ser absolute */
+        text-align: left;
+    }
+
+    .collab-grid-title {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+}

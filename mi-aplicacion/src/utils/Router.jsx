@@ -12,6 +12,7 @@ import Success from "../pages/SuccessCancel/Success";
 import Cancel from "../pages/SuccessCancel/Cancel";
 import NotFound from "../components/NotFound/NotFound";
 import JuradoInfo from "../pages/Jurado/JuradoInfo";
+import IndividualMember from "../pages/IndividualMember/IndividualMember";
 import Root from "../root/Root";
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: "/fundacion-azar",
                 element: <Foundation />
+            },
+            {
+                path: "/fundacion-azar/:slug",
+                element: <IndividualMember />
             },
             {
                 path: "/programa-residencias",
@@ -82,6 +87,10 @@ const router = createBrowserRouter([
                 element: <Foundation />
             },
             {
+                path: "/azar-foundation/:slug",
+                element: <IndividualMember />
+            },
+            {
                 path: "/residencies-program",
                 element: <ResidenciesProgram />
             },
@@ -131,6 +140,10 @@ const router = createBrowserRouter([
             {
                 path: "/pt/azar-fundacao",
                 element: <Foundation />
+            },
+            {
+                path: "/azar-fundacao/:slug",
+                element: <IndividualMember />
             },
             {
                 path: "/pt/programa-residencias",
