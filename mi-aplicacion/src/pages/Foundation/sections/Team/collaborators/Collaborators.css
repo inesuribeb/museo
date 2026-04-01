@@ -64,6 +64,34 @@
     margin-right: 1rem;
 }
 
+@media (max-width: 1200px) {
+    .collab-grid {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .collab-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 40px;
+    }
+
+    .collab-title-placeholder {
+        grid-column: 1 / -1;
+    }
+
+    .collab-title-wrapper {
+        position: static;
+        text-align: left;
+    }
+
+    .collab-grid-title {
+        font-size: 2.2rem;
+        margin-right: 0;
+    }
+}
+
 
 
 @media (max-width: 768px) {
