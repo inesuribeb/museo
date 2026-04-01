@@ -62,8 +62,9 @@
     font-weight: 300;
     text-align: center;
     margin: 0;
-    font-family: var(--futura-font);
-    font-weight: var(--futura-book);
+    font-family: var(--main-font);
+    /* font-weight: var(--futura-book); */
+    font-weight: 400;
     letter-spacing: 1px;
 }
 

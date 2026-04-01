@@ -1,0 +1,119 @@
+.collab-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.collab-img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 4 / 5;
+    /* background-color: var(--accent-color); */
+    background-color: transparent;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.collab-img:hover {
+    border-bottom: 1px solid var(--corporative-color);
+}
+
+.collab-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, right 0.3s ease, left 0.3s ease; */
+}
+
+.collab-card:hover .collab-img img {
+    width: 60%;
+    height: auto;
+    top: 0;
+    right: auto;
+    left: 0;
+}
+
+
+.collab-role {
+    opacity: 0;
+    position: absolute;
+    bottom: -0.75rem;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    color: var(--corporative-color);
+    line-height: 1;
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    /* font-weight: var(--futura-light) !important; */
+}
+
+.collab-card:hover .collab-role {
+    opacity: 1;
+}
+
+
+
+
+.collab-fullname {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    color: var(--corporative-color);
+    /* font-weight: var(--futura-light) !important; */
+    /* font: var(--futura-light-style); */
+}
+
+.collab-surname {
+    /* opacity: 0; */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.collab-card:hover .collab-surname {
+    opacity: 1;
+}
+
+
+
+.collab-card p {
+    margin-top: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .collab-card {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+    }
+
+    .collab-img {
+        max-width: unset;
+
+    }
+
+    .collab-surname {
+        opacity: 1;
+    }
+
+    /* .collab-fullname {
+        font-weight: 500;
+    } */
+    .collab-card:hover .collab-img img {
+        width: 40%;
+        height: auto;
+        top: 0;
+        right: auto;
+        left: 0;
+    }
+}

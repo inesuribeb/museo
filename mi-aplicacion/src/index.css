@@ -25,7 +25,7 @@
   --dark-blue: rgb(7, 36, 73);
   --accent-color: #87ACDD;
 
-  --main-font: 'Futura', Helvetica, Arial, sans-serif;
+  --main-font: 'futura-pt', Helvetica, Arial, sans-serif;
   --serif-font: 'EB Garamond', serif;
 
 
@@ -52,7 +52,7 @@ html {
   margin: 0px;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   overscroll-behavior-y: none;
 }
 
@@ -60,7 +60,8 @@ body {
   padding: 0px;
   margin: 0px;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  max-width: 100vw; 
   overflow-y: auto;
   background-color: var(--light-color);
   overscroll-behavior-y: none;

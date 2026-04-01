@@ -1,0 +1,118 @@
+.collab-section-intern {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.collab-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem 1rem; 
+    width: 100%;
+    padding: 0 80px;
+}
+
+.collab-section-intern {
+    position: relative; /* necesario para el absolute */
+    width: 100%;
+}
+
+.collab-title-placeholder {
+    position: relative; /* contiene el absolute del h1 */
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+/* .collab-grid-title {
+    position: absolute;
+    top: 0;
+    right: 0;        
+    left: -100px;  
+    font-size: 2.8rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    color: var(--corporative-color);
+    text-align: right; 
+} */
+
+
+
+.collab-title-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -100px;
+    text-align: right;
+}
+
+.collab-grid-title {
+    display: inline-block;
+    font-size: 2.6rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    color: var(--corporative-color);
+    border-top: 1px solid var(--corporative-color);
+    padding-top: 0rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .collab-grid {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .collab-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 40px;
+    }
+
+    .collab-title-placeholder {
+        grid-column: 1 / -1;
+    }
+
+    .collab-title-wrapper {
+        position: static;
+        text-align: left;
+    }
+
+    .collab-grid-title {
+        font-size: 2.2rem;
+        margin-right: 0;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .collab-grid {
+        margin-top: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+        gap: 2rem 1rem;
+    }
+
+    .collab-title-placeholder {
+        grid-column: 1 / -1; /* ocupa toda la fila */
+    }
+
+    .collab-title-wrapper {
+        position: static; /* deja de ser absolute */
+        text-align: left;
+    }
+
+    .collab-grid-title {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+}
