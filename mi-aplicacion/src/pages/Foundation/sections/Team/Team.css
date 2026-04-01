@@ -8,7 +8,7 @@
     background-color: transparent;
 
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .team-title {
@@ -29,8 +29,8 @@
     cursor: pointer;
     transition: all 0.4s ease;
     flex: 1;
-    min-width: 150px; 
-    max-width: 320px; 
+    min-width: 100px; 
+    max-width: 220px; 
     aspect-ratio: 3/4; 
     object-fit: cover;
     opacity: 1;
@@ -92,7 +92,7 @@
 } */
 .team-bio,
 .team-intro {
-    height: 120px; /* o lo que ocupe el nombre + cargo en hover */
+    height: 110px; /* o lo que ocupe el nombre + cargo en hover */
     min-height: unset; /* quita el min-height anterior */
     width: 800px;
     display: flex;
