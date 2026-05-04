@@ -9,12 +9,14 @@ import ShoppingBasket from './ShoppingBasket/ShoppingBasket';
 import './Header.css'
 
 function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isMenuClosing, setIsMenuClosing] = useState(false);
+    // const [isMenuOpen, setIsMenuOpen] = useState(false);
+    // const [isMenuClosing, setIsMenuClosing] = useState(false);
     const { t, getRoute } = useLanguage();
     const [shouldUseLightColor, setShouldUseLightColor] = useState(false);
 
-    const { hideTitle, useLightLogo, useLightHamburger } = useHeader();
+    // const { hideTitle, useLightLogo, useLightHamburger } = useHeader();
+    const { hideTitle, useLightLogo, useLightHamburger, isMenuOpen, setIsMenuOpen } = useHeader();
+    const [isMenuClosing, setIsMenuClosing] = useState(false);
 
     const [isScrollingDown, setIsScrollingDown] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -87,7 +89,7 @@ function Header() {
         <>
             <div className="header">
                 <div className={`header-logo ${shouldHideTitle ? 'hidden-title' : ''}`}>
-                {/* <div className={`header-logo ${hideTitle ? 'in-hero-section' : ''}`}> */}
+                    {/* <div className={`header-logo ${hideTitle ? 'in-hero-section' : ''}`}> */}
 
                     <Link
                         to={getRoute('home')}

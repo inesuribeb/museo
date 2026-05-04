@@ -3,6 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 
 import router from "./routes/checkoutRoutes.js";
+import newsletterRouter from "./routes/newsletterRoutes.js"; 
 //import webhookRoutes from "./routes/webhookRoutes.js";
 
 
@@ -20,6 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/", router);
+app.use("/", newsletterRouter);
 
 
 app.listen(process.env.APP_PORT || 3001, () => {

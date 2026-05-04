@@ -103,7 +103,8 @@ import HeaderPhone from "../components/Header/HeaderPhone";
 import BottomNavigation from "../pages/ResidenciesProgram/components/BottomNavigation";
 import BottomNavPhone from "../pages/ResidenciesProgram/components/BottomNavPhone";
 import Footer from "../components/Footer/Footer";
-import Banner from '../components/Banner/Banner'
+import Banner from '../components/Banner/Banner';
+import Newsletter from "../components/Newsletter/Newsletter";
 import './Root.css'
 
 function AppContent() {
@@ -141,6 +142,8 @@ function AppContent() {
             </main>
 
             <Footer />
+
+            <Newsletter />
         </div>
     );
 }

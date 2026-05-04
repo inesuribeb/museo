@@ -102,13 +102,15 @@ import ShoppingBasket from './ShoppingBasket/ShoppingBasket';
 import './HeaderPhone.css';
 
 function HeaderPhone() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    // const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
     const [showContent, setShowContent] = useState(false);
     const [isScrollingDown, setIsScrollingDown] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const { getRoute } = useLanguage();
-    const { useLightLogo, useLightHamburger } = useHeader();
+    // const { useLightLogo, useLightHamburger } = useHeader();
+    const { useLightLogo, useLightHamburger, isMenuOpen, setIsMenuOpen } = useHeader();
+
 
     useEffect(() => {
         const handleScroll = () => {
