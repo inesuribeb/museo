@@ -4,7 +4,7 @@ export const mockPublicationsData = [
         number: "01",
         availability: true, 
         /*portadaLibro*/ 
-        cover: "/Images/Publications/Publication01/portadalibro.jpg",
+        cover: "/Images/Publications/Pub1-ana/libro1.webp",
         // image: "/Images/Publications/Publication01/Publicaciones-1.jpg",
         image: "/Images/Publications/Pub1-ana/libro1.webp",
         // images: [
