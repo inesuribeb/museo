@@ -5,10 +5,19 @@ export const mockPublicationsData = [
         availability: true, 
         /*portadaLibro*/ 
         cover: "/Images/Publications/Publication01/portadalibro.jpg",
-        image: "/Images/Publications/Publication01/Publicaciones-1.jpg",
+        // image: "/Images/Publications/Publication01/Publicaciones-1.jpg",
+        image: "/Images/Publications/Pub1-ana/libro1.webp",
+        // images: [
+        //     "/Images/Publications/Publication01/ImagesCarru/pub-1.jpg",
+        //     "/Images/Publications/Publication01/ImagesCarru/pub-3.jpg",
+        // ],
         images: [
-            "/Images/Publications/Publication01/ImagesCarru/pub-1.jpg",
-            "/Images/Publications/Publication01/ImagesCarru/pub-3.jpg",
+            "/Images/Publications/Pub1-ana/libro1.webp",
+            "/Images/Publications/Pub1-ana/libro6.webp",
+            "/Images/Publications/Pub1-ana/libro2.webp",
+            "/Images/Publications/Pub1-ana/libro3.webp",
+            "/Images/Publications/Pub1-ana/libro4.webp",
+            "/Images/Publications/Pub1-ana/libro5.webp",
         ],
         imageRef: [
             "/Images/Publications/Publication01/MencionPubli1.jpg",
