@@ -4,15 +4,15 @@ export const mockPublicationsData = [
         number: "01",
         availability: true, 
         /*portadaLibro*/ 
-        cover: "/Images/Publications/Pub1-ana/libro1.webp",
+        cover: "/Images/Publications/Publication01/Publicaciones-1.jpg",
         // image: "/Images/Publications/Publication01/Publicaciones-1.jpg",
-        image: "/Images/Publications/Pub1-ana/libro1.webp",
+        image: "/Images/Publications/Publication01/Publicaciones-1.jpg",
         // images: [
         //     "/Images/Publications/Publication01/ImagesCarru/pub-1.jpg",
         //     "/Images/Publications/Publication01/ImagesCarru/pub-3.jpg",
         // ],
         images: [
-            "/Images/Publications/Pub1-ana/libro1.webp",
+            "/Images/Publications/Publication01/ImagesCarru/pub-1.jpg",
             "/Images/Publications/Pub1-ana/libro6.webp",
             "/Images/Publications/Pub1-ana/libro2.webp",
             "/Images/Publications/Pub1-ana/libro3.webp",
