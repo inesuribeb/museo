@@ -219,118 +219,209 @@ export const mockExhibitionsData = [
             pt: '<br/>O sucesso da Expo Residencia2025 não teria sido possível sem a vossa presença e apoio.<br/>Obrigado e até à próxima edição!',
         }
     },
-    // {
-    //     id: "expo-2", 
-    //     image: "/Images/Residencies/Residency02/prueba4.PNG",
 
-    //     title: {
-    //         es: "Territorios Urbanos",
-    //         en: "Urban Territories",
-    //         pt: "Territórios Urbanos"
-    //     },
-    //     subtitle: {
-    //         es: "Exposición • Abril 2025",
-    //         en: "Exhibition • April 2025",
-    //         pt: "Exposição • Abril 2025"
-    //     },
-    //     venue: {
-    //         es: "Centro de Arte Moderno, Madrid",
-    //         en: "Modern Art Center, Madrid",
-    //         pt: "Centro de Arte Moderno, Madrid"
-    //     },
-    //     curator: {
-    //         es: "Luis Martínez",
-    //         en: "Luis Martínez",
-    //         pt: "Luis Martínez"
-    //     },
-    //     description: {
-    //         es: "Exposición sobre intervenciones artísticas en contexto urbano",
-    //         en: "Exhibition about artistic interventions in urban context",
-    //         pt: "Exposição sobre intervenções artísticas em contexto urbano"
-    //     },
 
-    //     className: "exhibition-card",
-    //     year: 2025,
-    //     startDate: "2025-04-10",
-    //     endDate: "2025-06-10",
-    //     residencias: ["residencia-2"],
-    //     publicaciones: ["pub-2"],
-    //     collectiveArtPiece: ["artPiece-2"]
-    // },
-    // {
-    //     id: "expo-3", 
-    //     image: "/Images/Residencies/Residency02/prueba5.PNG",
 
-    //     title: {
-    //         es: "Territorios Urbanos",
-    //         en: "Urban Territories",
-    //         pt: "Territórios Urbanos"
-    //     },
-    //     subtitle: {
-    //         es: "Exposición • Abril 2025",
-    //         en: "Exhibition • April 2025",
-    //         pt: "Exposição • Abril 2025"
-    //     },
-    //     venue: {
-    //         es: "Centro de Arte Moderno, Madrid",
-    //         en: "Modern Art Center, Madrid",
-    //         pt: "Centro de Arte Moderno, Madrid"
-    //     },
-    //     curator: {
-    //         es: "Luis Martínez",
-    //         en: "Luis Martínez",
-    //         pt: "Luis Martínez"
-    //     },
-    //     description: {
-    //         es: "Exposición sobre intervenciones artísticas en contexto urbano",
-    //         en: "Exhibition about artistic interventions in urban context",
-    //         pt: "Exposição sobre intervenções artísticas em contexto urbano"
-    //     },
 
-    //     className: "exhibition-card",
-    //     year: 2025,
-    //     startDate: "2025-04-10",
-    //     endDate: "2025-06-10",
-    //     residencias: ["residencia-2"],
-    //     publicaciones: ["pub-2"],
-    //     collectiveArtPiece: ["artPiece-2"]
-    // },
-    // {
-    //     id: "expo-4", 
-    //     image: "/Images/Residencies/Residency02/prueba6.PNG",
 
-    //     title: {
-    //         es: "Territorios Urbanos",
-    //         en: "Urban Territories",
-    //         pt: "Territórios Urbanos"
-    //     },
-    //     subtitle: {
-    //         es: "Exposición • Abril 2025",
-    //         en: "Exhibition • April 2025",
-    //         pt: "Exposição • Abril 2025"
-    //     },
-    //     venue: {
-    //         es: "Centro de Arte Moderno, Madrid",
-    //         en: "Modern Art Center, Madrid",
-    //         pt: "Centro de Arte Moderno, Madrid"
-    //     },
-    //     curator: {
-    //         es: "Luis Martínez",
-    //         en: "Luis Martínez",
-    //         pt: "Luis Martínez"
-    //     },
-    //     description: {
-    //         es: "Exposición sobre intervenciones artísticas en contexto urbano",
-    //         en: "Exhibition about artistic interventions in urban context",
-    //         pt: "Exposição sobre intervenções artísticas em contexto urbano"
-    //     },
 
-    //     className: "exhibition-card",
-    //     year: 2025,
-    //     startDate: "2025-04-10",
-    //     endDate: "2025-06-10",
-    //     residencias: ["residencia-2"],
-    //     publicaciones: ["pub-2"],
-    //     collectiveArtPiece: ["artPiece-2"]
-    // }
+
+
+
+    {
+        id: "expo-2",
+        imageRef: "",
+        image: "/Images/Exhibitions/Exhibition02/libro1bien.webp",
+        imageDetail: "/Images/Exhibitions/Exhibition02/2.webp",
+        imageDetail2: "/Images/Exhibitions/Exhibition02/3.webp",
+        bgImage: "/Images/Exhibitions/Exhibition02/bg-expo2.webp",
+        imagesAuthor: "",
+        title: {
+            es: "Presentación <em>Una residencia narrada por Ivan Floro</em>",
+            en: "",
+            pt: ""
+        },
+        subtitle: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        venue: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        curator: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        description: {
+            es: "Presentación en Barcelona del libro resultado de la Residencia2025",
+            en: "",
+            pt: ""
+        },
+
+        className: "exhibition-card",
+        year: 2026,
+        startDate: "2026-06-17",
+        endDate: "2026-06-17",
+        residencias: [""],
+        publicaciones: [""],
+        collectiveArtPiece: [""],
+
+        introTitle: {
+            es: '',
+            en: '',
+            pt: '',
+        },
+
+        intro: {
+            es: '<em>Una residencia narrada por Ivan Floro</em> es un libro que recoge las obras pintadas del natural durante la residencia artística celebrada en Extremadura en enero de 2025. Para dar a conocer la publicación y acercarla a la ciudad natal del joven pintor catalán, el pasado 17 de junio hicimos una presentación en el Trent Studio donde la gente pudo conocer al artista, su obra y adentrarse en la primera edición del programa de residencias de Fundación Azar llevándose consigo un ejemplar firmado. ',
+            en: '',
+            pt: '',
+        },
+
+        intro2: {
+            es: '',
+            en: '',
+            pt: '',
+        },
+
+        // presentations: [
+        //     {
+        //         id: 1,
+        //         artist: 'Florencia del Campo',
+        //         title: {
+        //             es: 'Lectura por Florencia del Campo',
+        //             en: 'Reading by Florencia del Campo',
+        //             pt: 'Leitura de Florencia del Campo'
+        //         },
+        //         text: {
+        //             es: 'Florencia del Campo compartió un fragmento cargado de fuerza y crudeza de <em>El nombre impropio</em>, una de las cinco partes que conforman su proyecto de no ficción <em>Diarios colaterales</em>. ',
+        //             en: 'Florencia del Campo shared a fragment full of strength and rawness from <em>El nombre impropio</em>, one of the five parts that make up her non-fiction project <em>Diarios colaterales</em>.',
+        //             pt: 'Florencia del Campo compartilhou um fragmento carregado de força e crueza de <em>El nombre improprio</em>, uma das cinco partes que compõem seu projeto de não ficção <em>Diarios colaterales</em>.',
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-Florencia-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Florencia-2.jpg",
+        //         ]
+        //     },
+        //     {
+        //         id: 2,
+        //         artist: 'Mireya Hernández',
+        //         title: {
+        //             es: 'Lectura por Mireya Hernández',
+        //             en: 'Reading by Mireya Hernández',
+        //             pt: 'Leitura de Mireya Hernández'
+        //         },
+        //         text: {
+        //             es: 'Mireya Hernández escogió para su lectura dos prosas de su proyecto en curso <em>El lenguaje de las moscas</em>. Estos textos recogían inspiración y memorias tanto de dentro como de fuera de la residencia, asociando y entrelazando los pequeños detalles que conforman su forma de ver el mundo.',
+        //             en: 'Mireya Hernández chose for her reading two prose pieces from her ongoing project <em>El lenguaje de las moscas</em>. These texts drew on inspiration and memories both from within and outside the residency, associating and intertwining the small details that shape her way of seeing the world.',
+        //             pt: 'Mireya Hernández escolheu para a sua leitura duas prosas de seu projeto em andamento <em>El lenguaje de las moscas</em>. Esses textos recolhiam inspiração e memórias tanto de dentro quanto de fora da residência, associando e entrelaçando os pequenos detalhes que formam sua maneira de ver o mundo.',
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-Mireya-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Mireya-2.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Mireya-3.jpg",
+        //         ]
+        //     },
+        //     {
+        //         id: 3,
+        //         artist: 'Gonzalo Quincoces',
+        //         title: {
+        //             es: 'Lectura por Gonzalo Quincoces',
+        //             en: 'Reading by Gonzalo Quincoces',
+        //             pt: 'Leitura de Gonzalo Quincoces'
+        //         },
+        //         text: {
+        //             es: 'Gonzalo Quincoces leyó con brío las primeras secuencias de su guión <em>La noche del coche rojo</em>, su primer largometraje en desarrollo, transportando a los oyentes a una turbia y grisácea Vizcaya de los años 80.',
+        //             en: 'Gonzalo Quincoces read with vigor the opening sequences of his script <em>La noche del coche rojo</em>, his first feature film in development, transporting the audience to a murky and grayish Biscay of the 1980s.',
+        //             pt: 'Gonzalo Quincoces leu com ímpeto as primeiras sequências de seu roteiro <em>La noche del coche rojo</em>, seu primeiro longa-metragem em desenvolvimento, transportando os ouvintes para uma turva e acinzentada Biscaia dos anos 80.',
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-Quincoces-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Quincoces-2.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Quincoces-3.jpg",
+        //         ]
+        //     },
+        //     {
+        //         id: 4,
+        //         artist: 'Maria Gallemí',
+        //         title: {
+        //             es: 'Presentación con María Gallemí',
+        //             en: 'Presentation with María Gallemí',
+        //             pt: 'Apresentação com María Gallemí'
+        //         },
+        //         text: {
+        //             es: 'Maria Gallemí sorprendió con un espacio en el que la repostería se convirtió en herramienta conceptual de búsqueda y exploración. Su instalación incluía fotografías de sus referencias y los postres desarrollados durante la residencia, además de una deliciosa instalación comestible que difuminaba los límites entre la naturaleza y lo culinario.',
+        //             en: 'Maria Gallemí surprised with a space where pastry became a conceptual tool for research and exploration. Her installation included photographs of her references and the desserts developed during the residency, as well as a delicious edible installation that blurred the boundaries between nature and the culinary.',
+        //             pt: 'Maria Gallemí surpreendeu com um espaço em que a confeitaria se tornou uma ferramenta conceitual de busca e exploração. Sua instalação incluía fotografias de suas referências e as sobremesas desenvolvidas durante a residência, além de uma deliciosa instalação comestível que desfocava os limites entre a natureza e o culinário.',
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-7.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-2.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-3.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-4.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-5.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-6.jpg",
+        //         ]
+        //     },
+        //     {
+        //         id: 5,
+        //         artist: 'María Esteve',
+        //         title: {
+        //             es: 'Presentación con María Esteve',
+        //             en: 'Presentation with María Esteve',
+        //             pt: 'Apresentação com María Esteve'
+        //         },
+        //         text: {
+        //             es: 'María Esteve transformó una sala en un nuevo territorio titulado <em>Donde la tierra habla</em>, a partir de un registro de texturas del paisaje y un video que mostraba sus procesos en los parajes que rodean Finca El Azahar y en las minas a cielo abierto de Las Villuercas. A través de la técnica del <em>frottage</em> y el contacto directo con la tierra, el papel y las telas se convirtieron en cartografías y memoria de esa naturaleza.',
+        //             en: 'María Esteve transformed a room into a new territory entitled <em>Donde la tierra habla</em>, based on a record of landscape textures and a video showing her processes in the surroundings of Finca El Azahar and in the open-pit mines of Las Villuercas. Through the technique of <em>frottage</em> and direct contact with the earth, paper and fabrics became cartographies and memory of that nature.',
+        //             pt: 'María Esteve transformou uma sala em um novo território intitulado <em>Donde la tierra habla</em>, a partir de um registro de texturas da paisagem e de um vídeo que mostrava seus processos nos arredores da Finca El Azahar e nas minas a céu aberto de Las Villuercas. Através da técnica do <em>frottage</em> e do contato direto com a terra, o papel e os tecidos se transformaram em cartografias e memória dessa natureza.',
+
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-2.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-7.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-3.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-4.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-5.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-6.jpg",
+        //         ]
+        //     },
+        // ],
+
+        preSaleTitle: {
+            es: 'Una residencia narrada por Ivan Floro',
+            en: '',
+            pt: '',
+        },
+
+        preSaleImage: "/Images/Exhibitions/Exhibition02/1.webp",
+
+        preSaleImage2: "/Images/Exhibitions/Exhibition02/4.webp",
+
+        preSaleText: {
+            es: 'Iván Floro fue invitado a ser el narrador de la Residencia2025, acompañando a las residentes en sus días y procesos creativos. Compartió sobremesas y paseos, observó los rincones y paisajes que las rodeaban y se integró en el ritmo cotidiano de la residencia. Con sus bártulos siempre a cuestas, se propuso pintar todo del natural: «sin recurrir a la fotografía como punto de partida y, así, devolverle al óleo su antiguo cometido: capturar el momento».<br/><br/><em>Una residencia narrada por Iván Floro</em> es el testimonio pictórico de esa vivencia, pero también un reflejo de la naturalidad, la curiosidad y el ritmo intuitivo que caracterizan la obra de Iván Floro.',
+            en: '',
+            pt: '',
+         },
+        publicaciones: ["pub-1"],
+        gallery: [
+            "/Images/Exhibitions/Exhibition02/mas1.webp",
+            "/Images/Exhibitions/Exhibition02/mas2.webp",
+            "/Images/Exhibitions/Exhibition02/mas3.webp",
+            "/Images/Exhibitions/Exhibition02/mas4.webp",
+            "/Images/Exhibitions/Exhibition02/mas5.webp",
+        ],
+        // byeByeText: {
+        //     es: '',
+        //     en: '',
+        //     pt: '',
+        //  }
+    },
+
 ]
