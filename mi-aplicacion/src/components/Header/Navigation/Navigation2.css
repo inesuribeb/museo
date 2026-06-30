@@ -32,7 +32,7 @@
     background-color: var(--light-header-color);
     position: relative;
     overflow: hidden;
-    letter-spacing: 0.1rem;
+    letter-spacing: -0.05rem;
     font-family: var(--main-font);
     animation: slideDownNavLink 0.6s cubic-bezier(0.11, 0, 0.5, 0) both;
     pointer-events: auto;
@@ -93,9 +93,10 @@
 }
 
 .nav-number-2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--light-neutral-color);
     font-family: 'EB Garamond';
+    /* letter-spacing: -0.1rem; */
 }
 
 .nav-link-2.light-text.show-image .nav-text-2 {

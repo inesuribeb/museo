@@ -143,7 +143,7 @@ function AppContent() {
 
             <Footer />
 
-            <Newsletter />
+            {/* <Newsletter /> */}
         </div>
     );
 }
