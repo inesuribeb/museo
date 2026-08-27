@@ -1,0 +1,68 @@
+.section-introag {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem 2rem 0rem 2rem; */
+    margin: 4rem 2rem 0rem 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--dark-color);
+}
+
+.tit-subtit{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    gap: 0rem;
+}
+.tit-subtit h1,
+.tit-subtit h2{
+    margin: 0;
+    font-family: var(--main-font);
+    font-weight: 400;
+    padding: 0;
+    letter-spacing: -0.5px;
+}
+.tit-subtit h1{
+    font-size: 2.5rem;
+}
+.tit-subtit h2{
+    margin-top: -10px;
+    font-size: 1.9rem;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 12rem 0rem 15rem;
+    gap: 4rem;
+}
+
+.container-col-1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.intro-cont1 p{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.cta-quienes-somos {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.4;
+}
+.list-a-cosas{
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-a-cosas li{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}

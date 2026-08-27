@@ -23,6 +23,8 @@
     text-decoration: none;
     color: inherit;
     display: inline;
+    font-family: var(--main-font);
+
 }
 
 .header-home-link:hover {

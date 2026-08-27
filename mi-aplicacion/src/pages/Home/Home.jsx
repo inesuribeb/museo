@@ -9,6 +9,8 @@ import Hero3 from './sections/Intro/Hero3';
 import HeroPhone from './sections/Hero/HeroPhone';
 import Intro2 from './sections/Intro/Intro2';
 import Intro from './sections/Intro/Intro';
+import IntroAg from './sections/Intro/IntroAg';
+import Featured from './sections/Featured/Featured';
 import OpenCall from './sections/OpenCall/OpenCall';
 import NavigationTabs from './sections/Intro/components/NavigationTabs';
 import './Home.css'
@@ -56,11 +58,15 @@ function Home() {
                     lightHeader={{ hamburger: true }}
                 />
             )}
-            <Intro t={t} getRoute={getRoute} />
-            <OpenCall
+            {/* <Intro t={t} getRoute={getRoute} /> */}
+            <IntroAg t={t} getRoute={getRoute} />
+
+            <Featured t={t} getRoute={getRoute} />
+
+            {/* <OpenCall
                 t={t}
                 data={localizedNextResidency}
-            />
+            /> */}
         </div>
     )
 }
