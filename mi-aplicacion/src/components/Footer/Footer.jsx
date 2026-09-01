@@ -7,6 +7,10 @@ function Footer() {
 
     return (
         <div className='footer-content'>
+            <div className='suscribe-footer'>
+                <h1>{t('suscribe')}</h1>
+                <h2>{t('suscribefooter')}</h2>
+            </div>
             <div className='footer-anagram'>
                 <img src="/Images/Logo/LogoSinBordes.jpg" alt="" />
             </div>

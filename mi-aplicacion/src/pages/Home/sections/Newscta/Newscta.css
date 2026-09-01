@@ -1,0 +1,35 @@
+.section-newscta {
+    height: 48vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    align-items: center;
+    padding: 0rem 2rem 0rem 2rem;
+    margin-top: 12rem;
+}
+
+.newscta-title {
+    font-size: 1.8rem;
+    margin: 0;
+    font-family: var(--main-font);
+    font-weight: 400;
+    padding: 0;
+    letter-spacing: -0.5px;
+    padding-bottom: 1rem;
+}
+
+.cta-suscribe-home {
+    color: white;
+    background-color: black;
+    font-family: var(--main-font);
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    letter-spacing: -0.5px;
+    font-size: 1.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.672);
+    cursor: pointer;
+    margin-bottom: 1rem;
+
+}

@@ -73,44 +73,44 @@ export const mockPublicationsData = [
         shippingEurope: '15€',
         shippingInternational: '25€',
     },
-    // {
-    //     id: "pub-2",
-    //     number: "02",
-    //     cover: "/Images/Publications/Publication02/pub02-01.png",
-    //     images: [
-    //         "/Images/Publications/Publication02/pub02-01.png",
-    //         "/Images/Publications/Publication01/pub01-01.jpg",
-    //     ],
-    //     price: "€25.00",
+    {
+        id: "pub-2",
+        number: "02",
+        cover: "/Images/Publications/Publication02/prueba.png",
+        images: [
+            "/Images/Publications/Publication02/pub02-01.png",
+            "/Images/Publications/Publication01/pub01-01.jpg",
+        ],
+        price: "€25.00",
 
-    //     title: {
-    //         es: "Zine Urbano Madrid",
-    //         en: "Madrid Urban Zine",
-    //         pt: "Zine Urbano Madrid"
-    //     },
-    //     subtitle: {
-    //         es: "Fanzine • 32 páginas",
-    //         en: "Fanzine • 32 pages",
-    //         pt: "Fanzine • 32 páginas"
-    //     },
-    //     type: {
-    //         es: "Fanzine",
-    //         en: "Fanzine",
-    //         pt: "Fanzine"
-    //     },
-    //     description: {
-    //         es: "Publicación experimental sobre la intervención urbana",
-    //         en: "Experimental publication about urban intervention",
-    //         pt: "Publicação experimental sobre intervenção urbana"
-    //     },
+        title: {
+            es: "Zine Urbano Madrid",
+            en: "Madrid Urban Zine",
+            pt: "Zine Urbano Madrid"
+        },
+        subtitle: {
+            es: "Fanzine • 32 páginas",
+            en: "Fanzine • 32 pages",
+            pt: "Fanzine • 32 páginas"
+        },
+        type: {
+            es: "Fanzine",
+            en: "Fanzine",
+            pt: "Fanzine"
+        },
+        description: {
+            es: "Publicación experimental sobre la intervención urbana",
+            en: "Experimental publication about urban intervention",
+            pt: "Publicação experimental sobre intervenção urbana"
+        },
 
-    //     onClick: () => console.log("Click en Zine Urbano Madrid"),
-    //     className: "publication-card",
-    //     year: 2025,
-    //     pages: 32,
-    //     format: "A5",
-    //     residencias: ["residencia-2"],
-    //     exposiciones: ["expo-2"],
-    //     collectiveArtPiece: ["artPiece-2"]
-    // },
+        onClick: () => console.log("Click en Zine Urbano Madrid"),
+        className: "publication-card",
+        year: 2025,
+        pages: 32,
+        format: "A5",
+        residencias: ["residencia-2"],
+        exposiciones: ["expo-2"],
+        collectiveArtPiece: ["artPiece-2"]
+    },
 ]

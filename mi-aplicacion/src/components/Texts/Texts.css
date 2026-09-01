@@ -3,6 +3,10 @@
     padding: 0;
     color: inherit;
     font-family: var(--serif-font);
+
+    font-family: var(--main-font);
+    letter-spacing: -0.3px;
+
     line-height: 1.6;
 }
 

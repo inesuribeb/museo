@@ -13,6 +13,10 @@ import IntroAg from './sections/Intro/IntroAg';
 import Featured from './sections/Featured/Featured';
 import OpenCall from './sections/OpenCall/OpenCall';
 import NavigationTabs from './sections/Intro/components/NavigationTabs';
+import TiendaHome from './sections/TiendaHome/TiendaHome';
+import Newscta from './sections/Newscta/Newscta';
+import Fincahome from './sections/Fincahome/Fincahome';
+import Dontmiss from './sections/Dontmiss/Dontmiss';
 import './Home.css'
 
 function Home() {
@@ -63,10 +67,19 @@ function Home() {
 
             <Featured t={t} getRoute={getRoute} />
 
+            <TiendaHome t={t} getRoute={getRoute} />
+
+            <Newscta t={t} getRoute={getRoute} />
+
+            <Fincahome t={t} getRoute={getRoute} />
+
+            <Dontmiss t={t} getRoute={getRoute} />
+
             {/* <OpenCall
                 t={t}
                 data={localizedNextResidency}
             /> */}
+            <NavigationTabs  t={t} getRoute={getRoute}/>
         </div>
     )
 }

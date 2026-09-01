@@ -20,13 +20,19 @@ const translations = {
     exposition: "Exposición",
     artPiece: "Obra Colectiva",
     publication: "Publicación",
-    collaboration: "Colaboración", 
+    collaboration: "Colaboración",
     shop: "Tienda",
     all: "Todo",
     discoverOthers: "Descubre la historia de otros miembros del equipo y colaboradores",
     suscribe: "Suscríbete Ahora",
     name: "Nombre",
     surnmame: "Apellidos",
+    featured: "Destacados",
+    tiendaHome: "La tienda",
+    newscta: "No te pierdas nada— suscríbete a la Newsletter de Fundación Azar.",
+    discover: 'Descubre dónde tienen lugar las residencias de Fundación Azar',
+    dontmiss: "No te puedes perder",
+    suscribefooter: 'Accede sin límites a Fundación Azar',
     ...foundationTranslations.es,
     ...residenciesProgramTranslations.es,
     ...archiveTranslations.es,
@@ -46,13 +52,19 @@ const translations = {
     exposition: "Exhibition",
     artPiece: "Collective Art Piece",
     publication: "Publication",
-    collaboration: "Collaboration", 
+    collaboration: "Collaboration",
     shop: "Shop",
     all: "All",
     discoverOthers: "Discover the story of other team members and collaborators",
     suscribe: "Subscribe Now",
     name: "Name",
     surnmame: "Surname",
+    featured: "Featured",
+    tiendaHome: "The shop",
+    newscta: "Don't miss a thing—subscribe to Fundación Azar's Newsletter.",
+    discover: 'Discover where Fundación Azar residencies take place',
+    dontmiss: "Don't miss",
+    subscribefooter: 'Unlimited access to Fundación Azar',
     ...foundationTranslations.en,
     ...residenciesProgramTranslations.en,
     ...archiveTranslations.en,
@@ -72,13 +84,19 @@ const translations = {
     exposition: "Exposição",
     artPiece: "Obra Coletiva",
     publication: "Publicação",
-    collaboration: "Colaboração", 
+    collaboration: "Colaboração",
     shop: "Loja",
     all: "Todo",
     discoverOthers: "Descubra a história de outros membros da equipe e colaboradores",
     suscribe: "Subscreva já",
     name: "Nome",
     surnmame: "Sobrenome",
+    featured: "Destaques",
+    tiendaHome: "A loja",
+    newscta: "Não perca nada—subscreva a Newsletter da Fundación Azar.",
+    discover: 'Descubra onde acontecem as residências da Fundación Azar',
+    dontmiss: "Não perca",
+    subscribefooter: 'Acesso ilimitado à Fundación Azar',
     ...foundationTranslations.pt,
     ...residenciesProgramTranslations.pt,
     ...archiveTranslations.pt,
@@ -101,7 +119,7 @@ const routes = {
     exposition: "/exposicion",
     artPiece: "/obra-colectiva",
     publication: "/publicacion",
-    collaboration: "/colaboracion" ,
+    collaboration: "/colaboracion",
     jury: "/jurado"
   },
   en: {
@@ -140,8 +158,8 @@ const routeMap = {
   "/exposicion": { es: "/exposicion", en: "/exhibition", pt: "/pt/exposicao" },
   "/obra-colectiva": { es: "/obra-colectiva", en: "/collective-art-piece", pt: "/pt/obra-coletiva" },
   "/publicacion": { es: "/publicacion", en: "/publication", pt: "/pt/publicacao" },
-  "/colaboracion": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" }, 
-  "/jurado": { es: "/jurado", en: "/jury", pt: "/pt/jurado" }, 
+  "/colaboracion": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" },
+  "/jurado": { es: "/jurado", en: "/jury", pt: "/pt/jurado" },
 
   // Inglés
   "/home": { es: "/inicio", en: "/home", pt: "/pt/inicio" },
@@ -152,8 +170,8 @@ const routeMap = {
   "/exhibition": { es: "/exposicion", en: "/exhibition", pt: "/pt/exposicao" },
   "/collective-art-piece": { es: "/obra-colectiva", en: "/collective-art-piece", pt: "/pt/obra-coletiva" },
   "/publication": { es: "/publicacion", en: "/publication", pt: "/pt/publicacao" },
-  "/collaboration": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" }, 
-  "/jury": { es: "/jurado", en: "/jury", pt: "/pt/jurado" }, 
+  "/collaboration": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" },
+  "/jury": { es: "/jurado", en: "/jury", pt: "/pt/jurado" },
 
   // Portugués
   "/pt/inicio": { es: "/inicio", en: "/home", pt: "/pt/inicio" },
@@ -164,8 +182,8 @@ const routeMap = {
   "/pt/exposicao": { es: "/exposicion", en: "/exhibition", pt: "/pt/exposicao" },
   "/pt/obra-coletiva": { es: "/obra-colectiva", en: "/collective-art-piece", pt: "/pt/obra-coletiva" },
   "/pt/publicacao": { es: "/publicacion", en: "/publication", pt: "/pt/publicacao" },
-  "/pt/colaboracao": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" } ,
-  "/pt/jurado": { es: "/jurado", en: "/jury", pt: "/pt/jurado" }, 
+  "/pt/colaboracao": { es: "/colaboracion", en: "/collaboration", pt: "/pt/colaboracao" },
+  "/pt/jurado": { es: "/jurado", en: "/jury", pt: "/pt/jurado" },
 };
 
 const detectLanguageFromPath = (path) => {
@@ -200,13 +218,13 @@ export const LanguageProvider = ({ children }) => {
     let params = '';
 
     const pathSegments = currentPath.split('/');
-    
+
     if (currentPath.startsWith('/pt/')) {
-      basePath = '/' + pathSegments.slice(0, 3).join('/').substring(1); 
-      params = pathSegments.slice(3).join('/'); 
+      basePath = '/' + pathSegments.slice(0, 3).join('/').substring(1);
+      params = pathSegments.slice(3).join('/');
     } else {
-      basePath = '/' + pathSegments[1]; 
-      params = pathSegments.slice(2).join('/'); 
+      basePath = '/' + pathSegments[1];
+      params = pathSegments.slice(2).join('/');
     }
 
     let newPath = routeMap[basePath]?.[newLanguage] || routes[newLanguage].home;

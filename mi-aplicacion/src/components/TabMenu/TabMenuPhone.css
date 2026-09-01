@@ -47,6 +47,8 @@
     color: var(--corporative-color);
     font-size: 1.6rem;
     text-transform: capitalize;
+    font-family: var(--main-font);
+
 }
 
 .hamburger-archive:hover {
