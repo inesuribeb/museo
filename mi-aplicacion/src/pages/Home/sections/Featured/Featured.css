@@ -25,7 +25,7 @@
 .featured-grid {
     display: flex;
     padding-top: 4rem;
-    padding-left: 15rem;
+    /* padding-left: 15rem; */
     padding-right: 2rem;
     flex-direction: row;
     overflow-x: auto;
