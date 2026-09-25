@@ -29,12 +29,12 @@ function CartFooter({ subtotalPrice, shippingCost, totalPrice, onViewCart, onChe
             </div>
 
             <div className="cart-footer-actions">
-                <button
+                {/* <button
                     className="cart-footer-btn cart-footer-btn-view"
                     onClick={onViewCart}
                 >
                     {t('viewCart')}
-                </button>
+                </button> */}
                 <button
                     className="cart-footer-btn cart-footer-btn-checkout"
                     onClick={onCheckout}
