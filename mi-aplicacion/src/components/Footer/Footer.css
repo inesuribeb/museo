@@ -141,12 +141,36 @@
 
 /* Solo para móvil */
 @media (max-width: 768px) {
+
+
     .footer-content {
         padding: 0 1rem;
     }
 
     .footer-anagram img {
-        width: 15%;
+        width: 25%;
+    }
+
+    .footer-content {
+        padding: 2.5rem 1.25rem 0;
+    }
+ 
+    .suscribe-footer {
+        gap: 0.5rem;
+    }
+ 
+    .footer-anagram {
+        padding-top: 1.5rem;
+    }
+ 
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem 0 2rem;
+        font-size: 1rem;
+        text-align: center;
     }
 
     .footer-info {
@@ -158,22 +182,21 @@
         font-size: 1rem;
     }
 
-    /* Línea 1: Menú horizontal centrado */
     .footer-menu {
         order: 1;
         gap: 1rem;
         font-size: 1rem;
     }
 
-    /* Línea 2: Email */
     .footer-info-column:first-child {
         order: 2;
         justify-self: auto;
     }
 
-    /* Línea 3: Instagram */
     .footer-info-column:last-child {
         order: 3;
         justify-self: auto;
     }
 }
+
+
