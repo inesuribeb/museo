@@ -1,46 +1,3 @@
-/* .navigation-phone {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1rem;
-    background-color: transparent;
-    padding-top: 120px;
-}
-
-.nav-link-phone {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 1rem 0rem;
-    text-decoration: none;
-    color: var(--dark-color);
-    transition: all 0.2s ease;
-    font-family: var(--futura-font);
-    font-weight: var(--futura-book);
-    letter-spacing: 0rem;
-    margin-top: -1rem;
-}
-
-.nav-link-phone:last-child {
-    border-bottom: none;
-}
-
-.nav-number-phone {
-    font-size: 2.5rem;
-    color: var(--light-neutral-color);
-    font-family: 'EB Garamond';
-    font-weight: 100;
-    line-height: 1;
-    display: none;
-}
-
-.nav-text-phone {
-    font-size: 3rem;
-    font-weight: var(--futura-book);
-    color: var(--dark-color);
-    line-height: 1.1;
-} */
-
 .navigation-phone {
     display: flex;
     flex-direction: column;
@@ -66,13 +23,13 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 1rem 0rem;
+    padding: 0.7rem 0rem;
     text-decoration: none;
     color: var(--corporative-color);
     transition: all 0.2s ease;
     font-family: var(--futura-font);
     font-weight: var(--futura-book);
-    letter-spacing: 0rem;
+    letter-spacing: -1.2px;
     margin-top: -1rem;
     opacity: 0; /* Inicialmente invisible */
 }
@@ -100,7 +57,7 @@
 }
 
 .nav-text-phone {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: var(--futura-book);
     color: var(--corporative-color);
     line-height: 1.1;
