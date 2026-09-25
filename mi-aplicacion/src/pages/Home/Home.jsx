@@ -51,6 +51,32 @@ function Home() {
     }, [setHideTitle, isMobile]);
 
     return (
+        // <div className='home-content'>
+        //     {isMobile ? (
+        //         <HeroPhone
+        //             t={t}
+        //             lightHeader={{ hamburger: true, logo: true }}
+        //         />
+        //     ) : (
+        //         <Hero2
+        //             t={t}
+        //             lightHeader={{ hamburger: true }}
+        //         />
+        //     )}
+        //     <IntroAg t={t} getRoute={getRoute} />
+
+        //     <Featured t={t} getRoute={getRoute} />
+
+        //     <TiendaHome t={t} getRoute={getRoute} />
+
+        //     <Newscta t={t} getRoute={getRoute} />
+
+        //     <Fincahome t={t} getRoute={getRoute} />
+
+        //     <Dontmiss t={t} getRoute={getRoute} />
+
+        //     <NavigationTabs  t={t} getRoute={getRoute}/>
+        // </div>
         <div className='home-content'>
             {isMobile ? (
                 <HeroPhone
@@ -58,16 +84,15 @@ function Home() {
                     lightHeader={{ hamburger: true, logo: true }}
                 />
             ) : (
-                // <Hero2
                 <Hero2
                     t={t}
                     lightHeader={{ hamburger: true }}
                 />
             )}
-            {/* <Intro t={t} getRoute={getRoute} /> */}
-            <IntroAg t={t} getRoute={getRoute} />
+            <Intro t={t} getRoute={getRoute} />
+            {/* <IntroAg t={t} getRoute={getRoute} /> */}
 
-            <Featured t={t} getRoute={getRoute} />
+            {/* <Featured t={t} getRoute={getRoute} />
 
             <TiendaHome t={t} getRoute={getRoute} />
 
@@ -75,14 +100,16 @@ function Home() {
 
             <Fincahome t={t} getRoute={getRoute} />
 
-            <Dontmiss t={t} getRoute={getRoute} />
+            <Dontmiss t={t} getRoute={getRoute} /> */}
 
             {/* <OpenCall
                 t={t}
                 data={localizedNextResidency}
             /> */}
-            <NavigationTabs  t={t} getRoute={getRoute}/>
+            {/* <NavigationTabs  t={t} getRoute={getRoute}/> */}
         </div>
+
+        
     )
 }
 

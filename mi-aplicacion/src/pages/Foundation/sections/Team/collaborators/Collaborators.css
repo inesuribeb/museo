@@ -57,6 +57,7 @@
     font-family: var(--main-font);
     font-weight: 400;
     line-height: 1.4;
+    letter-spacing: -0-8px;
     margin: 0;
     color: var(--corporative-color);
     border-top: 1px solid var(--corporative-color);
