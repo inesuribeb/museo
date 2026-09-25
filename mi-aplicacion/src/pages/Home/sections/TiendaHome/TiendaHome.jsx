@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useLocalizedData } from '../../../../components/Hooks/Hooks';
 import { mockPublicationsData } from '../../../../utils/Data/PublicationsData';
 import './TiendaHome.css';
@@ -14,7 +14,16 @@ function TiendaHome({ t, getRoute }) {
 
     return (
         <div className='section-tiendahome'>
-            <h2 className="featured-title">{t('tiendaHome')}</h2>
+            {/* <h2 className="featured-title">{t('tiendaHome')}</h2> */}
+
+            <div className='title-and-cta-shop'>
+                <h2 className="featured-title-shop">{t('tiendaHome')}</h2>
+                <h3>
+                    <Link to={`${getRoute('archive')}?tab=publications`} className="see-all-link-shop">
+                        {t('seeShop')}
+                    </Link>
+                </h3>
+            </div>
 
             <div className={`grid-tienda-home count-${count}`}>
                 {localizedPublications.map(pub => (

@@ -18,7 +18,7 @@ function BottomNavPhone({ t, activeSection, onNavigate }) {
         { 
             id: 'pastresidencies', 
             label: t('previousResidencies'),
-            number: '03'
+            number: '02'
         }
     ];
 
