@@ -41,7 +41,7 @@ function Home() {
         };
 
         setHideTitle(true);
-        
+
 
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -75,7 +75,8 @@ function Home() {
 
             <Dontmiss t={t} getRoute={getRoute} />
 
-            <NavigationTabs  t={t} getRoute={getRoute}/>
+            {!isMobile && <NavigationTabs t={t} getRoute={getRoute} />}
+
         </div>
         // <div className='home-content'>
         //     {isMobile ? (
@@ -90,10 +91,10 @@ function Home() {
         //         />
         //     )}
         //     <Intro t={t} getRoute={getRoute} />
-        
+
         // </div>
 
-        
+
     )
 }
 

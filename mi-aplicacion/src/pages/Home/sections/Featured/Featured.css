@@ -104,3 +104,49 @@
     flex: 0 0 auto;
     width: 320px;
 }
+
+
+
+
+
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+    .featured-grid {
+        padding-top: 4rem;
+    }
+
+    .featured-grid .generic-card {
+        width: 280px;
+    }
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 768px) {
+    .featured-section {
+        margin: 3rem 0 0 1rem;
+        padding-top: 3.5rem;
+    }
+
+    .title-and-cta {
+        margin-right: 1rem;
+    }
+
+    .featured-title {
+        font-size: 2rem;
+    }
+
+    .title-and-cta h3 {
+        font-size: 1.1rem;
+    }
+
+    .featured-grid {
+        padding-top: 2rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .featured-grid .generic-card {
+        width: 75vw;
+        scroll-snap-align: start;
+    }
+}

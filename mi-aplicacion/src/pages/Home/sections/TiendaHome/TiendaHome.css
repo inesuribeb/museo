@@ -170,3 +170,77 @@
     font-weight: 400;
     letter-spacing: -1px;
 }
+
+
+
+
+
+
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+    .grid-tienda-home,
+    .grid-tienda-home.count-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding-top: 3rem;
+    }
+}
+
+/* ---------- Móvil: carrusel ---------- */
+@media (max-width: 768px) {
+    .section-tiendahome {
+        min-height: auto;
+        margin: 0rem 0 0 1rem;
+        padding-top: 3.5rem;
+    }
+
+    .title-and-cta-shop {
+        margin-right: 1rem;
+    }
+
+    .featured-title-shop {
+        font-size: 2rem;
+    }
+
+    .title-and-cta-shop h3 {
+        font-size: 1.1rem;
+    }
+
+    .grid-tienda-home {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding-top: 2rem;
+        padding-right: 1rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .grid-tienda-home::-webkit-scrollbar {
+        display: none;
+    }
+
+    .grid-tienda-home .tienda-card,
+    .grid-tienda-home.count-1 .tienda-card {
+        flex: 0 0 75vw;
+        max-width: none;
+        scroll-snap-align: start;
+    }
+
+    .tienda-card-overlay {
+        padding: 2rem 1.5rem;
+        justify-content: center;
+    }
+
+    .tienda-card-title {
+        font-size: 1.4rem;
+        width: 85%;
+    }
+
+    .tienda-card-price {
+        font-size: 1.1rem;
+    }
+}

@@ -17,14 +17,14 @@
 /* Móviles (hasta 767px) */
 @media (max-width: 767px) {
     .home-content {
-        gap: 4rem;
+        gap: 0rem;
     }
 }
 
 /* Móviles pequeños (hasta 480px) */
 @media (max-width: 480px) {
     .home-content {
-        gap: 3rem;
+        gap: 0rem;
         padding-bottom: 2rem;
     }
 }

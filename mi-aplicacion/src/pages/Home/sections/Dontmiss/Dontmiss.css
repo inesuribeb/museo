@@ -81,3 +81,55 @@
     text-decoration: none;
     margin-top: auto;
 }
+
+
+
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+    .dontmiss-image-container {
+        flex-basis: 220px;
+    }
+
+    .dontmiss-card-title {
+        font-size: 1.7rem;
+    }
+
+    .dontmiss-card-subtitle {
+        font-size: 1.4rem;
+    }
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 768px) {
+    .dontmiss-section {
+        min-height: auto;
+        margin: 4rem 1rem 0 1rem;
+    }
+
+    .dontmiss-title {
+        font-size: 2rem;
+    }
+
+    .dontmiss-row {
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+
+    .dontmiss-image-container {
+        flex-basis: 120px;
+    }
+
+    .dontmiss-card-title {
+        font-size: 1.2rem;
+        margin-bottom: -0.25rem;
+    }
+
+    .dontmiss-card-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .dontmiss-cta {
+        font-size: 1rem;
+    }
+}

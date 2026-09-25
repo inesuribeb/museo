@@ -33,3 +33,41 @@
     margin-bottom: 1rem;
 
 }
+
+
+
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+    .section-newscta {
+        margin-top: 8rem;
+        gap: 2rem;
+    }
+
+    .newscta-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 768px) {
+    .section-newscta {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 3rem 1rem;
+        margin-top: 5rem;
+        /* margin-bottom: 0; */
+    }
+
+    .newscta-title {
+        font-size: 1.4rem;
+        padding-bottom: 0;
+    }
+
+    .cta-suscribe-home {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+}

@@ -112,3 +112,74 @@
         transition: none;
     }
 }
+
+
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+    .container2 {
+        padding: 0 1rem 0 4rem;
+        gap: 3rem;
+    }
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 768px) {
+    .section-introag {
+        box-sizing: border-box;
+        margin: 3rem 1rem 0rem 1rem;
+        padding-top: 1.5rem;
+    }
+
+    .tit-subtit {
+        padding-bottom: 2rem;
+    }
+
+    .tit-subtit h1 {
+        font-size: 2rem;
+    }
+
+    .tit-subtit h2 {
+        margin-top: -6px;
+        font-size: 1.5rem;
+    }
+
+    .container2 {
+        flex-direction: column;
+        padding: 0;
+        gap: 0rem;
+    }
+
+    .container-col-1,
+    .container-activities {
+        flex: none;
+    }
+    /* .container-activities {
+        justify-content: flex-end;
+    } */
+
+    .intro-cont1 p {
+        font-size: 1.2rem;
+        padding-bottom: 3rem;
+    }
+
+    .cta-quienes-somos {
+        font-size: 1.6rem;
+
+    }
+    .cta-quienes-somos p{
+
+        margin: -0.5px;
+        padding: 0; 
+        letter-spacing: -0.5px;
+    }
+
+    .list-a-cosas {
+        margin: 0;
+        /* text-align: right; */
+    }
+
+    .list-a-cosas li {
+        font-size: 1.3rem;
+    }
+}

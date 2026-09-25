@@ -3,11 +3,11 @@ import { useLocalizedData } from '../../../../components/Hooks/Hooks';
 import './Fincahome.css';
 
 const Fincaspaces = [
-    { id: 1, img: '/Images/Finca/finca01.jpg', type: { es: "Habitación principal", en: "", pt: "" } },
-    { id: 2, img: '/Images/Finca/finca02.jpg', type: { es: "Comedor", en: "", pt: "" } },
-    { id: 3, img: '/Images/Finca/finca03.jpg', type: { es: "Salón", en: "", pt: "" } },
-    { id: 4, img: '/Images/Finca/finca04.jpg', type: { es: "Jardín", en: "", pt: "" } },
-    { id: 5, img: '/Images/Finca/finca05.jpg', type: { es: "Sala de tertulia", en: "", pt: "" } },
+    { id: 1, img: '/Images/Finca/finca01.jpg', type: { es: "Porche", en: "Porch", pt: "Alpendre" } },
+    { id: 2, img: '/Images/Finca/finca02.jpg', type: { es: "Finca", en: "Estate", pt: "Quinta" } },
+    { id: 3, img: '/Images/Finca/finca03.jpg', type: { es: "Sala de estar", en: "Living room", pt: "Sala de estar" } },
+    { id: 4, img: '/Images/Finca/finca04.jpg', type: { es: "Jardín", en: "Garden", pt: "Jardim" } },
+    { id: 5, img: '/Images/Finca/finca05.jpg', type: { es: "Terraza", en: "Terrace", pt: "Terraço" } },
 ];
 
 function Fincahome({ t, getRoute }) {
