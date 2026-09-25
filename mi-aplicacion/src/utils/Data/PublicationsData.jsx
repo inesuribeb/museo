@@ -2,15 +2,10 @@ export const mockPublicationsData = [
     {
         id: "pub-1",
         number: "01",
-        availability: true, 
-        /*portadaLibro*/ 
+        availability: true,
+        /*portadaLibro*/
         cover: "/Images/Publications/Publication01/Publicaciones-1.jpg",
-        // image: "/Images/Publications/Publication01/Publicaciones-1.jpg",
         image: "/Images/Publications/Publication01/Publicaciones-1.jpg",
-        // images: [
-        //     "/Images/Publications/Publication01/ImagesCarru/pub-1.jpg",
-        //     "/Images/Publications/Publication01/ImagesCarru/pub-3.jpg",
-        // ],
         images: [
             "/Images/Publications/Publication01/ImagesCarru/pub-1.jpg",
             "/Images/Publications/Pub1-ana/libro6.webp",
@@ -72,45 +67,83 @@ export const mockPublicationsData = [
         shippingSpain: '8€',
         shippingEurope: '15€',
         shippingInternational: '25€',
+
+        date: '2025-06-20'
     },
     {
         id: "pub-2",
-        number: "02",
-        cover: "/Images/Publications/Publication02/prueba.png",
+        number: "03",
+        availability: true,
+        /*portadaLibro*/
+        cover: "/Images/Publications/Publication02/portada.webp",
+        /*grid todo*/
+        image: "/Images/Publications/Publication02/portada.webp",
         images: [
-            "/Images/Publications/Publication02/pub02-01.png",
-            "/Images/Publications/Publication01/pub01-01.jpg",
+            "/Images/Publications/Publication02/portadahoriz.webp",
+            "/Images/Publications/Publication02/brais_rodriguez7.webp",
+            "/Images/Publications/Publication02/brais_rodriguez8.webp",
+            "/Images/Publications/Publication02/brais_rodriguez_1.webp",
+            "/Images/Publications/Publication02/brais_rodriguez_2.webp",
+            // "/Images/Publications/Publication02/brais_rodriguez3.webp",
+            // "/Images/Publications/Publication02/brais_rodriguez4.webp",
+            "/Images/Publications/Publication02/brais_rodriguez5.webp",
+            "/Images/Publications/Publication02/brais_rodriguez6.jpg",
+            // "/Images/Publications/Publication02/brais_rodriguez7.webp",
+            // "/Images/Publications/Publication02/brais_rodriguez8.webp",
         ],
-        price: "€25.00",
+        imageRef: [
+            "/Images/Publications/Publication02/brais_rodriguez_1.webp",
+            "/Images/Publications/Publication02/",
+        ],
+        price: "€42.00",
 
         title: {
-            es: "Zine Urbano Madrid",
-            en: "Madrid Urban Zine",
-            pt: "Zine Urbano Madrid"
+            es: "Una residencia narrada por: Brais Rodríguez",
+            en: "A Residency Narrated by: Brais Rodríguez",
+            pt: "Uma residência narrada por: Brais Rodríguez"
         },
         subtitle: {
-            es: "Fanzine • 32 páginas",
-            en: "Fanzine • 32 pages",
-            pt: "Fanzine • 32 páginas"
+            es: "Publicación",
+            en: "Publication",
+            pt: "Publicação"
         },
         type: {
-            es: "Fanzine",
-            en: "Fanzine",
-            pt: "Fanzine"
+            es: "Catálogo",
+            en: "Catalog",
+            pt: "Catálogo"
         },
         description: {
-            es: "Publicación experimental sobre la intervención urbana",
-            en: "Experimental publication about urban intervention",
-            pt: "Publicação experimental sobre intervenção urbana"
+            es: "",
+            en: "",
+            pt: ""
         },
-
-        onClick: () => console.log("Click en Zine Urbano Madrid"),
+        info: {
+            es: "Esta publicación pertenece a nuestra colección <em>Una residencia narrada por</em>, en la que cada año un artista  es invitado para convertirse en testigo y cronista de las residencias, el dibujante gallego Brais Rodríguez da cuerpo  a las luces y sombras de este encuentro. Tras un mes junto a  las artistas en plena naturaleza extremeña, nos presenta una historieta gráfica en la que el tiempo parece contenerse. Veinticuatro hojas son veinticuatro horas; cada viñeta,  un minuto. En ellas asoman los acontecimientos visibles  y también aquellos casi imperceptibles, incluso espectrales,  del proceso de creación de la obra colectiva <em>Una visión remota</em>. ",
+            en: "In this publication, part of our collection <em>Una residencia narrada por</em> (A Residency Narrated By), in which each year an artist is invited to become witness and chronicler of the residencies, Galician cartoonist Brais Rodríguez gives form to the lights and shadows of this encounter. After a month alongside the artists in the heart of Extremadura's countryside, he presents a graphic story in which time seems to hold its breath. Twenty-four pages are twenty-four hours; each panel, a single minute. Within them emerge both the visible events and those almost imperceptible, even spectral, moments in the creative process of <em>Una visión remota</em>.",
+            pt: "Nesta publicação, que integra a nossa coleção <em>Una residencia narrada por</em> (Uma residência narrada por), na qual todos os anos um artista é convidado a tornar-se testemunha e cronista das residências, o desenhador galego Brais Rodríguez dá corpo às luzes e sombras deste encontro. Depois de um mês junto das artistas em plena natureza da Extremadura, apresenta-nos uma história em banda desenhada em que o tempo parece suster-se. Vinte e quatro páginas são vinte e quatro horas; cada vinheta, um minuto. Nelas assomam os acontecimentos visíveis e também aqueles quase impercetíveis, até espectrais, do processo de criação de <em>Una visión remota</em>."
+        },
+        artistBio: {
+            es: "<br/>Brais Rodríguez, dibujante e historietista gallego, explora la narración visual a través de la abstracción, el collage y el cómic. <br/><br/>Desde 2002 coordina Carne Líquida, un proyecto de autoedición desde el que publica obra propia y de otros autores, como <em>La chica con el Sol en la cabeza</em> (2016), <em>Sombra</em> (2017), <em>Onde estás?</em> (2018), <em>Still Life</em> (2019), <em>Enxoval</em> (2024) y <em>O espectro visible</em> (2025). Su interés por la autoedición y el fanzine le ha llevado también a colaborar con proyectos y publicaciones como Polaia, Fanzine Enfermo, Argh!, Forn de calç, La cultura del duodeno, Fondo, Otto Press y Dream Journal. <br/><br/>Su trabajo traslada también el lenguaje del cómic al espacio expositivo, explorando sus posibilidades pictóricas e instalativas. Entre sus proyectos destacan <em>Not a regular Wall</em>, en Washington D. C. (2024), donde aborda la figura de Ramón y Cajal a través de la abstracción y la línea, y su residencia en la Academia de España en Roma, centrada en las posibilidades narrativas de la elipsis. Entre 2012 y 2019 desarrolló la serie <em>La gente del perro</em>, en la que trabajó con imágenes de archivo y collage, dando lugar a proyectos como <em>La era de las imágenes desaparecidas</em>, realizado en colaboración con el Museo del Prado, y la intervención Álbum de Brignardelli.",
+            en: "<br/>Brais Rodríguez, a Galician illustrator and comics artist, explores visual storytelling through abstraction, collage and comics. <br/><br/>Since 2002 he has run Carne Líquida, a self-publishing project through which he releases his own work and that of other authors, including <em>La chica con el Sol en la cabeza</em> (2016), <em>Sombra</em> (2017), <em>Onde estás?</em> (2018), <em>Still Life</em> (2019), <em>Enxoval</em> (2024) and <em>O espectro visible</em> (2025). His interest in self-publishing and zines has also led him to collaborate with projects and publications such as Polaia, Fanzine Enfermo, Argh!, Forn de calç, La cultura del duodeno, Fondo, Otto Press and Dream Journal. <br/><br/>His work also brings the language of comics into the exhibition space, exploring its pictorial and installation possibilities. Notable projects include <em>Not a regular Wall</em> in Washington, D.C. (2024), where he approaches the figure of Ramón y Cajal through abstraction and line, and his residency at the Spanish Academy in Rome, focused on the narrative possibilities of ellipsis. Between 2012 and 2019 he developed the series <em>La gente del perro</em>, working with archival images and collage, which gave rise to projects such as <em>La era de las imágenes desaparecidas</em>, produced in collaboration with the Museo del Prado, and the intervention Álbum de Brignardelli.",
+            pt: "<br/>Brais Rodríguez, desenhador e autor de banda desenhada galego, explora a narração visual através da abstração, da colagem e da banda desenhada. <br/><br/>Desde 2002 coordena a Carne Líquida, um projeto de autoedição a partir do qual publica obra própria e de outros autores, como <em>La chica con el Sol en la cabeza</em> (2016), <em>Sombra</em> (2017), <em>Onde estás?</em> (2018), <em>Still Life</em> (2019), <em>Enxoval</em> (2024) e <em>O espectro visible</em> (2025). O seu interesse pela autoedição e pelo fanzine levou-o também a colaborar com projetos e publicações como Polaia, Fanzine Enfermo, Argh!, Forn de calç, La cultura del duodeno, Fondo, Otto Press e Dream Journal. <br/><br/>O seu trabalho transpõe também a linguagem da banda desenhada para o espaço expositivo, explorando as suas possibilidades pictóricas e instalativas. Entre os seus projetos destacam-se <em>Not a regular Wall</em>, em Washington D.C. (2024), onde aborda a figura de Ramón y Cajal através da abstração e da linha, e a sua residência na Academia de Espanha em Roma, centrada nas possibilidades narrativas da elipse. Entre 2012 e 2019 desenvolveu a série <em>La gente del perro</em>, na qual trabalhou com imagens de arquivo e colagem, dando origem a projetos como <em>La era de las imágenes desaparecidas</em>, realizado em colaboração com o Museu do Prado, e a intervenção Álbum de Brignardelli."
+        },
         className: "publication-card",
-        year: 2025,
-        pages: 32,
-        format: "A5",
+        year: 2026,
+        pages: 64,
+        format: "29,7x42 cm",
+        designBy: "Ana Domínguez Studio",
         residencias: ["residencia-2"],
         exposiciones: ["expo-2"],
-        collectiveArtPiece: ["artPiece-2"]
+        collectiveArtPiece: ["artPiece-2"],
+        detailImages: [
+            "/Images/Publications/Publication02/brais_rodriguez7.webp",
+            "/Images/Publications/Publication02/braiz_rodriguez_horiz.webp",
+            "/Images/Publications/Publication02/brais_rodriguez_grande.webp",
+        ],
+        shippingSpain: '8€',
+        shippingEurope: '15€',
+        shippingInternational: '25€',
+
+        date: '2026-09-25'
     },
 ]

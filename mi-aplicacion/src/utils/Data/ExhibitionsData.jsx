@@ -217,7 +217,8 @@ export const mockExhibitionsData = [
             es: '<br/>El éxito de Expo Residencia2025 no habría sido posible sin vuestra presencia y apoyo.<br/>¡Gracias y nos vemos en la próxima edición!',
             en: '<br/>The success of Expo Residencia2025 would not have been possible without your presence and support.<br/>Thank you, and see you at the next edition!',
             pt: '<br/>O sucesso da Expo Residencia2025 não teria sido possível sem a vossa presença e apoio.<br/>Obrigado e até à próxima edição!',
-        }
+        },
+        date: '2025-06-18'
     },
 
 
@@ -417,6 +418,7 @@ export const mockExhibitionsData = [
             "/Images/Exhibitions/Exhibition02/mas4.webp",
             "/Images/Exhibitions/Exhibition02/mas5.webp",
         ],
+        date: '2026-06-17'
         // byeByeText: {
         //     es: '',
         //     en: '',

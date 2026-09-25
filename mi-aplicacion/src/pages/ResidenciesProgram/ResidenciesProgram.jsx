@@ -19,7 +19,7 @@ function ResidenciesProgram() {
     const { t } = useLanguage();
     // const { setActiveSection } = useResidencies();
     const { activeSection, setActiveSection } = useResidencies();
-    const currentResidency = mockNextResidencia[0]; 
+    const currentResidency = mockNextResidencia[0];
 
     const isMobile = useMobile();
 
@@ -144,7 +144,7 @@ function ResidenciesProgram() {
         setTimeout(handleScroll, 100);
 
         return () => window.removeEventListener('scroll', optimizedScroll);
-    }, [setActiveSection, isMobile]); 
+    }, [setActiveSection, isMobile]);
 
     return (
         <div className='residencies-program-content'>
@@ -165,19 +165,17 @@ function ResidenciesProgram() {
                     )}
                 </div>
 
-                <div ref={openCallRef} id="opencall-section">
-                    {/* <OpenCallR t={t} residency={currentResidency}/> */}
+                {/* <div ref={openCallRef} id="opencall-section">
                     <div className='wrapper-oc-title-req'>
-                    <MediumSans className='oc-title-req'>{t('openCall')}</MediumSans>
-                    {/* <MediumSans className='oc-title-req'>:</MediumSans>
-                    <MediumSans className='oc-title-req'>{t('residency2026')}</MediumSans> */}
-                </div>
+                        <MediumSans className='oc-title-req'>{t('openCall')}</MediumSans>
+
+                    </div>
                     {isMobile ? (
-                        <OpenCallPhone t={t} residency={currentResidency}/>
+                        <OpenCallPhone t={t} residency={currentResidency} />
                     ) : (
-                        <OpenCallR t={t} residency={currentResidency}/>
+                        <OpenCallR t={t} residency={currentResidency} />
                     )}
-                </div>
+                </div> */}
 
                 <div ref={pastResidenciesRef} id="pastresidencies-section">
                     <PastResidencies t={t} />

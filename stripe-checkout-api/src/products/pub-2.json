@@ -1,7 +1,7 @@
 {
   "id": "pub-2",
-  "name": "Mi Segundo Libro Increíble",
-  "amount": 1999,
+  "name": "Una residencia narrada por: Brais Rodríguez",
+  "amount": 4200,
   "currency": "eur",
-  "stock": 50
+  "stock": 200
 }

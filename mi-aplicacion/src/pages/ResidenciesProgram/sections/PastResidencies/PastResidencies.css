@@ -8,6 +8,8 @@
     position: relative;
     background-color: transparent;
     padding: 5rem 2rem;
+        margin-bottom: 5rem;
+
 }
 
 @media (max-width: 768px) {

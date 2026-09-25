@@ -75,7 +75,8 @@ export const mockArtPiecesData = [
         year: 2025,
         residencias: ["residencia-1"],
         publicaciones: ["pub-1"],
-        exposiciones: ["expo-1"]
+        exposiciones: ["expo-1"],
+        date: '2025-06-15'
     },
     // {
     //     id: "artPiece-2", 

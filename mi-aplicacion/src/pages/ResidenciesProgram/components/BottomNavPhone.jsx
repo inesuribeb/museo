@@ -10,11 +10,11 @@ function BottomNavPhone({ t, activeSection, onNavigate }) {
             label: t('theEspace'),
             number: '01'
         },
-        { 
-            id: 'opencall', 
-            label: t('openCall'),
-            number: '02'
-        },
+        // { 
+        //     id: 'opencall', 
+        //     label: t('openCall'),
+        //     number: '02'
+        // },
         { 
             id: 'pastresidencies', 
             label: t('previousResidencies'),

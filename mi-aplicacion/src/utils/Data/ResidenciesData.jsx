@@ -219,6 +219,8 @@ export const mockResidencias = [
             pt: 'Além de acompanhar os residentes nas suas inquietações, a nossa intenção é também provocar encontros inesperados entre artistas que, à primeira vista, poderiam parecer distantes entre si. Pensamos a residência como um lugar onde ideias, processos e disciplinas artísticas se «polinizam». Desses dias de exploração e convívio nasceu <b>a obra coletiva <em>memoria sense mancha</em></b>: uma peça viva e conceptual, desenvolvida entre os seis residentes.'
         },
         collectiveArtPiece: ["artPiece-1"],
+
+        date: '2025-01-15'
     },
     // {
     //     id: "residencia-2",

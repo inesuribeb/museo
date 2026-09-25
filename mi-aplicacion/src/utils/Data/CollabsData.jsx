@@ -22,6 +22,8 @@ export const mockCollabsData = [
             "/Images/Collaborations/Collab01/Collab01-2.jpg",
             "/Images/Collaborations/Collab01/Collab01-3.jpg",
             "/Images/Collaborations/Collab01/Collab01-4.jpg",
-        ]
+        ],
+        date: '2025-06-10',
     }
+    
 ]

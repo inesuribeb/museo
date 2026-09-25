@@ -18,16 +18,18 @@
 //     const { t, getRoute } = useLanguage();
 //     const location = useLocation();
 //     const navigate = useNavigate();
-//     const [activeTab, setActiveTab] = useState('exhibitions');
+//     const [activeTab, setActiveTab] = useState('all');
 //     const isMobile = useMobile();
 
 //     useEffect(() => {
 //         const searchParams = new URLSearchParams(location.search);
 //         const tabParam = searchParams.get('tab');
 
-//         const validTabs = ['exhibitions', 'collectiveArtPieces', 'publications', 'collaborations'];
+//         const validTabs = ['all', 'exhibitions', 'collectiveArtPieces', 'publications', 'collaborations'];
 //         if (tabParam && validTabs.includes(tabParam)) {
 //             setActiveTab(tabParam);
+//         } else if (!tabParam) {
+//             setActiveTab('all');
 //         }
 //     }, [location.search]);
 
@@ -35,7 +37,6 @@
 //     const localizedArtPieces = useLocalizedData(mockArtPiecesData);
 //     const localizedPublications = useLocalizedData(mockPublicationsData);
 //     const localizedCollaborations = useLocalizedData(mockCollabsData);
-
 
 //     const createNavigateHandler = (id, type) => {
 //         return () => {
@@ -46,17 +47,17 @@
 //                 if (type === 'exhibitions') basePath = '/pt/exposicao/';
 //                 else if (type === 'collectiveArtPieces') basePath = '/pt/obra-coletiva/';
 //                 else if (type === 'publications') basePath = '/pt/publicacao/';
-//                 else if (type === 'collaborations') basePath = '/pt/colaboracao/'; // ← Ruta PT
+//                 else if (type === 'collaborations') basePath = '/pt/colaboracao/';
 //             } else if (currentPath.includes('/exhibition/') || currentPath.includes('/archive')) {
 //                 if (type === 'exhibitions') basePath = '/exhibition/';
 //                 else if (type === 'collectiveArtPieces') basePath = '/collective-art-piece/';
 //                 else if (type === 'publications') basePath = '/publication/';
-//                 else if (type === 'collaborations') basePath = '/collaboration/'; // ← Ruta EN
+//                 else if (type === 'collaborations') basePath = '/collaboration/';
 //             } else {
 //                 if (type === 'exhibitions') basePath = '/exposicion/';
 //                 else if (type === 'collectiveArtPieces') basePath = '/obra-colectiva/';
 //                 else if (type === 'publications') basePath = '/publicacion/';
-//                 else if (type === 'collaborations') basePath = '/colaboracion/'; // ← Ruta ES
+//                 else if (type === 'collaborations') basePath = '/colaboracion/';
 //             }
 
 //             navigate(`${basePath}${id}`);
@@ -67,6 +68,46 @@
 //         let data, type;
 
 //         switch (activeTab) {
+//             case 'all':
+//                 const allExhibitions = localizedExhibitions.map(item => ({
+//                     ...item,
+//                     dataType: 'exhibitions',
+//                     category: t('exhibitions'), 
+//                     showCategory: true
+//                 }));
+//                 const allArtPieces = localizedArtPieces.map(item => ({
+//                     ...item,
+//                     dataType: 'collectiveArtPieces',
+//                     category: t('collectiveArtPieces'),
+//                     showCategory: true
+//                 }));
+//                 const allPublications = localizedPublications.map(item => ({
+//                     ...item,
+//                     dataType: 'publications',
+//                     category: t('publications'),
+//                     showCategory: true
+//                 }));
+//                 const allCollaborations = localizedCollaborations.map(item => ({
+//                     ...item,
+//                     dataType: 'collaborations',
+//                     category: t('collaborations'),
+//                     showCategory: true
+//                 }));
+
+//                 data = [...allExhibitions, ...allArtPieces, ...allPublications, ...allCollaborations];
+
+//                 data.sort((a, b) => {
+//                     if (a.date && b.date) return b.date.localeCompare(a.date); // más reciente primero
+//                     if (a.date) return -1;
+//                     if (b.date) return 1;
+//                     return 0;
+//                 });
+
+//                 return data.map(item => ({
+//                     ...item,
+//                     onClick: createNavigateHandler(item.id, item.dataType),
+//                 }));
+
 //             case 'exhibitions':
 //                 data = localizedExhibitions;
 //                 type = 'exhibitions';
@@ -94,22 +135,34 @@
 //         }));
 //     };
 
-
 //     const handleTabChange = (tabId) => {
 //         setActiveTab(tabId);
 
 //         const currentRoute = getRoute('archive');
-//         const newUrl = tabId === 'exhibitions'
-//             ? currentRoute
+//         const newUrl = tabId === 'all'
+//             ? currentRoute 
 //             : `${currentRoute}?tab=${tabId}`;
 
 //         navigate(newUrl, { replace: true });
+//     };
+
+//     const getCardType = () => {
+//         if (activeTab === 'all') {
+//             return 'generic';
+//         } else if (activeTab === 'publications') {
+//             return 'publications';
+//         } else if (activeTab === 'collectiveArtPieces') {
+//             return 'artpieces';
+//         } else {
+//             return 'generic';
+//         }
 //     };
 
 //     return (
 //         <div className='archive-container'>
 //             <div className='filter-archive'>
 //                 <MiniBlue className='azar-archive'>{t('azarArchive')}</MiniBlue>
+
 //                 {isMobile ? (
 //                     <TabMenuPhone
 //                         t={t}
@@ -130,7 +183,7 @@
 //                 <Grid
 //                     cards={getCurrentData()}
 //                     className={`archive-grid ${activeTab}-grid`}
-//                     cardType={activeTab === 'publications' ? 'publications' : activeTab === 'collectiveArtPieces' ? 'artpieces' : 'generic'}
+//                     cardType={getCardType()}
 //                 />
 //             </div>
 //         </div>
@@ -138,6 +191,7 @@
 // }
 
 // export default Archive;
+
 
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -154,6 +208,15 @@ import TabMenu from '../../components/TabMenu/TabMenu';
 import TabMenuPhone from '../../components/TabMenu/TabMenuPhone';
 import Grid from '../../components/Grid/Grid';
 import './Archive.css';
+
+// Ordena por fecha ISO (YYYY-MM-DD), más reciente primero.
+// Los items sin fecha van al final.
+const sortByDateDesc = (a, b) => {
+    if (a.date && b.date) return b.date.localeCompare(a.date);
+    if (a.date) return -1;
+    if (b.date) return 1;
+    return 0;
+};
 
 function Archive() {
     const { t, getRoute } = useLanguage();
@@ -210,12 +273,12 @@ function Archive() {
         let data, type;
 
         switch (activeTab) {
-            case 'all':
+            case 'all': {
                 // Combinar todos los datos con sus respectivos tipos
                 const allExhibitions = localizedExhibitions.map(item => ({
                     ...item,
                     dataType: 'exhibitions',
-                    category: t('exhibitions'), // ← Traducido
+                    category: t('exhibitions'),
                     showCategory: true
                 }));
                 const allArtPieces = localizedArtPieces.map(item => ({
@@ -237,22 +300,16 @@ function Archive() {
                     showCategory: true
                 }));
 
+                // Array nuevo, se puede ordenar sin copiar
                 data = [...allExhibitions, ...allArtPieces, ...allPublications, ...allCollaborations];
+                data.sort(sortByDateDesc);
 
-                // Opcional: ordenar por año si existe, o por algún otro criterio
-                data.sort((a, b) => {
-                    if (a.year && b.year) {
-                        return b.year - a.year; // Más reciente primero
-                    }
-                    return 0;
-                });
-
-                // Crear handlers individuales para cada item basado en su tipo
+                // Handlers individuales para cada item según su tipo
                 return data.map(item => ({
                     ...item,
-                    onClick: createNavigateHandler(item.id, item.dataType),
-                    // showCategory: false
+                    onClick: createNavigateHandler(item.id, item.dataType)
                 }));
+            }
 
             case 'exhibitions':
                 data = localizedExhibitions;
@@ -275,11 +332,13 @@ function Archive() {
                 type = 'exhibitions';
         }
 
-        // Para tabs específicos (no 'all')
-        return data.map(item => ({
-            ...item,
-            onClick: createNavigateHandler(item.id, type)
-        }));
+        // Tabs específicos: copiar antes de ordenar para no mutar los datos del hook
+        return [...data]
+            .sort(sortByDateDesc)
+            .map(item => ({
+                ...item,
+                onClick: createNavigateHandler(item.id, type)
+            }));
     };
 
     const handleTabChange = (tabId) => {
@@ -309,8 +368,6 @@ function Archive() {
         <div className='archive-container'>
             <div className='filter-archive'>
                 <MiniBlue className='azar-archive'>{t('azarArchive')}</MiniBlue>
-                {/* <MiniBlue className='azar-archive'>{t('azarArchive')}</MiniBlue> */}
-                {/* <span className='hamburger-icon'>▼</span> */}
                 {isMobile ? (
                     <TabMenuPhone
                         t={t}

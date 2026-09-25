@@ -6,6 +6,14 @@ import './Featured.css';
 const FeaturedItems = [
     {
         id: 1,
+        img: '/Images/Publications/Publication02/portada.webp',
+        tab: { es: "Publicaciones", en: "Publication", pt: "Publicaçãos" },
+        title: { es: "Una residencia narrada por: Brais Rodríguez", en: "2025RUna residencia narrada por: Brais Rodríguezesidency", pt: "Una residencia narrada por: Brais Rodríguez" },
+        description: { es: 'Escritura, Fotografía, y Cocina', en: 'Writing, Photography, and Cooking', pt: 'Escrita, Fotografia, e Culinária' },
+        link: '/publicacion/pub-2',
+    },
+    {
+        id: 2,
         img: '/Images/Residencies/Residency01/PortadaResi.jpg',
         tab: { es: "Residencias", en: "Residencies", pt: "Residências" },
         title: { es: "Residencia2025", en: "2025Residency", pt: "Residência2025" },
@@ -13,7 +21,7 @@ const FeaturedItems = [
         link: '/residencia/residencia-1',
     },
     {
-        id: 2,
+        id: 3,
         img: '/Images/Exhibitions/Exhibition01/Cover-expo1.jpg',
         tab: { es: "Exposiciones", en: "Exhibitions", pt: "Exposiçãos" },
         title: { es: "Expo Residencia2025", en: "Residency2025 Expo", pt: "Expo Residência2025" },
@@ -21,7 +29,7 @@ const FeaturedItems = [
         link: '/exposicion/expo-1',
     },
     {
-        id: 3,
+        id: 4,
         img: '/Images/Publications/Publication01/Publicaciones-1.jpg',
         tab: { es: "Publicaciones", en: "Publication", pt: "Publicaçãos" },
         title: { es: "Una residencia narrada por: Ivan Floro", en: "A Residency Narrated by: Ivan Floro", pt: "Uma residência narrada por: Ivan Floro" },
@@ -29,7 +37,7 @@ const FeaturedItems = [
         link: '/publicacion/pub-1',
     },
     {
-        id: 4,
+        id: 5,
         img: '/Images/Home/Intro/Intro2-obras.jpg',
         tab: { es: "Obras colectivas", en: "Collective works", pt: "Obras coletivas" },
         title: { es: "Memoria sense mancha", en: "Memoria sense mancha", pt: "Memoria sense mancha" },
@@ -37,7 +45,7 @@ const FeaturedItems = [
         link: '/obra-colectiva/artPiece-1',
     },
     {
-        id: 5,
+        id: 6,
         img: '/Images/Exhibitions/Exhibition02/libro1bien.webp',
         tab: { es: "Exposiciones", en: "Exhibitions", pt: "Exposiçãos" },
         title: { es: "Presentación <em>Una residencia narrada por Ivan Floro</em>", en: "", pt: "" },
@@ -45,7 +53,7 @@ const FeaturedItems = [
         link: '/exposicion/expo-2',
     },
     {
-        id: 6,
+        id: 7,
         img: '/Images/Collaborations/Collab01/Collab01-4.jpg',
         tab: { es: "Colaboraciones", en: "Collaborations", pt: "Colaboraçãos" },
         title: { es: "<em>Blanco</em>, una colaboración con el Circulo de Bellas Artes", en: "em>Blanco</em>, a collaboration with Círculo de Bellas Artes", pt: "<em>Blanco</em>, uma colaboração com o Círculo de Belas Artes" },

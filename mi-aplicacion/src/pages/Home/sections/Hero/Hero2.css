@@ -2,6 +2,9 @@
 .hero2-section {
     position: relative;
     width: 100%;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+
 }
 
 /* 2. Contenedor único que cambia de fixed a absolute */

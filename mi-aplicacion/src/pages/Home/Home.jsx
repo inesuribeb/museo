@@ -4,6 +4,7 @@ import { useHeader } from '../../contexts/HeaderContext';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { useLocalizedData } from '../../components/Hooks/Hooks';
 import { mockNextResidencia } from '../../utils/Data/NextResidencyData';
+import Hero from './sections/Hero/Hero';
 import Hero2 from './sections/Hero/Hero2';
 import Hero3 from './sections/Intro/Hero3';
 import HeroPhone from './sections/Hero/HeroPhone';
@@ -57,6 +58,7 @@ function Home() {
                     lightHeader={{ hamburger: true, logo: true }}
                 />
             ) : (
+                // <Hero2
                 <Hero2
                     t={t}
                     lightHeader={{ hamburger: true }}
