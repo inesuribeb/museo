@@ -5,6 +5,22 @@ import './Dontmiss.css';
 const Dontmisscards = [
     {
         id: 1,
+        img: '/Images/brais-abc.webp',
+        title: {
+            es: "ABC CULTURAL: UNA RESIDENCIA NARRADA POR BRAIS RODRÍGUEZ",
+            en: "ABC CULTURAL: A RESIDENCY NARRATED BY BRAIS RODRÍGUEZ",
+            pt: "ABC CULTURAL: UMA RESIDÊNCIA NARRADA POR BRAIS RODRÍGUEZ",
+          },
+          subtitle: {
+            es: "Un cómic que se lee como obra de arte: así ve la prensa nuestra última publicación.",
+            en: "A comic that reads like a work of art: how the press sees our latest publication.",
+            pt: "Uma banda desenhada que se lê como obra de arte: assim vê a imprensa a nossa mais recente publicação.",
+          },
+        cta: { es: "Descubre más", en: "Discover more", pt: "Descubra mais" },
+        link: 'https://www.abc.es/cultura/arte/?ref=https%3A%2F%2Fwww.abc.es%2Fcultura%2Farte%2F'
+    },
+    {
+        id: 2,
         img: '/Images/fotosresi.png',
         title: { es: "Residencia2026", en: "", pt: "" },
         subtitle: { es: "Cinco artistas, un paisaje y un mes de lluvia para dar forma a una obra colectiva: Una visión remota.", en: "Five artists, a landscape and a month of rain came together to create a collective work: Una visión remota.", pt: "Cinco artistas, uma paisagem e um mês de chuva deram forma a uma obra coletiva: Uma visão remota." },
@@ -12,21 +28,21 @@ const Dontmisscards = [
         link: 'https://www.instagram.com/p/DWQ8NgWDOnc/?img_index=1'
     },
     {
-        id: 2,
+        id: 3,
         img: '/Images/wipweb.webp',
         title: { es: "En proceso: Residencia2026", en: "In progress: Residencia2026", pt: "Em processo: Residencia2026" },
         subtitle: { es: "Una mirada al trabajo que está tomando forma durante la residencia.", en: "A glimpse into the work taking shape during the residency.", pt: "Um olhar sobre o trabalho que está a ganhar forma durante a residência." },
         cta: { es: "Descubre más", en: "Discover more", pt: "Descubra mais" },
         link: 'https://www.instagram.com/p/DUEOq_TDB7U/?img_index=1'
     },
-    {
-        id: 3,
-        img: '/Images/Team/Pau_card.png',
-        title: { es: "PAULA G.GENER", en: "", pt: "" },
-        subtitle: { es: "Directora de la fundación", en: "", pt: "" },
-        cta: { es: "Descubre su historia", en: "Discover her story", pt: "Descubra a sua história" },
-        link: '/fundacion-azar/paula-g-genner'
-    },
+    // {
+    //     id: 3,
+    //     img: '/Images/Team/Pau_card.png',
+    //     title: { es: "PAULA G.GENER", en: "", pt: "" },
+    //     subtitle: { es: "Directora de la fundación", en: "", pt: "" },
+    //     cta: { es: "Descubre su historia", en: "Discover her story", pt: "Descubra a sua história" },
+    //     link: '/fundacion-azar/paula-g-genner'
+    // },
 ];
 
 const isExternalLink = (link) => /^https?:\/\//.test(link);
