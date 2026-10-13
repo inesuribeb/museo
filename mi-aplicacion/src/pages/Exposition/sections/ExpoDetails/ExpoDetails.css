@@ -15,10 +15,22 @@
     width: 100%;
 }
 
-.intro-expoDetails-img,
+/* .intro-expoDetails-img,
 .intro-expoDetails-texts {
     flex: 1;
     display: flex;
+} */
+
+.intro-expoDetails-img,
+.intro-expoDetails-texts {
+    display: flex;
+}
+
+.intro-expoDetails-img {
+    flex: 52%;
+}
+.intro-expoDetails-texts {
+    flex: 48%;
 }
 
 /* .intro-expoDetails-img img {
@@ -31,7 +43,7 @@
 }
 
 .intro-expoDetails-img img {
-    width: 80%;
+    width: 70%;
     height: auto;
     aspect-ratio: 4 / 5;      /* la proporción que quieras */
     object-fit: cover;        /* rellena la caja recortando sin deformar */
@@ -46,7 +58,7 @@
 
 .texts-intro {
     padding-bottom: 5rem;
-    width: 90%;
+    width: 95%;
 }
 
 .intro-expoDetails-texts img{
