@@ -35,6 +35,15 @@ const FeaturedItems = [
     },
     {
         id: 4,
+        img: '/Images/ArtPieces/ArtPiece02/card.webp',
+        tab: { es: "Obras colectivas", en: "Collective works", pt: "Obras coletivas" },
+        title: { es: "Una visión remota", en: "Una visión remota", pt: "Una visión remota" },
+        description: { es: "Instalación - Performance • Finca El Azahar", en: "Installation - Performance • Finca El Azahar", pt: "Instalação - Performance • Finca El Azahar" },
+        route: 'artPiece',
+        slug: 'artPiece-2',
+    },
+    {
+        id: 5,
         img: '/Images/Residencies/Residency01/PortadaResi.jpg',
         tab: { es: "Residencias", en: "Residencies", pt: "Residências" },
         title: { es: "Residencia2025", en: "2025Residency", pt: "Residência2025" },
@@ -43,7 +52,7 @@ const FeaturedItems = [
         slug: 'residencia-1',
     },
     {
-        id: 5,
+        id: 6,
         img: '/Images/Exhibitions/Exhibition01/Cover-expo1.jpg',
         tab: { es: "Exposiciones", en: "Exhibitions", pt: "Exposições" },
         title: { es: "Expo Residencia2025", en: "Residency2025 Expo", pt: "Expo Residência2025" },
@@ -52,7 +61,7 @@ const FeaturedItems = [
         slug: 'expo-1',
     },
     {
-        id: 6,
+        id: 7,
         img: '/Images/Publications/Publication01/Publicaciones-1.jpg',
         tab: { es: "Publicaciones", en: "Publications", pt: "Publicações" },
         title: { es: "Una residencia narrada por: Ivan Floro", en: "A Residency Narrated by: Ivan Floro", pt: "Uma residência narrada por: Ivan Floro" },
@@ -61,7 +70,7 @@ const FeaturedItems = [
         slug: 'pub-1',
     },
     {
-        id: 7,
+        id: 8,
         img: '/Images/Home/Intro/Intro2-obras.jpg',
         tab: { es: "Obras colectivas", en: "Collective works", pt: "Obras coletivas" },
         title: { es: "Memoria sense mancha", en: "Memoria sense mancha", pt: "Memoria sense mancha" },
@@ -70,7 +79,7 @@ const FeaturedItems = [
         slug: 'artPiece-1',
     },
     {
-        id: 8,
+        id: 9,
         img: '/Images/Exhibitions/Exhibition02/libro1bien.webp',
         tab: { es: "Exposiciones", en: "Exhibitions", pt: "Exposições" },
         title: { es: "Presentación <em>Una residencia narrada por Ivan Floro</em>", en: "Presentation of <em>Una residencia narrada por Ivan Floro</em>", pt: "Apresentação de <em>Una residencia narrada por Ivan Floro</em>" },
@@ -79,7 +88,7 @@ const FeaturedItems = [
         slug: 'expo-2',
     },
     {
-        id: 9,
+        id: 10,
         img: '/Images/Collaborations/Collab01/Collab01-4.jpg',
         tab: { es: "Colaboraciones", en: "Collaborations", pt: "Colaborações" },
         title: { es: "<em>Blanco</em>, una colaboración con el Círculo de Bellas Artes", en: "<em>Blanco</em>, a collaboration with Círculo de Bellas Artes", pt: "<em>Blanco</em>, uma colaboração com o Círculo de Belas Artes" },
