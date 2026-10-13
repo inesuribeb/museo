@@ -11,7 +11,7 @@ function ExhibitionMention({ residencia, t, currentLanguage }) {
         ? mockExhibitionsData.find(expo => expo.id === residencia.exposiciones[0])
         : null;
 
-        
+
 
     return (
         <section className='section-exhibition-mention'>
@@ -44,8 +44,11 @@ function ExhibitionMention({ residencia, t, currentLanguage }) {
                             alt={exhibition.title[currentLanguage] || exhibition.title.es}
                             className="exhibition-image"
                         />
-                        <h3>{exhibition.title[currentLanguage] || exhibition.title.es}</h3>
-                    </Link>
+                        <h3
+                            dangerouslySetInnerHTML={{
+                                __html: exhibition.title[currentLanguage] || exhibition.title.es
+                            }}
+                        />                    </Link>
                 )}
 
             </div>

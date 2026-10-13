@@ -158,8 +158,8 @@ pt: "Através do uso da colagem e da assemblagem levadas à cena — ao vivo e n
         className: "artpiece-card",
         year: 2026,
         residencias: ["residencia-2"],
-        publicaciones: ["pub-3"],
-        exposiciones: ["expo-4"],
+        publicaciones: ["pub-2"],
+        exposiciones: ["expo-3"],
         date: '2026-01-15'
     },
 

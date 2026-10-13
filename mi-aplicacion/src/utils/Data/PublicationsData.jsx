@@ -93,7 +93,7 @@ export const mockPublicationsData = [
         ],
         imageRef: [
             "/Images/Publications/Publication02/brais_rodriguez_1.webp",
-            "/Images/Publications/Publication02/",
+            "",
         ],
         price: "€42.00",
 
