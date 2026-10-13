@@ -36,9 +36,9 @@ export const mockArtPiecesData = [
             pt: "Finca El Azahar, Trujillo"
         },
         description: {
-            es: "El resultado de la Residencia2025: una obra mitad <em>happening</em>, mitad <em>ready-made</em>",
-            en: "The result of Residencia2025: a piece that is half <em>happening</em>, half <em>ready-made</em>",
-            pt: "O resultado da Residência2025: uma obra metade <em>happening</em>, metade <em>ready-made</em>"
+            es: "El resultado de la Residencia2025: una obra mitad <em>happening</em>, mitad <em>ready-made</em>.",
+            en: "The result of Residencia2025: a piece that is half <em>happening</em>, half <em>ready-made</em>.",
+            pt: "O resultado da Residência2025: uma obra metade <em>happening</em>, metade <em>ready-made</em>."
         },
         // textAP: {
         //     es: 'Tres manteles conforman la obra. Perfectamente doblados como si fueran a entrar de nuevo en el cajón del que salieron, aparecen ahora atados con un sencillo cordel de rafia que los presenta como un pack indivisible. A diferencia de otros, nuestros manteles no serán enmarcados ni expuestos en la pared de un museo, sino que volverán a su lugar de origen, eliminando cualquier deseo de elevar la obra o significarla más allá de lo meramente cotidiano y obligándola a seguir siendo lo que es: un receptáculo de lo efímero y lo invisible donde la noción de ornamento se combina con la de recuerdo. <em>memoria sense mancha</em> da cuenta de un lugar y un tiempo determinados: el comedor de Finca El Azahar durante la Residencia2025. Estos tres manteles, siempre juntos, desplegados todos los días sobre tres mesas idénticas, encierran la diégesis experimentada por los siete residentes y sus invitados a lo largo de tres semanas.<br/><br/>La «memoria» del título alude pues a ese registro voluntario e involuntario, en el fondo regido por el azar, de conversaciones, comidas, fiestas, juegos, risas, discusiones, borracheras e indagaciones de que fueron testigos los tres manteles. «Sense» es al tiempo «sentido» en inglés y «sin» en catalán. Es una obra que apela al tacto, la vista, el oído, el gusto y el olfato. Todos ellos se aúnan en la comida, el personaje principal del lugar, pero su ausencia articula otros sentidos de orden semántico, pues el artista no come solo lo que le sirven en el plato, necesita de los demás: es un vampiro que muerde lo que tiene a su alrededor. La «mancha» del título encierra la tensión entre la idea de marca y la idea de borrado y es clave en esta obra colectiva, mitad <em>happening</em>, mitad <em>ready-made</em>. Queríamos que fuera física, un «terrorista» la provocó, se desvaneció en parte, pero sobre todo perduró. Hasta una de las trabajadoras de la finca, involuntariamente, en su afán de pulcritud, añadió una nueva capa de sentido, verdadero punto de inflexión en la creación espontánea de la pieza. Asimismo, el bordado, como ornamento (Ángel González hablaba en <em>El resto</em> del ornamento de la comida, de lo matérico de cuando nos sentamos a la mesa), imprime o «borda» la idea de reliquia, dotando a la obra de un aura mística o religiosa. De ese modo, en la pieza final convive lo más propio del cuerpo (los fluidos, lo orgánico y los rastros de lo gastronómico) con lo sagrado (lo etéreo también es parte de los manteles): la carga es doble.<br/><br/><em>Memoria sense mancha</em> es una obra en progreso que siempre estará cambiando y que recogerá las vivencias de los futuros comensales. Al ser desplegados de nuevo sobre las mismas mesas, ahora ya con las palabras que le dan título bordadas en el centro de los tres pedazos de tela, los manteles podrán colocarse en cualquier orden, pues todas las lecturas son posibles. La pieza, en la que los siete autores originales y los secundarios participaron en la misma medida y sin hacer primar ninguna de sus disciplinas, se cargará de significado en cada nueva comida, en cada nueva convocatoria de la residencia, imprimiendo en los manteles las huellas visibles e invisibles de todo lo que suceda en torno a ellos.',
@@ -78,41 +78,89 @@ export const mockArtPiecesData = [
         exposiciones: ["expo-1"],
         date: '2025-06-15'
     },
-    // {
-    //     id: "artPiece-2", 
-    //     image: "/Images/ArtPieces/ArtPiece02/artpiece02-01.png",
 
-    //     title: {
-    //         es: "Intervención Urbana Madrid",
-    //         en: "Madrid Urban Intervention",
-    //         pt: "Intervenção Urbana Madrid"
-    //     },
-    //     subtitle: {
-    //         es: "Performance • Madrid Centro",
-    //         en: "Performance • Madrid Center",
-    //         pt: "Performance • Madrid Centro"
-    //     },
-    //     type: {
-    //         es: "Performance",
-    //         en: "Performance",
-    //         pt: "Performance"
-    //     },
-    //     location: {
-    //         es: "Madrid Centro",
-    //         en: "Madrid Center",
-    //         pt: "Madrid Centro"
-    //     },
-    //     description: {
-    //         es: "Performance colectiva en espacio urbano",
-    //         en: "Collective performance in urban space",
-    //         pt: "Performance coletiva em espaço urbano"
-    //     },
 
-    //     onClick: () => console.log("Click en Intervención Urbana Madrid"),
-    //     className: "artpiece-card",
-    //     year: 2025,
-    //     residencias: ["residencia-2"],
-    //     publicaciones: ["pub-2"],
-    //     exposiciones: ["expo-2"]
-    // }
+
+
+
+    {
+        id: "artPiece-2",
+        image2: "/Images/ArtPieces/ArtPiece02/portada_obra_2.webp",
+        image: "/Images/ArtPieces/ArtPiece02/card.webp",
+
+
+        introduction: {
+            es: 'Una obra colectiva de la Residencia2026:',
+            en: 'A collective work from Residency2026:',
+            pt: 'Uma obra coletiva da Residência2026:'
+        },
+        title: {
+            es: "Una visión remota",
+            en: "Una visión remota",
+            pt: "Una visión remota"
+        },
+        authors: {
+            es: 'una obra de Telma João Santos, Natividad Martín, Ana Mortera Herrero, Izarne Oyarzabal. <br/>Música original: Alejandro Benito Romero',
+            en: 'a work by Telma João Santos, Natividad Martín, Ana Mortera Herrero, Izarne Oyarzabal. <br/>Original music: Alejandro Benito Romero',
+            pt: 'uma obra de Telma João Santos, Natividad Martín, Ana Mortera Herrero, Izarne Oyarzabal. <br/>Música original: Alejandro Benito Romero',
+        },
+        subtitle: {
+            es: "Performance • Finca El Azahar",
+            en: "Performance • Finca El Azahar",
+            pt: "Performance • Finca El Azahar"
+        },
+        type: {
+            es: "Performance",
+            en: "Performance",
+            pt: "Performance"
+        },
+        location: {
+            es: "Finca El Azahar, Trujillo",
+            en: "Finca El Azahar, Trujillo",
+            pt: "Finca El Azahar, Trujillo"
+        },
+        description: {
+            es: "El resultado de la Residencia2026: una obra en dos actos, entre <em>instalación</em> y <em>performance</em>.",
+            en: "",
+            pt: ""
+        },
+        // textAP: {
+        //     es: 'Tres manteles conforman la obra. Perfectamente doblados como si fueran a entrar de nuevo en el cajón del que salieron, aparecen ahora atados con un sencillo cordel de rafia que los presenta como un pack indivisible. A diferencia de otros, nuestros manteles no serán enmarcados ni expuestos en la pared de un museo, sino que volverán a su lugar de origen, eliminando cualquier deseo de elevar la obra o significarla más allá de lo meramente cotidiano y obligándola a seguir siendo lo que es: un receptáculo de lo efímero y lo invisible donde la noción de ornamento se combina con la de recuerdo. <em>memoria sense mancha</em> da cuenta de un lugar y un tiempo determinados: el comedor de Finca El Azahar durante la Residencia2025. Estos tres manteles, siempre juntos, desplegados todos los días sobre tres mesas idénticas, encierran la diégesis experimentada por los siete residentes y sus invitados a lo largo de tres semanas.<br/><br/>La «memoria» del título alude pues a ese registro voluntario e involuntario, en el fondo regido por el azar, de conversaciones, comidas, fiestas, juegos, risas, discusiones, borracheras e indagaciones de que fueron testigos los tres manteles. «Sense» es al tiempo «sentido» en inglés y «sin» en catalán. Es una obra que apela al tacto, la vista, el oído, el gusto y el olfato. Todos ellos se aúnan en la comida, el personaje principal del lugar, pero su ausencia articula otros sentidos de orden semántico, pues el artista no come solo lo que le sirven en el plato, necesita de los demás: es un vampiro que muerde lo que tiene a su alrededor. La «mancha» del título encierra la tensión entre la idea de marca y la idea de borrado y es clave en esta obra colectiva, mitad <em>happening</em>, mitad <em>ready-made</em>. Queríamos que fuera física, un «terrorista» la provocó, se desvaneció en parte, pero sobre todo perduró. Hasta una de las trabajadoras de la finca, involuntariamente, en su afán de pulcritud, añadió una nueva capa de sentido, verdadero punto de inflexión en la creación espontánea de la pieza. Asimismo, el bordado, como ornamento (Ángel González hablaba en <em>El resto</em> del ornamento de la comida, de lo matérico de cuando nos sentamos a la mesa), imprime o «borda» la idea de reliquia, dotando a la obra de un aura mística o religiosa. De ese modo, en la pieza final convive lo más propio del cuerpo (los fluidos, lo orgánico y los rastros de lo gastronómico) con lo sagrado (lo etéreo también es parte de los manteles): la carga es doble.<br/><br/><em>Memoria sense mancha</em> es una obra en progreso que siempre estará cambiando y que recogerá las vivencias de los futuros comensales. Al ser desplegados de nuevo sobre las mismas mesas, ahora ya con las palabras que le dan título bordadas en el centro de los tres pedazos de tela, los manteles podrán colocarse en cualquier orden, pues todas las lecturas son posibles. La pieza, en la que los siete autores originales y los secundarios participaron en la misma medida y sin hacer primar ninguna de sus disciplinas, se cargará de significado en cada nueva comida, en cada nueva convocatoria de la residencia, imprimiendo en los manteles las huellas visibles e invisibles de todo lo que suceda en torno a ellos.',
+        //     en: 'Three tablecloths make up the work. Perfectly folded as if they were about to return to the drawer from which they came, they now appear tied with a simple raffia cord that presents them as an indivisible pack. Unlike others, our tablecloths will not be framed or displayed on a museum wall, but will return to their place of origin, eliminating any desire to elevate the work or signify it beyond the merely everyday, forcing it to remain what it is: a receptacle of the ephemeral and the invisible, where the notion of ornament combines with that of memory. <em>memoria sense mancha</em> refers to a specific place and time: the dining room of Finca El Azahar during Residencia2025. These three tablecloths, always together, spread out every day over three identical tables, encapsulate the diegesis experienced by the seven residents and their guests over the course of three weeks.<br/><br/>The “memory” in the title thus refers to that voluntary and involuntary record, ultimately governed by chance, of conversations, meals, parties, games, laughter, arguments, drunkenness, and inquiries witnessed by the three tablecloths. “Sense” is at once “sense” in English and “without” in Catalan. It is a work that appeals to touch, sight, hearing, taste, and smell. All of them come together in food, the main character of the place, but its absence articulates other semantic meanings, for the artist does not only consume what is served on the plate; they need others: they are a vampire who bites what surrounds them. The “stain” in the title holds the tension between the idea of a mark and the idea of erasure and is key to this collective work, half <em>happening</em>, half <em>ready-made</em>. We wanted it to be physical; a “terrorist” provoked it; it partially faded but above all endured. Even one of the estate workers, unintentionally, in her zeal for cleanliness, added a new layer of meaning, a true turning point in the spontaneous creation of the piece. Likewise, the embroidery, as ornament (Ángel González wrote in <em>El resto</em> about the ornament of food, about the materiality of sitting at the table), imprints or “embroiders” the idea of a relic, endowing the work with a mystical or religious aura. Thus, in the final piece, what is most inherent to the body (fluids, organic matter, and traces of gastronomy) coexists with the sacred (the ethereal is also part of the tablecloths): the weight is double.<br/><br/><em>Memoria sense mancha</em> is a work in progress that will always be changing and will continue to capture the experiences of future diners. When spread out again over the same tables, now with the words of its title embroidered in the center of the three pieces of fabric, the tablecloths can be arranged in any order, as all readings are possible. The piece, in which the seven original authors and secondary contributors participated equally without prioritizing any of their disciplines, will gain meaning with each new meal, with each new residency gathering, imprinting on the tablecloths the visible and invisible traces of everything that happens around them.',
+        //     pt: 'Três toalhas de mesa compõem a obra. Perfeitamente dobradas, como se estivessem prestes a voltar para a gaveta de onde saíram, agora aparecem amarradas com um simples cordão de ráfia que as apresenta como um pacote indivisível. Ao contrário de outras, nossas toalhas não serão emolduradas nem expostas na parede de um museu, mas retornarão ao seu lugar de origem, eliminando qualquer desejo de elevar a obra ou significá-la além do cotidiano, obrigando-a a continuar sendo o que é: um receptáculo do efêmero e do invisível, onde a noção de ornamento se combina com a de memória. <em>memoria sense mancha</em> refere-se a um lugar e um tempo específicos: a sala de jantar da Finca El Azahar durante a Residência2025. Essas três toalhas, sempre juntas, estendidas todos os dias sobre três mesas idênticas, encerram a diegese vivida pelos sete residentes e seus convidados ao longo de três semanas.<br/><br/>A “memória” do título alude, portanto, a esse registro voluntário e involuntário, no fundo regido pelo acaso, de conversas, refeições, festas, jogos, risadas, discussões, bebedeiras e investigações testemunhadas pelas três toalhas. “Sense” é ao mesmo tempo “sentido” em inglês e “sem” em catalão. É uma obra que apela ao tato, à visão, à audição, ao paladar e ao olfato. Todos eles se unem na comida, a personagem principal do lugar, mas sua ausência articula outros sentidos de ordem semântica, pois o artista não consome apenas o que lhe servem no prato; precisa dos outros: é um vampiro que morde o que tem ao redor. A “mancha” do título carrega a tensão entre a ideia de marca e a de apagamento e é fundamental nesta obra coletiva, metade <em>happening</em>, metade <em>ready-made</em>. Queríamos que fosse física; um “terrorista” a provocou; ela desapareceu em parte, mas sobretudo permaneceu. Até uma das funcionárias da fazenda, involuntariamente, em seu zelo pela limpeza, acrescentou uma nova camada de significado, verdadeiro ponto de inflexão na criação espontânea da peça. Da mesma forma, o bordado, como ornamento (Ángel González falava em <em>El resto</em> sobre o ornamento da comida, sobre a materialidade de quando nos sentamos à mesa), imprime ou “borda” a ideia de relíquia, conferindo à obra uma aura mística ou religiosa. Assim, na peça final, o que é mais próprio do corpo (fluidos, matéria orgânica e vestígios gastronômicos) convive com o sagrado (o etéreo também faz parte das toalhas): a carga é dupla.<br/><br/><em>Memoria sense mancha</em> é uma obra em progresso que estará sempre em transformação e que continuará a recolher as vivências dos futuros comensais. Ao serem novamente estendidas sobre as mesmas mesas, agora já com as palavras do título bordadas no centro dos três pedaços de tecido, as toalhas poderão ser dispostas em qualquer ordem, pois todas as leituras são possíveis. A peça, na qual os sete autores originais e os secundários participaram de forma igual, sem dar primazia a nenhuma de suas disciplinas, será carregada de significado a cada nova refeição, a cada novo encontro da residência, imprimindo nas toalhas as marcas visíveis e invisíveis de tudo o que acontecer ao seu redor.',
+        // },
+        textAP1: {
+            es: "<b>Una visión remota</b> fue el conjunto de dispositivos que dieron lugar a la obra, resultado material de la Residencia 2026 Fantasmata, compuesta por dos actos que transitaron entre instalación y performance.<br/><br/>Marcada por las condiciones climáticas extremas del invierno en Extremadura, y tomando como punto de partida la caída íntegra de un gran ciprés —arrojado por la borrasca Kristin—, la creación se arraigó en torno al cepellón de este ciprés, una gran masa compacta de raíces y tierra. Establecimos así el motivo en torno al cual articular una obra que generó constantemente encuentros inconclusos: un espacio-tiempo contingente donde dejar ser a las diferencias y a lo desconocido.",
+            en: "<b>Una visión remota</b> was the set of devices that gave rise to the work, the material outcome of the 2026 Fantasmata Residency, made up of two acts that moved between installation and performance.<br/><br/>Shaped by the extreme weather of the Extremaduran winter, and taking as its starting point the complete fall of a large cypress — brought down by Storm Kristin — the creation took root around this cypress's root ball, a large, compact mass of roots and soil. In this way we established the motif around which to articulate a work that constantly generated unfinished encounters: a contingent space-time in which to let differences and the unknown be.",
+            pt: "<b>Una visión remota</b> foi o conjunto de dispositivos que deram origem à obra, resultado material da Residência 2026 Fantasmata, composta por dois atos que transitaram entre instalação e performance.<br/><br/>Marcada pelas condições climáticas extremas do inverno na Extremadura, e tomando como ponto de partida a queda integral de um grande cipreste — derrubado pela tempestade Kristin —, a criação enraizou-se em torno do torrão deste cipreste, uma grande massa compacta de raízes e terra. Estabelecemos assim o motivo em torno do qual articular uma obra que gerou constantemente encontros inconclusos: um espaço-tempo contingente onde deixar ser as diferenças e o desconhecido."
+        },
+
+        textAP2: {
+            es: "Con el ciprés derribado por la borrasca Kristin como material que tomamos en nuestras manos, o más bien, como material en el que decidimos inscribir nuestros cuerpos, establecimos el motivo en torno al cual articular una obra que generó constantemente encuentros inconclusos. Un espacio-tiempo contingente donde las diferencias se entrelazaron y crearon un tejido relacional inesperado.<br/><br/>Cuatro desconocidas procedentes de cuatro puntos cardinales de la península —española y portuguesa— nos reunimos para sublimar dicho evento, casi para hacer una humilde mitología de ello. El ciprés cayó y esta potencia de derribo se convirtió en acto escultórico, convirtiéndose en dramaturgia, coreografía, en trabajo y mito, en unidad de medida, en relato encriptado.",
+            en: "With the cypress brought down by Storm Kristin as material we took into our hands, or rather, as material in which we decided to inscribe our bodies, we established the motif around which to articulate a work that constantly generated unfinished encounters. A contingent space-time where differences intertwined and created an unexpected relational fabric.<br/><br/>Four strangers from four cardinal points of the Iberian Peninsula — Spanish and Portuguese — came together to sublimate this event, almost to make a humble mythology of it. The cypress fell, and this force of collapse became a sculptural act, turning into dramaturgy, choreography, into labour and myth, into a unit of measurement, into an encrypted narrative.",
+            pt: "Com o cipreste derrubado pela tempestade Kristin como material que tomámos nas nossas mãos, ou melhor, como material no qual decidimos inscrever os nossos corpos, estabelecemos o motivo em torno do qual articular uma obra que gerou constantemente encontros inconclusos. Um espaço-tempo contingente onde as diferenças se entrelaçaram e criaram um tecido relacional inesperado.<br/><br/>Quatro desconhecidas vindas de quatro pontos cardeais da península — espanhola e portuguesa — reunimo-nos para sublimar esse acontecimento, quase para fazer dele uma humilde mitologia. O cipreste caiu e esta potência de derrube tornou-se ato escultórico, convertendo-se em dramaturgia, coreografia, em trabalho e mito, em unidade de medida, em relato encriptado."
+        },
+
+        textAP3: {
+            es: "Mediante el uso del collage y del ensamblaje llevados a la escena —en vivo y en exterior, de noche— y la concepción intermitente de la luz —contrastes de luz y oscuridad con diferentes rítmicas presentes— fueron apareciendo de manera parcial presencias y estampas de distinta naturaleza.<br/><br/>En este caso, lo escénico —como instalación y como performance— fue lo que nos sirvió para dar forma de conjunto a lo disperso de los elementos y sus acciones, conformando así una misma experiencia.",
+            en: "Through the use of collage and assemblage brought to the stage — live, outdoors and at night — and an intermittent conception of light — contrasts of light and darkness with different rhythms at play — presences and tableaux of different kinds gradually emerged, always partially.<br/><br/>In this case, the staging — as installation and as performance — was what allowed us to give shape as a whole to the dispersed elements and their actions, thus forming a single experience.",
+pt: "Através do uso da colagem e da assemblagem levadas à cena — ao vivo e no exterior, de noite — e da conceção intermitente da luz — contrastes de luz e escuridão com diferentes ritmos presentes — foram surgindo de forma parcial presenças e imagens de natureza distinta.<br/><br/>Neste caso, o cénico — como instalação e como performance — foi o que nos serviu para dar forma de conjunto ao disperso dos elementos e das suas ações, constituindo assim uma mesma experiência."
+        },
+
+        gallery: [
+            "/Images/ArtPieces/ArtPiece02/1.webp",
+            "/Images/ArtPieces/ArtPiece02/2.webp",
+            "/Images/ArtPieces/ArtPiece02/3.webp",
+            "/Images/ArtPieces/ArtPiece02/4.webp",
+            "/Images/ArtPieces/ArtPiece02/5.webp",
+        ],
+
+        className: "artpiece-card",
+        year: 2026,
+        residencias: ["residencia-2"],
+        publicaciones: ["pub-3"],
+        exposiciones: ["expo-4"],
+        date: '2026-01-15'
+    },
+
 ]

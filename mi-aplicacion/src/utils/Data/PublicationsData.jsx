@@ -36,9 +36,9 @@ export const mockPublicationsData = [
             pt: "Catálogo"
         },
         description: {
-            es: "Primera edición de la serie editorial <em>Una residencia narrada por</em> que recoge los óleos realizados por el pintor Iván Floro",
-            en: "First edition of the editorial series <em>A residency narrated by</em>, featuring the oil paintings by the artist Iván Floro",
-            pt: "Primeira edição da série editorial <em>Uma residência narrada por</em>, que reúne as pinturas a óleo do artista Iván Floro"
+            es: "Primera edición de la serie editorial <em>Una residencia narrada por</em> que recoge los óleos realizados por el pintor Iván Floro.",
+            en: "First edition of the editorial series <em>A residency narrated by</em>, featuring the oil paintings by the artist Iván Floro.",
+            pt: "Primeira edição da série editorial <em>Uma residência narrada por</em>, que reúne as pinturas a óleo do artista Iván Floro."
         },
         info: {
             es: 'Con el comienzo del programa de residencias de Fundación Azar, surge también el deseo de contarlas desde dentro. Para ello, Fundación Azar lanza la serie editorial <em>Una residencia narrada por</em>, en la que cada año, un artista es invitado a convivir con los residentes y convertir su mirada en relato. <br/><br/>Ivan Floro fue elegido para ser testigo y cronista visual de esta primera edición. Durante tres semanas, se confundió con los residentes, adentrándose en sus días y procesos creativos, compartiendo sobremesas y silencios, observando los rincones y paisajes. Con sus bártulos siempre a cuestas, se propuso pintar todo del natural: “sin recurrir a la fotografía como punto de partida y, así, devolverle al óleo su antiguo cometido: capturar el momento”. <br/><br/>Las obras que conforman esta serie, ahora también recogidas en el libro <em>Una residencia narrada por Ivan Floro</em>, son el testimonio pictórico de esta convivencia.',
@@ -113,9 +113,9 @@ export const mockPublicationsData = [
             pt: "Catálogo"
         },
         description: {
-            es: "",
-            en: "",
-            pt: ""
+            es: "Segunda edición de la serie editorial <em>Una residencia narrada por</em>, que recoge la historieta gráfica del dibujante Brais Rodríguez.",
+            en: "Second edition of the editorial series <em>Una residencia narrada por</em>, featuring the graphic story by cartoonist Brais Rodríguez.",
+            pt: "Segunda edição da série editorial <em>Una residencia narrada por</em>, que reúne a banda desenhada do desenhador Brais Rodríguez."
         },
         info: {
             es: "Esta publicación pertenece a nuestra colección <em>Una residencia narrada por</em>, en la que cada año un artista  es invitado para convertirse en testigo y cronista de las residencias, el dibujante gallego Brais Rodríguez da cuerpo  a las luces y sombras de este encuentro. Tras un mes junto a  las artistas en plena naturaleza extremeña, nos presenta una historieta gráfica en la que el tiempo parece contenerse. Veinticuatro hojas son veinticuatro horas; cada viñeta,  un minuto. En ellas asoman los acontecimientos visibles  y también aquellos casi imperceptibles, incluso espectrales,  del proceso de creación de la obra colectiva <em>Una visión remota</em>. ",

@@ -29,9 +29,9 @@ export const mockExhibitionsData = [
             pt: "Ana García"
         },
         description: {
-            es: "Muestra de la Residencia2025 en Madrid",
-            en: "Sample of Residencia2025 in Madrid",
-            pt: "Exposição da Residência2025 em Madrid"
+            es: "Muestra de la obra resultante de la Residencia2025 en Madrid.",
+            en: "Exhibition of the work resulting from Residencia2025, in Madrid.",
+            pt: "Mostra da obra resultante da Residencia2025, em Madrid."
         },
 
         className: "exhibition-card",
@@ -244,8 +244,8 @@ export const mockExhibitionsData = [
         imagesAuthor: "",
         title: {
             es: "<em>Una residencia narrada por Ivan Floro</em>",
-            en: "",
-            pt: ""
+            en: "<em>Una residencia narrada por Ivan Floro</em>",
+            pt: "<em>Una residencia narrada por Ivan Floro</em>"
         },
         subtitle: {
             es: "",
@@ -263,9 +263,9 @@ export const mockExhibitionsData = [
             pt: ""
         },
         description: {
-            es: "Presentación en Barcelona del libro resultado de la Residencia2025",
-            en: "",
-            pt: ""
+            es: "Presentación en Barcelona del libro resultado de la Residencia2025.",
+            en: "Presentation in Barcelona of the book resulting from Residencia2025.",
+            pt: "Apresentação em Barcelona do livro resultante da Residencia2025."
         },
 
         className: "exhibition-card",
@@ -283,9 +283,9 @@ export const mockExhibitionsData = [
         },
 
         intro: {
-            es: '<em>Una residencia narrada por Ivan Floro</em> es un libro que recoge las obras pintadas del natural durante la residencia artística celebrada en Extremadura en enero de 2025. Para dar a conocer la publicación y acercarla a la ciudad natal del joven pintor catalán, el pasado 17 de junio hicimos una presentación en el Trent Studio donde la gente pudo conocer al artista, su obra y adentrarse en la primera edición del programa de residencias de Fundación Azar llevándose consigo un ejemplar firmado. ',
-            en: '',
-            pt: '',
+            es: '<em>Una residencia narrada por Ivan Floro</em> es un libro que recoge las obras pintadas del natural durante la residencia artística celebrada en Extremadura en enero de 2025. Para dar a conocer la publicación y acercarla a la ciudad natal del joven pintor catalán, el pasado 17 de junio hicimos una presentación en el Trent Studio donde la gente pudo conocer al artista, su obra y adentrarse en la primera edición del programa de residencias de Fundación Azar llevándose consigo un ejemplar firmado.',
+            en: "<em>Una residencia narrada por Ivan Floro</em> is a book that brings together the works painted from life during the artist residency held in Extremadura in January 2025. To launch the publication and bring it to the young Catalan painter's hometown, on 17 June we held a presentation at Trent Studio, where people were able to meet the artist and his work, discover the first edition of Fundación Azar's residency programme and take home a signed copy.",
+            pt: '<em>Una residencia narrada por Ivan Floro</em> é um livro que reúne as obras pintadas ao natural durante a residência artística realizada na Extremadura em janeiro de 2025. Para dar a conhecer a publicação e aproximá-la da cidade natal do jovem pintor catalão, no passado dia 17 de junho fizemos uma apresentação no Trent Studio, onde o público pôde conhecer o artista e a sua obra, mergulhar na primeira edição do programa de residências da Fundação Azar e levar consigo um exemplar assinado.',
         },
 
         intro2: {
@@ -294,116 +294,10 @@ export const mockExhibitionsData = [
             pt: '',
         },
 
-        // presentations: [
-        //     {
-        //         id: 1,
-        //         artist: 'Florencia del Campo',
-        //         title: {
-        //             es: 'Lectura por Florencia del Campo',
-        //             en: 'Reading by Florencia del Campo',
-        //             pt: 'Leitura de Florencia del Campo'
-        //         },
-        //         text: {
-        //             es: 'Florencia del Campo compartió un fragmento cargado de fuerza y crudeza de <em>El nombre impropio</em>, una de las cinco partes que conforman su proyecto de no ficción <em>Diarios colaterales</em>. ',
-        //             en: 'Florencia del Campo shared a fragment full of strength and rawness from <em>El nombre impropio</em>, one of the five parts that make up her non-fiction project <em>Diarios colaterales</em>.',
-        //             pt: 'Florencia del Campo compartilhou um fragmento carregado de força e crueza de <em>El nombre improprio</em>, uma das cinco partes que compõem seu projeto de não ficção <em>Diarios colaterales</em>.',
-        //         },
-        //         images: [
-        //             "/Images/Exhibitions/Exhibition01/Expo-Florencia-1.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-Florencia-2.jpg",
-        //         ]
-        //     },
-        //     {
-        //         id: 2,
-        //         artist: 'Mireya Hernández',
-        //         title: {
-        //             es: 'Lectura por Mireya Hernández',
-        //             en: 'Reading by Mireya Hernández',
-        //             pt: 'Leitura de Mireya Hernández'
-        //         },
-        //         text: {
-        //             es: 'Mireya Hernández escogió para su lectura dos prosas de su proyecto en curso <em>El lenguaje de las moscas</em>. Estos textos recogían inspiración y memorias tanto de dentro como de fuera de la residencia, asociando y entrelazando los pequeños detalles que conforman su forma de ver el mundo.',
-        //             en: 'Mireya Hernández chose for her reading two prose pieces from her ongoing project <em>El lenguaje de las moscas</em>. These texts drew on inspiration and memories both from within and outside the residency, associating and intertwining the small details that shape her way of seeing the world.',
-        //             pt: 'Mireya Hernández escolheu para a sua leitura duas prosas de seu projeto em andamento <em>El lenguaje de las moscas</em>. Esses textos recolhiam inspiração e memórias tanto de dentro quanto de fora da residência, associando e entrelaçando os pequenos detalhes que formam sua maneira de ver o mundo.',
-        //         },
-        //         images: [
-        //             "/Images/Exhibitions/Exhibition01/Expo-Mireya-1.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-Mireya-2.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-Mireya-3.jpg",
-        //         ]
-        //     },
-        //     {
-        //         id: 3,
-        //         artist: 'Gonzalo Quincoces',
-        //         title: {
-        //             es: 'Lectura por Gonzalo Quincoces',
-        //             en: 'Reading by Gonzalo Quincoces',
-        //             pt: 'Leitura de Gonzalo Quincoces'
-        //         },
-        //         text: {
-        //             es: 'Gonzalo Quincoces leyó con brío las primeras secuencias de su guión <em>La noche del coche rojo</em>, su primer largometraje en desarrollo, transportando a los oyentes a una turbia y grisácea Vizcaya de los años 80.',
-        //             en: 'Gonzalo Quincoces read with vigor the opening sequences of his script <em>La noche del coche rojo</em>, his first feature film in development, transporting the audience to a murky and grayish Biscay of the 1980s.',
-        //             pt: 'Gonzalo Quincoces leu com ímpeto as primeiras sequências de seu roteiro <em>La noche del coche rojo</em>, seu primeiro longa-metragem em desenvolvimento, transportando os ouvintes para uma turva e acinzentada Biscaia dos anos 80.',
-        //         },
-        //         images: [
-        //             "/Images/Exhibitions/Exhibition01/Expo-Quincoces-1.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-Quincoces-2.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-Quincoces-3.jpg",
-        //         ]
-        //     },
-        //     {
-        //         id: 4,
-        //         artist: 'Maria Gallemí',
-        //         title: {
-        //             es: 'Presentación con María Gallemí',
-        //             en: 'Presentation with María Gallemí',
-        //             pt: 'Apresentação com María Gallemí'
-        //         },
-        //         text: {
-        //             es: 'Maria Gallemí sorprendió con un espacio en el que la repostería se convirtió en herramienta conceptual de búsqueda y exploración. Su instalación incluía fotografías de sus referencias y los postres desarrollados durante la residencia, además de una deliciosa instalación comestible que difuminaba los límites entre la naturaleza y lo culinario.',
-        //             en: 'Maria Gallemí surprised with a space where pastry became a conceptual tool for research and exploration. Her installation included photographs of her references and the desserts developed during the residency, as well as a delicious edible installation that blurred the boundaries between nature and the culinary.',
-        //             pt: 'Maria Gallemí surpreendeu com um espaço em que a confeitaria se tornou uma ferramenta conceitual de busca e exploração. Sua instalação incluía fotografias de suas referências e as sobremesas desenvolvidas durante a residência, além de uma deliciosa instalação comestível que desfocava os limites entre a natureza e o culinário.',
-        //         },
-        //         images: [
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-1.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-7.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-2.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-3.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-4.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-5.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-6.jpg",
-        //         ]
-        //     },
-        //     {
-        //         id: 5,
-        //         artist: 'María Esteve',
-        //         title: {
-        //             es: 'Presentación con María Esteve',
-        //             en: 'Presentation with María Esteve',
-        //             pt: 'Apresentação com María Esteve'
-        //         },
-        //         text: {
-        //             es: 'María Esteve transformó una sala en un nuevo territorio titulado <em>Donde la tierra habla</em>, a partir de un registro de texturas del paisaje y un video que mostraba sus procesos en los parajes que rodean Finca El Azahar y en las minas a cielo abierto de Las Villuercas. A través de la técnica del <em>frottage</em> y el contacto directo con la tierra, el papel y las telas se convirtieron en cartografías y memoria de esa naturaleza.',
-        //             en: 'María Esteve transformed a room into a new territory entitled <em>Donde la tierra habla</em>, based on a record of landscape textures and a video showing her processes in the surroundings of Finca El Azahar and in the open-pit mines of Las Villuercas. Through the technique of <em>frottage</em> and direct contact with the earth, paper and fabrics became cartographies and memory of that nature.',
-        //             pt: 'María Esteve transformou uma sala em um novo território intitulado <em>Donde la tierra habla</em>, a partir de um registro de texturas da paisagem e de um vídeo que mostrava seus processos nos arredores da Finca El Azahar e nas minas a céu aberto de Las Villuercas. Através da técnica do <em>frottage</em> e do contato direto com a terra, o papel e os tecidos se transformaram em cartografias e memória dessa natureza.',
-
-        //         },
-        //         images: [
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-1.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-2.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-7.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-3.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-4.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-5.jpg",
-        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-6.jpg",
-        //         ]
-        //     },
-        // ],
-
         preSaleTitle: {
-            es: 'Una residencia narrada por Ivan Floro',
-            en: '',
-            pt: '',
+            es: '<em>Una residencia narrada por</em> Ivan Floro',
+            en: '<em>Una residencia narrada por</em> Ivan Floro',
+            pt: '<em>Una residencia narrada por</em> Ivan Floro',
         },
 
         preSaleImage: "/Images/Exhibitions/Exhibition02/1.webp",
@@ -411,9 +305,9 @@ export const mockExhibitionsData = [
         preSaleImage2: "/Images/Exhibitions/Exhibition02/4.webp",
 
         preSaleText: {
-            es: 'Iván Floro fue invitado a ser el narrador de la Residencia2025, acompañando a las residentes en sus días y procesos creativos. Compartió sobremesas y paseos, observó los rincones y paisajes que las rodeaban y se integró en el ritmo cotidiano de la residencia. Con sus bártulos siempre a cuestas, se propuso pintar todo del natural: «sin recurrir a la fotografía como punto de partida y, así, devolverle al óleo su antiguo cometido: capturar el momento».<br/><br/><em>Una residencia narrada por Iván Floro</em> es el testimonio pictórico de esa vivencia, pero también un reflejo de la naturalidad, la curiosidad y el ritmo intuitivo que caracterizan la obra de Iván Floro.',
-            en: '',
-            pt: '',
+            es: 'Ivan Floro fue invitado a ser el narrador de la Residencia2025, acompañando a las residentes en sus días y procesos creativos. Compartió sobremesas y paseos, observó los rincones y paisajes que las rodeaban y se integró en el ritmo cotidiano de la residencia. Con sus bártulos siempre a cuestas, se propuso pintar todo del natural: «sin recurrir a la fotografía como punto de partida y, así, devolverle al óleo su antiguo cometido: capturar el momento».<br/><br/><em>Una residencia narrada por Iván Floro</em> es el testimonio pictórico de esa vivencia, pero también un reflejo de la naturalidad, la curiosidad y el ritmo intuitivo que caracterizan la obra de Iván Floro.',
+            en: "Ivan Floro was invited to be the narrator of Residencia2025, accompanying the residents through their days and creative processes. He shared long meals and walks, observed the corners and landscapes around them and became part of the daily rhythm of the residency. With his materials always at hand, he set out to paint everything from life: “without resorting to photography as a starting point and, in this way, giving oil painting back its old purpose: to capture the moment.”<br/><br/><em>Una residencia narrada por Iván Floro</em> is the pictorial record of that experience, but also a reflection of the naturalness, curiosity and intuitive rhythm that characterise Iván Floro's work.",
+            pt: 'Ivan Floro foi convidado a ser o narrador da Residencia2025, acompanhando os residentes nos seus dias e processos criativos. Partilhou longas conversas à mesa e passeios, observou os recantos e paisagens que os rodeavam e integrou-se no ritmo quotidiano da residência. Com os seus apetrechos sempre às costas, propôs-se pintar tudo ao natural: «sem recorrer à fotografia como ponto de partida e, assim, devolver ao óleo a sua antiga missão: captar o momento».<br/><br/><em>Una residencia narrada por Iván Floro</em> é o testemunho pictórico dessa vivência, mas também um reflexo da naturalidad, da curiosidade e do ritmo intuitivo que caracterizam a obra de Iván Floro.',
         },
         publicaciones: ["pub-1"],
         gallery: [
@@ -473,9 +367,9 @@ export const mockExhibitionsData = [
             pt: ""
         },
         description: {
-            es: "Presentación <em>Una visión remota</em> en Madrid",
-            en: "Presentation of <em>Una visión remota</em> in Madrid",
-            pt: "Apresentação de <em>Una visión remota</em> em Madrid"
+            es: "Presentación de <em>Una visión remota</em>, obra resultado de la Residencia2026, en Madrid.",
+            en: "Presentation of <em>Una visión remota</em>, the work resulting from Residencia2026, in Madrid.",
+            pt: "Apresentação de <em>Una visión remota</em>, obra resultante da Residencia2026, em Madrid."
         },
 
         className: "exhibition-card",
