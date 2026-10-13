@@ -25,9 +25,16 @@
     display: flex;
 }
 
+.intro-presale-img {
+    align-items: flex-start; /* evita que el img se estire en altura */
+}
+
 .intro-presale-img img {
     width: 80%;
     height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
 }
 
 .intro-presale-texts {

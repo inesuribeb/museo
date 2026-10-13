@@ -21,9 +21,20 @@
     display: flex;
 }
 
+/* .intro-expoDetails-img img {
+    width: 80%;
+    height: auto;
+} */
+
+.intro-expoDetails-img {
+    align-items: flex-start; /* evita que el img se estire en altura */
+}
+
 .intro-expoDetails-img img {
     width: 80%;
     height: auto;
+    aspect-ratio: 4 / 5;      /* la proporción que quieras */
+    object-fit: cover;        /* rellena la caja recortando sin deformar */
 }
 
 .intro-expoDetails-texts {
@@ -34,7 +45,7 @@
 }
 
 .texts-intro {
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
     width: 90%;
 }
 

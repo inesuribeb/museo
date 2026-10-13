@@ -133,7 +133,7 @@ export const mockPublicationsData = [
         format: "29,7x42 cm",
         designBy: "Ana Domínguez Studio",
         residencias: ["residencia-2"],
-        exposiciones: ["expo-2"],
+        exposiciones: ["expo-3"],
         collectiveArtPiece: ["artPiece-2"],
         detailImages: [
             "/Images/Publications/Publication02/brais_rodriguez7.webp",

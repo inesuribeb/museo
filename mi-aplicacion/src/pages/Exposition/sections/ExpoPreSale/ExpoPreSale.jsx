@@ -4,10 +4,13 @@ import { mockPublicationsData } from '../../../../utils/Data/PublicationsData';
 import MediumSans from '../../../../components/Titles/MediumSans/MediumSans'
 import './ExpoPreSale.css';
 
+const stripHtml = (html = '') => html.replace(/<[^>]*>/g, '');
+
 function ExpoPreSale({ t, currentLanguage, exhibition }) {
+    if (!exhibition) return null;
 
     const getAssociatedPublication = () => {
-        if (!exhibition?.publicaciones || exhibition.publicaciones.length === 0) {
+        if (!exhibition.publicaciones || exhibition.publicaciones.length === 0) {
             return null;
         }
 
@@ -17,16 +20,19 @@ function ExpoPreSale({ t, currentLanguage, exhibition }) {
     };
 
     const associatedPublication = getAssociatedPublication();
+    const altText = stripHtml(exhibition.title);
 
     return (
         <section className='expo-pre-sale'>
             <div className='presale-texts'>
-                <div className='intro-presale-img'>
-                    <img
-                        src={exhibition?.preSaleImage}
-                        alt={exhibition?.title}
-                    />
-                </div>
+                {exhibition.preSaleImage && (
+                    <div className='intro-presale-img'>
+                        <img
+                            src={exhibition.preSaleImage}
+                            alt={altText}
+                        />
+                    </div>
+                )}
 
                 <div className='intro-presale-texts'>
                     <div className='pre-sale-text'>
@@ -39,11 +45,12 @@ function ExpoPreSale({ t, currentLanguage, exhibition }) {
                             dangerouslySetInnerHTML={{ __html: exhibition.preSaleText }}
                         />
                     </div>
-                    <img
-                        src={exhibition?.preSaleImage2}
-                        alt={exhibition?.title}
-                    />
-
+                    {exhibition.preSaleImage2 && (
+                        <img
+                            src={exhibition.preSaleImage2}
+                            alt={altText}
+                        />
+                    )}
                 </div>
 
             </div>

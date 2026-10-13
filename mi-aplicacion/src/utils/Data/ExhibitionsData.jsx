@@ -213,10 +213,15 @@ export const mockExhibitionsData = [
             // "/Images/Exhibitions/Exhibition01/Gallery/Gallery-10.jpg",
             "/Images/Exhibitions/Exhibition01/Gallery/Gallery-5.jpg",
         ],
+        // byeByeText: {
+        //     es: '<br/>El éxito de Expo Residencia2025 no habría sido posible sin vuestra presencia y apoyo.<br/>¡Gracias y nos vemos en la próxima edición!',
+        //     en: '<br/>The success of Expo Residencia2025 would not have been possible without your presence and support.<br/>Thank you, and see you at the next edition!',
+        //     pt: '<br/>O sucesso da Expo Residencia2025 não teria sido possível sem a vossa presença e apoio.<br/>Obrigado e até à próxima edição!',
+        // },
         byeByeText: {
-            es: '<br/>El éxito de Expo Residencia2025 no habría sido posible sin vuestra presencia y apoyo.<br/>¡Gracias y nos vemos en la próxima edición!',
-            en: '<br/>The success of Expo Residencia2025 would not have been possible without your presence and support.<br/>Thank you, and see you at the next edition!',
-            pt: '<br/>O sucesso da Expo Residencia2025 não teria sido possível sem a vossa presença e apoio.<br/>Obrigado e até à próxima edição!',
+            es: "",
+            en: "",
+            pt: ""
         },
         date: '2025-06-18'
     },
@@ -238,7 +243,7 @@ export const mockExhibitionsData = [
         bgImage: "/Images/Exhibitions/Exhibition02/bg-expo2.webp",
         imagesAuthor: "",
         title: {
-            es: "Presentación <em>Una residencia narrada por Ivan Floro</em>",
+            es: "<em>Una residencia narrada por Ivan Floro</em>",
             en: "",
             pt: ""
         },
@@ -409,7 +414,7 @@ export const mockExhibitionsData = [
             es: 'Iván Floro fue invitado a ser el narrador de la Residencia2025, acompañando a las residentes en sus días y procesos creativos. Compartió sobremesas y paseos, observó los rincones y paisajes que las rodeaban y se integró en el ritmo cotidiano de la residencia. Con sus bártulos siempre a cuestas, se propuso pintar todo del natural: «sin recurrir a la fotografía como punto de partida y, así, devolverle al óleo su antiguo cometido: capturar el momento».<br/><br/><em>Una residencia narrada por Iván Floro</em> es el testimonio pictórico de esa vivencia, pero también un reflejo de la naturalidad, la curiosidad y el ritmo intuitivo que caracterizan la obra de Iván Floro.',
             en: '',
             pt: '',
-         },
+        },
         publicaciones: ["pub-1"],
         gallery: [
             "/Images/Exhibitions/Exhibition02/mas1.webp",
@@ -419,6 +424,219 @@ export const mockExhibitionsData = [
             "/Images/Exhibitions/Exhibition02/mas5.webp",
         ],
         date: '2026-06-17'
+        // byeByeText: {
+        //     es: '',
+        //     en: '',
+        //     pt: '',
+        //  }
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        id: "expo-3",
+        imageRef: "",
+        // image: "/Images/Exhibitions/Exhibition03/cartel_expo2.webp",
+        image: "/Images/Exhibitions/Exhibition03/danij1.webp",
+
+        imageDetail: "/Images/Exhibitions/Exhibition03/danij1.webp",
+        // imageDetail2: "/Images/Exhibitions/Exhibition03/danij2.webp",
+        imageDetail2: "",
+
+        bgImage: "/Images/Exhibitions/Exhibition03/expo_resi2026.webp",
+        imagesAuthor: "",
+        title: {
+            es: "<em>Una visión remota</em>",
+            en: "<em>Una visión remota</em>",
+            pt: "<em>Una visión remota</em>"
+        },
+        subtitle: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        venue: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        curator: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        description: {
+            es: "Presentación <em>Una visión remota</em> en Madrid",
+            en: "Presentation of <em>Una visión remota</em> in Madrid",
+            pt: "Apresentação de <em>Una visión remota</em> em Madrid"
+        },
+
+        className: "exhibition-card",
+        year: 2026,
+        startDate: "2026-06-17",
+        endDate: "2026-06-17",
+        residencias: ["residencia-1"],
+        publicaciones: ["pub-2"],
+        collectiveArtPiece: [""],
+
+        introTitle: {
+            es: '',
+            en: '',
+            pt: '',
+        },
+
+        intro: {
+            es: '¿A qué huele la casualidad?<br/><em>Una visión remota</em> con Fundación Azar en la Finca Azahar.<br/><br/><b>Llegamos a los jardines de la politécnica, nos habían citado aquí a las 20:45, todo cambia de noche.</b> Un camino de farolillos nos guiaba al Acto I, una instalación transitable franqueada por grandes telones. En su interior, un render proyectado en una pantalla giraba sobre sí mismo mientras el sonido de una fuerte borrasca se mezclaba con breves susurros de calma. Era un cepellón, <b>la representación vectorial de un  cepellón</b>, una especie de masa que normalmente no vemos, formada bajo tierra por las  raíces de los árboles. Esta forma solo era discernible al transitar la instalación, llena de  troncos y ramas, y al fondo el cepellón, la ilusión del cepellón, su representación. <b>Pienso  en Deleuze y Guattari, en su rizoma y en lo arborescente de nuestra civilización.</b> Nos  invitan a pasar al Acto II así que atravesamos los jardines casi en penumbra, guiados por  esos farolillos y miembros del equipo hasta llegar a una especie de rotonda. El centro de  la rotonda está elevado, rodeado de cipreses en una perfecta vertical al cielo creando  una especie de tholos. <b>Nos colocamos alrededor para ver no sabemos muy bien qué.</b> En el centro de la rotonda está el cepellón, el de verdad, un cepellón enorme. En escena,  una mujer con mono de trabajo va moviendo ramas de un lado a otro, aparece un ángel,  un ángel con alas de ciprés que le golpean desde los lados, un Dioniso con corona de  ciprés y otro personaje que ponía la luz en la escena, enfocando con su foco como una  mirada ajena. <b>La música, las luces estroboscópicas, todo es como una gran tormenta.  </b><br/><br/>Averiguamos después que de hecho sí, era una tormenta. Nos había citado aquí la <b>Fundación Azar de las Artes, fundada por la productora de cine independiente Nathalie Trafford y el director de artes escénicas Denis Curty, con Paula G. Gener como  directora.</b> Con el objetivo de crear una obra conjunta, la Fundación Azar acoge una vez  al año a artistas de diferentes disciplinas en la Finca El Azahar, en un bonito y poco casual  juego de palabras. Esta vez fue el turno de <b>Telma João Santos</b>, doctora en Matemáticas  y en Artes Performáticas, <b>Natividad Martín</b>, posgraduada en Bellas Artes y bailarina, <b>Ana  Mortera Herrero</b>, artista multidisciplinar e <b>Izarne Oyarzabal</b>, arquitecta y bailarina. Esta  variada mezcla responde al enfoque particular de esta residencia: <b>la polinización  cruzada</b>. Desde 2024, Fundación Azar busca combinar distintas disciplinas y conceptos  artísticos para cada residencia creando una amalgama que junto con la selección de  artistas derive en la creación de una obra colectiva fruto de ese encuentro, resultado de  la unión de sus diferentes campos y visiones. <b>Fantasmata</b>, la residencia de este año, estaba enfocada a creadores relacionados con la danza, las matemáticas y la naturaleza  para el desarrollo de obras artísticas. <b>El objetivo es que los residentes creen una obra  colectiva fruto de la intersección entre sus diferentes campos y visiones, algo que este  año se vio marcado por la borrasca Kristin.</b> Aquello que vimos en los jardines de la  politécnica en fue el resultado de esta residencia en varios actos, un conjunto de  dispositivos para generar un resultado material del tiempo compartido. “Nos sentimos  como cuatro seres en un manicomio, es decir, un universo muy interesante, pero le  faltaba una especie de refugio sin locura o un pasaje a un lugar distinto a este”, escribe  Telma en su diario de trabajo, lo cual podemos leer gracias a la publicación que  acompaña al proyecto. ',
+            en: "What does chance smell like?<br/><em>Una visión remota</em> with Fundación Azar at Finca Azahar.<br/><br/><b>We arrived at the gardens of the Polytechnic; we had been asked to meet here at 8:45 pm. Everything changes at night.</b> A path of lanterns guided us to Act I, a walk-through installation flanked by large stage curtains. Inside, a render projected onto a screen rotated on itself while the sound of a heavy storm mingled with brief whispers of calm. It was a root ball, <b>the vector representation of a root ball</b>, a kind of mass we don't usually see, formed underground by the roots of trees. This shape could only be made out by walking through the installation, full of trunks and branches, and at the back the root ball, the illusion of the root ball, its representation. <b>I think of Deleuze and Guattari, of their rhizome and the arborescence of our civilisation.</b> We are invited to move on to Act II, so we cross the gardens in near darkness, guided by the lanterns and members of the team, until we reach a kind of roundabout. The centre of the roundabout is raised, surrounded by cypresses rising in a perfect vertical towards the sky, creating a kind of tholos. <b>We gather around it to watch we're not quite sure what.</b> In the centre of the roundabout is the root ball, the real one, an enormous root ball. On stage, a woman in work overalls moves branches from one side to the other; an angel appears, an angel with cypress wings that strike it from the sides, a Dionysus with a cypress crown, and another figure who lit the scene, aiming a spotlight like an outsider's gaze. <b>The music, the strobe lights, everything is like a great storm.</b><br/><br/>We found out afterwards that, in fact, it was a storm. We had been brought here by the <b>Fundación Azar de las Artes, founded by independent film producer Nathalie Trafford and performing arts director Denis Curty, with Paula G. Gener as director.</b> With the aim of creating a joint work, Fundación Azar hosts artists from different disciplines once a year at Finca El Azahar, in a lovely and hardly accidental play on words. This time it was the turn of <b>Telma João Santos</b>, PhD in Mathematics and in Performing Arts; <b>Natividad Martín</b>, postgraduate in Fine Arts and dancer; <b>Ana Mortera Herrero</b>, multidisciplinary artist; and <b>Izarne Oyarzabal</b>, architect and dancer. This varied mix reflects the particular approach of this residency: <b>cross-pollination</b>. Since 2024, Fundación Azar has sought to combine different disciplines and artistic concepts for each residency, creating an amalgam that, together with the selection of artists, leads to a collective work born of that encounter, the result of bringing together their different fields and visions. <b>Fantasmata</b>, this year's residency, was aimed at creators connected with dance, mathematics and nature, for the development of artistic works. <b>The goal is for the residents to create a collective work born of the intersection of their different fields and visions, something that this year was marked by Storm Kristin.</b> What we saw in the gardens of the Polytechnic was the outcome of this residency in several acts, a set of devices to generate a material result of the time spent together. “We feel like four beings in a madhouse, that is, a very interesting universe, but it lacked a kind of refuge without madness, or a passage to a place different from this one,” writes Telma in her work diary, which we can read thanks to the publication that accompanies the project.",
+            pt: 'A que cheira o acaso?<br/><em>Una visión remota</em> com a Fundação Azar na Finca Azahar.<br/><br/><b>Chegámos aos jardins da Politécnica, tinham-nos marcado encontro aqui às 20h45, tudo muda à noite.</b> Um caminho de lanternas guiava-nos até ao Ato I, uma instalação percorrível ladeada por grandes panos de cena. No seu interior, um render projetado num ecrã girava sobre si mesmo enquanto o som de uma forte tempestade se misturava com breves sussurros de calma. Era um torrão, <b>a representação vetorial de um torrão</b>, uma espécie de massa que normalmente não vemos, formada debaixo da terra pelas raízes das árvores. Esta forma só se tornava discernível ao percorrer a instalação, cheia de troncos e ramos, e ao fundo o torrão, a ilusão do torrão, a sua representação. <b>Penso em Deleuze e Guattari, no seu rizoma e no caráter arborescente da nossa civilização.</b> Convidam-nos a passar ao Ato II, por isso atravessamos os jardins quase na penumbra, guiados por essas lanternas e por membros da equipa, até chegarmos a uma espécie de rotunda. O centro da rotunda é elevado, rodeado de ciprestes numa vertical perfeita em direção ao céu, criando uma espécie de tholos. <b>Colocamo-nos à volta para ver não sabemos bem o quê.</b> No centro da rotunda está o torrão, o verdadeiro, um torrão enorme. Em cena, uma mulher de fato-macaco vai mudando ramos de um lado para o outro, aparece um anjo, um anjo com asas de cipreste que lhe batem dos lados, um Dioniso com coroa de cipreste e outra personagem que iluminava a cena, apontando o seu foco como um olhar alheio. <b>A música, as luzes estroboscópicas, tudo é como uma grande tempestade.</b><br/><br/>Descobrimos depois que, de facto, era uma tempestade. Quem nos tinha trazido aqui era a <b>Fundação Azar de las Artes, fundada pela produtora de cinema independente Nathalie Trafford e pelo diretor de artes cénicas Denis Curty, com Paula G. Gener como diretora.</b> Com o objetivo de criar uma obra conjunta, a Fundação Azar acolhe uma vez por ano artistas de diferentes disciplinas na Finca El Azahar, num belo e pouco casual jogo de palavras. Desta vez, chegou a vez de <b>Telma João Santos</b>, doutorada em Matemática e em Artes Performativas, <b>Natividad Martín</b>, pós-graduada em Belas-Artes e bailarina, <b>Ana Mortera Herrero</b>, artista multidisciplinar, e <b>Izarne Oyarzabal</b>, arquiteta e bailarina. Esta mistura variada responde ao enfoque particular desta residência: <b>a polinização cruzada</b>. Desde 2024, a Fundação Azar procura combinar diferentes disciplinas e conceitos artísticos em cada residência, criando uma amálgama que, juntamente com a seleção de artistas, resulte numa obra coletiva fruto desse encontro, resultado da união dos seus diferentes campos e visões. <b>Fantasmata</b>, a residência deste ano, era dirigida a criadores ligados à dança, à matemática e à natureza, para o desenvolvimento de obras artísticas. <b>O objetivo é que os residentes criem uma obra coletiva fruto da interseção entre os seus diferentes campos e visões, algo que este ano ficou marcado pela tempestade Kristin.</b> Aquilo que vimos nos jardins da Politécnica foi o resultado desta residência em vários atos, um conjunto de dispositivos para gerar um resultado material do tempo partilhado. “Sentimo-nos como quatro seres num manicómio, ou seja, um universo muito interessante, mas faltava-lhe uma espécie de refúgio sem loucura ou uma passagem para um lugar diferente deste”, escreve Telma no seu diário de trabalho, que podemos ler graças à publicação que acompanha o projeto.',
+        },
+
+        intro2: {
+            es: '',
+            en: '',
+            pt: '',
+        },
+
+        // presentations: [
+        //     {
+        //         id: 1,
+        //         artist: 'Florencia del Campo',
+        //         title: {
+        //             es: 'Lectura por Florencia del Campo',
+        //             en: 'Reading by Florencia del Campo',
+        //             pt: 'Leitura de Florencia del Campo'
+        //         },
+        //         text: {
+        //             es: 'Florencia del Campo compartió un fragmento cargado de fuerza y crudeza de <em>El nombre impropio</em>, una de las cinco partes que conforman su proyecto de no ficción <em>Diarios colaterales</em>. ',
+        //             en: 'Florencia del Campo shared a fragment full of strength and rawness from <em>El nombre impropio</em>, one of the five parts that make up her non-fiction project <em>Diarios colaterales</em>.',
+        //             pt: 'Florencia del Campo compartilhou um fragmento carregado de força e crueza de <em>El nombre improprio</em>, uma das cinco partes que compõem seu projeto de não ficção <em>Diarios colaterales</em>.',
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-Florencia-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Florencia-2.jpg",
+        //         ]
+        //     },
+        //     {
+        //         id: 2,
+        //         artist: 'Mireya Hernández',
+        //         title: {
+        //             es: 'Lectura por Mireya Hernández',
+        //             en: 'Reading by Mireya Hernández',
+        //             pt: 'Leitura de Mireya Hernández'
+        //         },
+        //         text: {
+        //             es: 'Mireya Hernández escogió para su lectura dos prosas de su proyecto en curso <em>El lenguaje de las moscas</em>. Estos textos recogían inspiración y memorias tanto de dentro como de fuera de la residencia, asociando y entrelazando los pequeños detalles que conforman su forma de ver el mundo.',
+        //             en: 'Mireya Hernández chose for her reading two prose pieces from her ongoing project <em>El lenguaje de las moscas</em>. These texts drew on inspiration and memories both from within and outside the residency, associating and intertwining the small details that shape her way of seeing the world.',
+        //             pt: 'Mireya Hernández escolheu para a sua leitura duas prosas de seu projeto em andamento <em>El lenguaje de las moscas</em>. Esses textos recolhiam inspiração e memórias tanto de dentro quanto de fora da residência, associando e entrelaçando os pequenos detalhes que formam sua maneira de ver o mundo.',
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-Mireya-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Mireya-2.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Mireya-3.jpg",
+        //         ]
+        //     },
+        //     {
+        //         id: 3,
+        //         artist: 'Gonzalo Quincoces',
+        //         title: {
+        //             es: 'Lectura por Gonzalo Quincoces',
+        //             en: 'Reading by Gonzalo Quincoces',
+        //             pt: 'Leitura de Gonzalo Quincoces'
+        //         },
+        //         text: {
+        //             es: 'Gonzalo Quincoces leyó con brío las primeras secuencias de su guión <em>La noche del coche rojo</em>, su primer largometraje en desarrollo, transportando a los oyentes a una turbia y grisácea Vizcaya de los años 80.',
+        //             en: 'Gonzalo Quincoces read with vigor the opening sequences of his script <em>La noche del coche rojo</em>, his first feature film in development, transporting the audience to a murky and grayish Biscay of the 1980s.',
+        //             pt: 'Gonzalo Quincoces leu com ímpeto as primeiras sequências de seu roteiro <em>La noche del coche rojo</em>, seu primeiro longa-metragem em desenvolvimento, transportando os ouvintes para uma turva e acinzentada Biscaia dos anos 80.',
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-Quincoces-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Quincoces-2.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-Quincoces-3.jpg",
+        //         ]
+        //     },
+        //     {
+        //         id: 4,
+        //         artist: 'Maria Gallemí',
+        //         title: {
+        //             es: 'Presentación con María Gallemí',
+        //             en: 'Presentation with María Gallemí',
+        //             pt: 'Apresentação com María Gallemí'
+        //         },
+        //         text: {
+        //             es: 'Maria Gallemí sorprendió con un espacio en el que la repostería se convirtió en herramienta conceptual de búsqueda y exploración. Su instalación incluía fotografías de sus referencias y los postres desarrollados durante la residencia, además de una deliciosa instalación comestible que difuminaba los límites entre la naturaleza y lo culinario.',
+        //             en: 'Maria Gallemí surprised with a space where pastry became a conceptual tool for research and exploration. Her installation included photographs of her references and the desserts developed during the residency, as well as a delicious edible installation that blurred the boundaries between nature and the culinary.',
+        //             pt: 'Maria Gallemí surpreendeu com um espaço em que a confeitaria se tornou uma ferramenta conceitual de busca e exploração. Sua instalação incluía fotografias de suas referências e as sobremesas desenvolvidas durante a residência, além de uma deliciosa instalação comestível que desfocava os limites entre a natureza e o culinário.',
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-7.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-2.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-3.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-4.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-5.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaGallemi-6.jpg",
+        //         ]
+        //     },
+        //     {
+        //         id: 5,
+        //         artist: 'María Esteve',
+        //         title: {
+        //             es: 'Presentación con María Esteve',
+        //             en: 'Presentation with María Esteve',
+        //             pt: 'Apresentação com María Esteve'
+        //         },
+        //         text: {
+        //             es: 'María Esteve transformó una sala en un nuevo territorio titulado <em>Donde la tierra habla</em>, a partir de un registro de texturas del paisaje y un video que mostraba sus procesos en los parajes que rodean Finca El Azahar y en las minas a cielo abierto de Las Villuercas. A través de la técnica del <em>frottage</em> y el contacto directo con la tierra, el papel y las telas se convirtieron en cartografías y memoria de esa naturaleza.',
+        //             en: 'María Esteve transformed a room into a new territory entitled <em>Donde la tierra habla</em>, based on a record of landscape textures and a video showing her processes in the surroundings of Finca El Azahar and in the open-pit mines of Las Villuercas. Through the technique of <em>frottage</em> and direct contact with the earth, paper and fabrics became cartographies and memory of that nature.',
+        //             pt: 'María Esteve transformou uma sala em um novo território intitulado <em>Donde la tierra habla</em>, a partir de um registro de texturas da paisagem e de um vídeo que mostrava seus processos nos arredores da Finca El Azahar e nas minas a céu aberto de Las Villuercas. Através da técnica do <em>frottage</em> e do contato direto com a terra, o papel e os tecidos se transformaram em cartografias e memória dessa natureza.',
+
+        //         },
+        //         images: [
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-1.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-2.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-7.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-3.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-4.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-5.jpg",
+        //             "/Images/Exhibitions/Exhibition01/Expo-MariaEsteve-6.jpg",
+        //         ]
+        //     },
+        // ],
+
+        preSaleTitle: {
+            es: 'Una residencia narrada por Brais Rodríguez',
+            en: '',
+            pt: '',
+        },
+
+        preSaleImage: "/Images/Exhibitions/Exhibition03/publi2.webp",
+
+        preSaleImage2: "",
+
+        preSaleText: {
+            es: "Para cada edición, <b>Fundación Azar invita a un artista que  acompaña a las residentes para luego narrar la experiencia, esta vez el encargado ha  sido Brais Rodríguez</b>, en una publicación acompañada por textos de las artistas y otros  colaboradores del proyecto como Pedro G. Romero. Gracias a esta publicación, que nos  fue entregada tras la función, comenzamos a entender la pieza. Los textos de las artistas  y colaboradores del proyecto nos dan las pistas pero es el relato ilustrado de Brais  Rodríguez lo primero que ves. <b>24 páginas con 60 viñetas cada una recogen todo un día</b> en el que no solo ilustra la tormenta, también algo más complejo, como la danza, los  pensamientos y su ausencia.  <br/><br/>Quizás fue obra del azar, que esta residencia se definiera por la danza de los  árboles, la matemática del clima y la naturaleza de esta borrasca que lo condicionó todo  esta vez en la Fundación Azar. <b>Lo que seguro no es cuestión de suerte es que estos  proyectos existan,</b> son fruto del esfuerzo y dedicación de personas que entienden lo  fundamental que es no depender del azar, contar con el apoyo de estructuras como esta  que permitan experimentar más allá, conocer el trabajo de otros y compartir el propio,  una polinización cruzada. Como señala el texto firmado por Nathalie Trafford, Denis  Curty y Paula G. Gener en la publicación mencionada: “nosotros, como ese insecto,  vamos explorando, quizás incluso extraviándonos, pero persiguiendo una meta tan  sencilla en apariencia como compleja en la práctica: interrogar la esencia de la obra de  arte”. <b>Lo importante no es la respuesta, es mantener las cuestiones artísticas abiertas. </b>",
+            en: "For each edition, <b>Fundación Azar invites an artist to accompany the residents and later narrate the experience; this time the task fell to Brais Rodríguez</b>, in a publication accompanied by texts from the artists and other project collaborators such as Pedro G. Romero. Thanks to this publication, which was handed to us after the performance, we began to understand the piece. The texts by the artists and collaborators give us the clues, but it is Brais Rodríguez's illustrated account that you see first. <b>24 pages with 60 panels each capture an entire day</b>, in which he illustrates not only the storm but also something more complex, such as dance, thoughts and their absence.<br/><br/>Perhaps it was down to chance that this residency was defined by the dance of the trees, the mathematics of the weather and the nature of the storm that shaped everything this time at Fundación Azar. <b>What is certainly not a matter of luck is that these projects exist.</b> They are the result of the effort and dedication of people who understand how essential it is not to depend on chance, to have the support of structures like this one that make it possible to experiment further, to discover the work of others and share one's own: a cross-pollination. As the text signed by Nathalie Trafford, Denis Curty and Paula G. Gener in the aforementioned publication puts it: “we, like that insect, keep exploring, perhaps even losing our way, but pursuing a goal as simple in appearance as it is complex in practice: to question the essence of the work of art.” <b>What matters is not the answer, but keeping artistic questions open.</b>",
+            pt: 'Em cada edição, <b>a Fundação Azar convida um artista que acompanha as residentes para depois narrar a experiência; desta vez, o encarregado foi Brais Rodríguez</b>, numa publicação acompanhada por textos das artistas e de outros colaboradores do projeto, como Pedro G. Romero. Graças a esta publicação, que nos foi entregue depois da apresentação, começámos a entender a peça. Os textos das artistas e dos colaboradores do projeto dão-nos as pistas, mas é o relato ilustrado de Brais Rodríguez a primeira coisa que se vê. <b>24 páginas com 60 vinhetas cada uma registam um dia inteiro</b>, em que não ilustra apenas a tempestade, mas também algo mais complexo, como a dança, os pensamentos e a sua ausência.<br/><br/>Talvez tenha sido obra do acaso que esta residência se definisse pela dança das árvores, pela matemática do clima e pela natureza desta tempestade que tudo condicionou desta vez na Fundação Azar. <b>O que certamente não é uma questão de sorte é que estes projetos existam.</b> São fruto do esforço e da dedicação de pessoas que entendem como é fundamental não depender do acaso, contar com o apoio de estruturas como esta, que permitam experimentar mais além, conhecer o trabalho dos outros e partilhar o próprio, uma polinização cruzada. Como refere o texto assinado por Nathalie Trafford, Denis Curty e Paula G. Gener na publicação mencionada: “nós, como esse inseto, vamos explorando, talvez até a perder-nos, mas a perseguir uma meta tão simples na aparência como complexa na prática: interrogar a essência da obra de arte”. <b>O importante não é a resposta, é manter as questões artísticas em aberto.</b>',
+        },
+        publicaciones: ["pub-2"],
+        gallery: [
+            "/Images/Exhibitions/Exhibition03/expo_resi2026.webp",
+            "/Images/Exhibitions/Exhibition03/danij1.webp",
+            "/Images/Exhibitions/Exhibition03/danij2.webp",
+            "/Images/Exhibitions/Exhibition03/danij3.webp",
+            "/Images/Exhibitions/Exhibition03/danij4.webp",
+            "/Images/Exhibitions/Exhibition03/danij5.webp",
+            "/Images/Exhibitions/Exhibition03/danij6.webp",
+            "/Images/Exhibitions/Exhibition03/danij7.webp",
+        ],
+        date: '2026-09-17'
         // byeByeText: {
         //     es: '',
         //     en: '',
