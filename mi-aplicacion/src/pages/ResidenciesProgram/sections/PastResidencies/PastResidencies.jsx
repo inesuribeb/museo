@@ -25,10 +25,12 @@ function PastResidencies({ t }) {
         };
     };
 
-    const residenciasWithNavigation = mockResidencias.map(residencia => ({
-        ...residencia,
-        onClick: createNavigateHandler(residencia.id)
-    }));
+    const residenciasWithNavigation = [...mockResidencias]
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map(residencia => ({
+            ...residencia,
+            onClick: createNavigateHandler(residencia.id)
+        }));
 
     const localizedResidencias = useLocalizedData(residenciasWithNavigation);
 

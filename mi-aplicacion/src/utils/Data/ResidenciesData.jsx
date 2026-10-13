@@ -222,100 +222,182 @@ export const mockResidencias = [
 
         date: '2025-01-15'
     },
-    // {
-    //     id: "residencia-2",
-    //     image: "/Images/Residencies/Residency02/prueba1.PNG",
-    //     imageR: "/Images/Residencies/Residency02/prueba1.PNG",
 
-    //     title: {
-    //         es: "Residencia Urbana Madrid",
-    //         en: "Madrid Urban Residency",
-    //         pt: "Residência Urbana Madrid"
-    //     },
-    //     subtitle: {
-    //         es: "Madrid, España • 2025",
-    //         en: "Madrid, Spain • 2025",
-    //         pt: "Madrid, Espanha • 2025"
-    //     },
-    //     location: {
-    //         es: "Madrid, España",
-    //         en: "Madrid, Spain",
-    //         pt: "Madrid, Espanha"
-    //     },
-    //     description: {
-    //         es: "Residencia artística en contexto urbano",
-    //         en: "Artistic residency in urban context",
-    //         pt: "Residência artística em contexto urbano"
-    //     },
+    {
+        id: "residencia-2",
+        // imageR: "/Images/Header/HeaderResidencia.jpg",
+        imageR: "/Images/Residencies/Residency02/portada_interior.webp",
 
-    //     className: "residencia-card",
-    //     year: 2025,
-    //     publicaciones: ["pub-2"],
-    //     exposiciones: ["expo-2"],
-    //     collectiveArtPiece: ["artPiece-2"],
-    // },
-    // {
-    //     id: "residencia-3",
-    //     image: "/Images/Residencies/Residency02/prueba2.PNG",
-    //     imageR: "/Images/Residencies/Residency02/prueba2.PNG",
+        image: "/Images/Residencies/Residency02/cartel_resi_2.webp",
 
-    //     title: {
-    //         es: "Residencia Experimental",
-    //         en: "Experimental Residency",
-    //         pt: "Residência Experimental"
-    //     },
-    //     subtitle: {
-    //         es: "Barcelona, España • 2025",
-    //         en: "Barcelona, Spain • 2025",
-    //         pt: "Barcelona, Espanha • 2025"
-    //     },
-    //     location: {
-    //         es: "Barcelona, España",
-    //         en: "Barcelona, Spain",
-    //         pt: "Barcelona, Espanha"
-    //     },
-    //     description: {
-    //         es: "Exploración de nuevos medios y tecnologías",
-    //         en: "Exploration of new media and technologies",
-    //         pt: "Exploração de novas mídias e tecnologias"
-    //     },
 
-    //     className: "residencia-card",
-    //     year: 2025,
-    //     publicaciones: ["pub-3"],
-    //     exposiciones: ["expo-3"],
-    //     collectiveArtPiece: ["artPiece-3"],
-    // },
-    // {
-    //     id: "residencia-4",
-    //     image: "/Images/Residencies/Residency02/prueba3.PNG",
-    //     imageR: "/Images/Residencies/Residency02/prueba3.PNG",
+        title: {
+            es: "Residencia2026",
+            en: "2026Residency",
+            pt: "Residência2026"
+        },
+        title2: {
+            es: 'Danza,<br/>matemática y naturalezas',
+            en: 'Dance,<br/>mathematics, <br/>and nature',
+            pt: 'Dança,<br/>matemática <br/>e natureza',
+        },
+        subtitle: {
+            es: "Trujillo, Extremadura • Enero 2026",
+            en: "Trujillo, Extremadura • January 2026",
+            pt: "Trujillo, Extremadura • Janeiro 2026"
+        },
+        location: {
+            es: "Trujillo, Extremadura",
+            en: "Trujillo, Extremadura",
+            pt: "Trujillo, Extremadura"
+        },
+        description: {
+            es: "Segunda edición del programa de residencias, que reunió la danza, las matemáticas y la naturaleza.",
+            en: "Second edition of the residency programme, which brought together dance, mathematics and nature.",
+            pt: "Segunda edição do programa de residências, que reuniu a dança, a matemática e a natureza."
+        },
+        textR: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        jurado: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        textR2: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        residents: [
+            {
+                id: 1,
+                image: '/Images/Residencies/Residency02/anamortera.webp',
+                name: 'Ana Mortera',
+                origin: {
+                    es: '',
+                    en: "",
+                    pt: ""
+                },
+                artPieceName: {
+                    es: '',
+                    en: "",
+                    pt: ""
+                },
+                artPieceType: {
+                    es: 'Artista plástica',
+                    en: 'Visual artist',
+                    pt: 'Artista plástica'
+                },
+                artPieceDescription: {
+                    es: "<em>Pese a que estábamos rodeadas de naturaleza fue un reto descubrir cómo relacionarla con la obra. Hasta el día de la borrasca, cuando el viento tiró el ciprés.<br/><br/>Los días que pasamos en la Residencia de la Fundación Azar de las Artes estuvieron marcados por el clima: las lluvias, el viento, las alertas rojas. No pude evitar ver el ciprés como reflejo de nosotras. Un cuerpo a merced de la naturaleza, parado en el campo en Trujillo y que de repente sucumbía, se doblegaba ante la hostilidad. Y esa caída era nuestra, intentando acordar ideas y sacudiéndonos las unas a las otras.<br/><br/>El intercambio de espacios me resultó poético. Bailar donde el árbol había muerto, el cepellón arrancado del suelo con las raíces al cielo y el ciprés desplomado en el molino, nuestro espacio de trabajo, de encuentro, de ensayos.<br/><br/>El proceso creativo lo sentíamos como un rompecabezas, pero al final fue la misma naturaleza quien nos regaló la obra, sus dos actos. Solo tuvimos que conseguir ver (vernos en) lo que se nos había puesto delante.</em>",
+                    en: "<em>Although we were surrounded by nature, it was a challenge to discover how to relate it to the work. Until the day of the storm, when the wind brought down the cypress.<br/><br/>The days we spent at the Fundación Azar de las Artes Residency were marked by the weather: the rain, the wind, the red alerts. I couldn't help seeing the cypress as a reflection of ourselves. A body at the mercy of nature, standing still in the fields of Trujillo, that suddenly gave way and bowed to the hostility. And that fall was ours, as we tried to agree on ideas and shook one another up.<br/><br/>I found the exchange of spaces poetic. Dancing where the tree had died, the root ball torn from the ground with its roots to the sky, and the cypress collapsed in the mill, our space for work, for meeting, for rehearsals.<br/><br/>We experienced the creative process as a puzzle, but in the end it was nature itself that gave us the work, its two acts. All we had to do was manage to see (and see ourselves in) what had been placed before us.</em>",
+                    pt: "<em>Apesar de estarmos rodeadas de natureza, foi um desafio descobrir como relacioná-la com a obra. Até ao dia da tempestade, quando o vento derrubou o cipreste.<br/><br/>Os dias que passámos na Residência da Fundação Azar de las Artes foram marcados pelo clima: as chuvas, o vento, os alertas vermelhos. Não consegui deixar de ver o cipreste como um reflexo de nós. Um corpo à mercê da natureza, parado no campo em Trujillo, que de repente sucumbia, se vergava perante a hostilidade. E essa queda era nossa, a tentar chegar a acordo sobre as ideias e a sacudir-nos umas às outras.<br/><br/>A troca de espaços pareceu-me poética. Dançar onde a árvore tinha morrido, o torrão arrancado do solo com as raízes viradas para o céu e o cipreste tombado no moinho, o nosso espaço de trabalho, de encontro, de ensaios.<br/><br/>Sentíamos o processo criativo como um quebra-cabeças, mas no final foi a própria natureza que nos ofereceu a obra, os seus dois atos. Só tivemos de conseguir ver (e ver-nos em) aquilo que nos tinha sido posto à frente.</em>"
+                }
+            },
+            {
+                id: 2,
+                image: '/Images/Residencies/Residency02/telma.webp',
+                name: 'Telma João Santos',
+                origin: {
+                    es: '',
+                    en: "",
+                    pt: ""
+                },
+                artPieceName: {
+                    es: '',
+                    en: "",
+                    pt: ""
+                },
+                artPieceType: {
+                    es: 'Doctora en artes performativas y doctora en matemáticas',
+                    en: 'PhD in Performing Arts and PhD in Mathematics',
+                    pt: 'Doutorada em artes performativas e doutorada em matemática'
+                },
+                artPieceDescription: {
+                    es: "<em>Parada. Abismada. Domada. Entusiasmada. Selvagem. Desafiada.<br/><br/>Por entre tempestades, encontros, desafios, traduções e (des)enganos linguísticos, percorri quatro semanas de uma contínua adaptação, um contínuo espanto artístico e visceral perante os encontros, as ideias delas, os desenhos dele, a comida e os mantras incríveis de Nathalie, as danças pela noite fora com todos eles, os vinhos magníficos tal qual uma imagem que nunca conseguirei de facto segurar – fantasmata. Sempre num quase que se transforma num espectro de um outro quase, um instante belo que não consigo gravar pois afinal é uma sucessão de instantes belos aos quais não consigo atribuir morada fixa.<br/><br/>Construímos uma obra coletiva, Una visión remota – um outro espanto este de termos conseguido tal proeza –, que tem um lugar de memória muito colocada nas minhas vísceras, na forma de olhar o mundo. Contínuo, constante, um estado de alerta e entrega tão vívidos e tão presentes. Pensei matemática, erotizei-a, performei-a e, no fim, encontrei o meu corpo no meio dos outros corpos. Pelo meio, fotografei-me e senti muito amor. </em>",
+                    en: "<em>Still. Awestruck. Tamed. Enthused. Wild. Challenged.<br/><br/>Through storms, encounters, challenges, translations and linguistic (mis)understandings, I went through four weeks of continuous adaptation, a continuous artistic and visceral wonder at the encounters, the women's ideas, his drawings, Nathalie's incredible food and mantras, the dancing deep into the night with all of them, the magnificent wines, just like an image I will never truly be able to hold – fantasmata. Always in an almost that turns into the ghost of another almost, a beautiful instant I cannot record because, after all, it is a succession of beautiful instants to which I cannot assign a fixed address.<br/><br/>We built a collective work, Una visión remota – another wonder, that we managed such a feat – which holds a place of memory set deep in my gut, in the way I look at the world. Continuous, constant, a state of alertness and surrender so vivid and so present. I thought mathematics, eroticised it, performed it and, in the end, found my body among the other bodies. Along the way, I photographed myself and felt a great deal of love.</em>",
+                    pt: "<em>Parada. Abismada. Domada. Entusiasmada. Selvagem. Desafiada.<br/><br/>Por entre tempestades, encontros, desafios, traduções e (des)enganos linguísticos, percorri quatro semanas de uma contínua adaptação, um contínuo espanto artístico e visceral perante os encontros, as ideias delas, os desenhos dele, a comida e os mantras incríveis de Nathalie, as danças pela noite fora com todos eles, os vinhos magníficos tal qual uma imagem que nunca conseguirei de facto segurar – fantasmata. Sempre num quase que se transforma num espectro de um outro quase, um instante belo que não consigo gravar pois afinal é uma sucessão de instantes belos aos quais não consigo atribuir morada fija.<br/><br/>Construímos uma obra coletiva, Una visión remota – um outro espanto este de termos conseguido tal proeza –, que tem um lugar de memória muito colocada nas minhas vísceras, na forma de olhar o mundo. Contínuo, constante, um estado de alerta e entrega tão vívidos e tão presentes. Pensei matemática, erotizei-a, performei-a e, no fim, encontrei o meu corpo no meio dos outros corpos. Pelo meio, fotografei-me e senti muito amor.</em>"
+                }
+            },
+            {
+                id: 3,
+                image: '/Images/Residencies/Residency02/izarne.webp',
+                name: 'Izarne Oyarzabal',
+                origin: {
+                    es: '',
+                    en: "",
+                    pt: ""
+                },
+                artPieceName: {
+                    es: '',
+                    en: "",
+                    pt: ""
+                },
+                artPieceType: {
+                    es: 'Arquitecta y bailarina',
+                    en: 'Architect and dancer',
+                    pt: 'Arquiteta e bailarina'
+                },
+                artPieceDescription: {
+                    es: "<em>El trabajo de este trabajo ha sido para mí una obra en minúscula. Una inclinación a ser mano de obra como ética del trabajo en mi práctica artística. Como si el cuerpo a cuerpo con la materialidad de los elementos y los medios de producción me fueran a traer sentido. Donde colocar algo me colocase a mí también. Pero esto no es un método, es una creencia y mientras creo no sé lo que estoy haciendo. Marina Garcés en su ensayo Nueva ilustración radical dice que el no-saber es un gesto soberano de declararse fuera del sentido y me parece que ahí hay una promesa de algo que me gustaría ver. Creer para ver y no al revés.<br/><br/>Ha sido permaneciendo las cuatro juntas en este no-saber como hemos generado simultáneamente colectivo y Obra, un espacio insospechado de suspensión productiva de relaciones e imaginación. Un momento de fantasmata como instante de quietud que sabe elongarse en el tiempo. Así hemos llegado a crear algo incipiente, algo que se está asomando.</em>",
+                    en: "<em>The work of this work has been, for me, a work in lowercase. An inclination to be the labour, as a work ethic in my artistic practice. As if the body-to-body encounter with the materiality of the elements and the means of production would bring me meaning. Where placing something might place me as well. But this is not a method, it is a belief, and while I believe, I don't know what I'm doing. In her essay Nueva ilustración radical, Marina Garcés says that not-knowing is a sovereign gesture of declaring oneself outside of meaning, and I sense a promise there of something I would like to see. Believing in order to see, not the other way round.<br/><br/>It was by remaining, the four of us together, in this not-knowing that we simultaneously generated a collective and a Work, an unsuspected space of productive suspension of relationships and imagination. A moment of fantasmata as an instant of stillness that knows how to stretch out in time. That is how we came to create something incipient, something that is beginning to emerge.</em>",
+                    pt: "<em>O trabalho deste trabalho foi para mim uma obra em minúscula. Uma inclinação para ser mão de obra como ética de trabalho na minha prática artística. Como se o corpo a corpo com a materialidade dos elementos e dos meios de produção me fosse trazer sentido. Onde colocar algo me colocasse também a mim. Mas isto não é um método, é uma crença e, enquanto creio, não sei o que estou a fazer. Marina Garcés, no seu ensaio Nueva ilustración radical, diz que o não-saber é um gesto soberano de se declarar fora do sentido e parece-me que aí há uma promessa de algo que gostaria de ver. Crer para ver e não o contrário.<br/><br/>Foi permanecendo as quatro juntas neste não-saber que gerámos simultaneamente coletivo e Obra, um espaço insuspeito de suspensão produtiva de relações e imaginação. Um momento de fantasmata como instante de quietude que sabe alongar-se no tempo. Assim chegámos a criar algo incipiente, algo que está a despontar.</em>"
+                }
+            },
+            {
+                id: 4,
+                image: '/Images/Residencies/Residency02/natividad.webp',
+                name: 'Natividad Martín',
+                origin: {
+                    es: '',
+                    en: "",
+                    pt: ""
+                },
+                artPieceName: {
+                    es: "",
+                    en: "",
+                    pt: ""
+                },
+                artPieceType: {
+                    es: 'Artista y bailarina',
+                    en: 'Artist and dancer',
+                    pt: 'Artista e bailarina'
+                },
+                artPieceDescription: {
+                    es: "<em>El ciprés cayó, y con él todo lo que hubiésemos querido controlar, incluso cualquier voluntad de intentarlo. <br/><br/>Estuvimos pendientes del fuego, porque hacía frío y viento. Decidimos quedarnos, por alguna razón que no recuerdo, muy cerca de lo que se cayó. Nos poseyó esa caída, pesada, verde, mortuoria y absurda. Absurda fue también nuestra obsesión por atrapar el tal acontecimiento —pienso en nuestras conversaciones y debacles como escenas irracionales, divertidas, desorientadas, urgentes—. Es la realidad, nos unió nada más que este hecho. No supimos encontrar otro motivo. Y salimos al frío, al viento y la lluvia a buscar un sentido y medirlo. Hicimos con lo que había, sin más refinamiento ni currículum.<br/><br/>Varios días sentí la terrible invasión de la mirada ajena, y luego llegaba la noche con su balanceo y monumentalidad. Cayó todo lo que podía caer del cielo. El horizonte se hizo más alto y de agua. Decidí —sólo para mí— unirme a ese movimiento y caer, caer. Poco más me importó de verdad, es decir, en el cuerpo. <br/><br/>Quise arrancarles los ojos. Quise que una ventisca se les metiera por las cuencas hasta el interior y les inflase, les hiciese volar por los aires para, luego, dejarles caer.<br/><br/>Así es el final de la obra: alguien cae por un agujero... Y antes de eso, alas, mirones, viento y puntos ciegos que algo dicen.</em>",
+                    en: "<em>The cypress fell, and with it everything we might have wanted to control, even any will to try.<br/><br/>We kept watch over the fire, because it was cold and windy. We decided, for some reason I don't remember, to stay very close to what had fallen. That fall possessed us, heavy, green, mortuary and absurd. Absurd too was our obsession with capturing that event — I think of our conversations and debacles as irrational, funny, disoriented, urgent scenes. That's the truth: nothing but this fact brought us together. We couldn't find any other reason. And we went out into the cold, the wind and the rain to look for a meaning and to measure it. We worked with what there was, with no further refinement or credentials.<br/><br/>For several days I felt the terrible invasion of other people's gaze, and then the night would come with its swaying and its monumentality. Everything that could fall from the sky fell. The horizon grew higher and turned to water. I decided — just for myself — to join that movement and fall, and fall. Little else truly mattered to me, that is, in the body.<br/><br/>I wanted to tear their eyes out. I wanted a blizzard to get in through their sockets, all the way inside, and inflate them, send them flying through the air and then let them fall.<br/><br/>This is how the work ends: someone falls through a hole... And before that, wings, onlookers, wind and blind spots that say something.</em>",
+                    pt: "<em>O cipreste caiu e, com ele, tudo o que teríamos querido controlar, até qualquer vontade de o tentar.<br/><br/>Estivemos atentas ao fogo, porque fazia frio e vento. Decidimos ficar, por alguma razão de que não me lembro, muito perto do que tinha caído. Possuiu-nos essa queda, pesada, verde, mortuária e absurda. Absurda foi também a nossa obsessão por captar tal acontecimento — penso nas nossas conversas e desastres como cenas irracionais, divertidas, desorientadas, urgentes. É a realidade: uniu-nos apenas este facto. Não soubemos encontrar outro motivo. E saímos para o frio, o vento e a chuva à procura de um sentido e para o medir. Fizemos com o que havia, sem mais refinamento nem currículo.<br/><br/>Durante vários dias senti a terrível invasão do olhar alheio, e depois chegava a noite com o seu balanço e a sua monumentalidade. Caiu tudo o que podia cair do céu. O horizonte tornou-se mais alto e feito de água. Decidi — só para mim — juntar-me a esse movimento e cair, cair. Pouco mais me importou de verdade, ou seja, no corpo.<br/><br/>Quis arrancar-lhes os olhos. Quis que uma nevasca lhes entrasse pelas órbitas até ao interior e os inchasse, os fizesse voar pelos ares para, depois, os deixar cair.<br/><br/>Assim é o final da obra: alguém cai por um buraco... E antes disso, asas, basbaques, vento e pontos cegos que dizem alguma coisa.</em>"
+                }
+            },
 
-    //     title: {
-    //         es: "Residencia Rural",
-    //         en: "Rural Residency",
-    //         pt: "Residência Rural"
-    //     },
-    //     subtitle: {
-    //         es: "Asturias, España • 2025",
-    //         en: "Asturias, Spain • 2025",
-    //         pt: "Astúrias, Espanha • 2025"
-    //     },
-    //     location: {
-    //         es: "Asturias, España",
-    //         en: "Asturias, Spain",
-    //         pt: "Astúrias, Espanha"
-    //     },
-    //     description: {
-    //         es: "Conexión con la naturaleza y tradiciones locales",
-    //         en: "Connection with nature and local traditions",
-    //         pt: "Conexão com a natureza e tradições locais"
-    //     },
 
-    //     className: "residencia-card",
-    //     year: 2025,
-    //     publicaciones: ["pub-4"],
-    //     exposiciones: ["expo-4"],
-    //     collectiveArtPiece: ["artPiece-4"],
-    // }
+
+        ],
+        className: "residencia-card",
+        year: 2026,
+        textP: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        publicaciones: ["pub-2"],
+        textE: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        exposiciones: ["expo-3"],
+        textCAP: {
+            es: "",
+            en: "",
+            pt: ""
+        },
+        collectiveArtPiece: ["artPiece-2"],
+
+        date: '2026-01-15'
+    },
+
 ]
