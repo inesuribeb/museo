@@ -244,8 +244,8 @@ export const mockExhibitionsData = [
         imagesAuthor: "",
         title: {
             es: "Presentación de <em>Una residencia narrada por Ivan Floro</em>",
-            "en": "Presentation of <em>A Residency Narrated by Ivan Floro</em>",
-            "pt": "Apresentação de <em>Uma residência narrada por Ivan Floro</em>"
+            en: "Presentation of <em>A Residency Narrated by Ivan Floro</em>",
+            pt: "Apresentação de <em>Uma residência narrada por Ivan Floro</em>"
         },
         subtitle: {
             es: "",
@@ -348,8 +348,8 @@ export const mockExhibitionsData = [
         imagesAuthor: "",
         title: {
             es: "Presentación en Madrid de <em>Una visión remota</em>",
-            "en": "Madrid presentation of <em>Una visión remota</em>",
-            "pt": "Apresentação em Madrid de <em>Una visión remota</em>"
+            en: "Madrid presentation of <em>Una visión remota</em>",
+            pt: "Apresentação em Madrid de <em>Una visión remota</em>"
         },
         subtitle: {
             es: "",
