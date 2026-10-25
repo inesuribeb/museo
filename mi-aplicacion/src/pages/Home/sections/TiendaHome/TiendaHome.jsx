@@ -3,6 +3,9 @@ import { useLocalizedData } from '../../../../components/Hooks/Hooks';
 import { mockPublicationsData } from '../../../../utils/Data/PublicationsData';
 import './TiendaHome.css';
 
+// Quita etiquetas HTML para usos que requieren texto plano (alt, aria-label…)
+const stripHtml = (html = '') => html.replace(/<[^>]*>/g, '').trim();
+
 function TiendaHome({ t, getRoute }) {
     const navigate = useNavigate();
     const localizedPublications = useLocalizedData(mockPublicationsData);
@@ -35,12 +38,18 @@ function TiendaHome({ t, getRoute }) {
                         <div className="tienda-card-image-container">
                             <img
                                 src={pub.cover}
-                                alt={pub.title}
+                                alt={stripHtml(pub.title)}
                                 className="tienda-card-image"
                             />
                             <div className="tienda-card-overlay">
-                                <h3 className="tienda-card-title">{pub.title}</h3>
-                                <p className="tienda-card-price">{pub.price}</p>
+                                <h3
+                                    className="tienda-card-title"
+                                    dangerouslySetInnerHTML={{ __html: pub.title }}
+                                />
+                                <p
+                                    className="tienda-card-price"
+                                    dangerouslySetInnerHTML={{ __html: pub.price }}
+                                />
                             </div>
                         </div>
                     </div>

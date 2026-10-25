@@ -21,9 +21,9 @@ export const mockPublicationsData = [
         price: "€55.00",
 
         title: {
-            es: "Una residencia narrada por: Ivan Floro",
-            en: "A Residency Narrated by: Ivan Floro",
-            pt: "Uma residência narrada por: Ivan Floro"
+            es: "<em>Una residencia narrada por: Ivan Floro</em>",
+            en: "<em>A Residency Narrated by: Ivan Floro</em>",
+            pt: "<em>Uma residência narrada por: Ivan Floro</em>"
         },
         subtitle: {
             es: "Publicación • 64 páginas",
@@ -98,9 +98,9 @@ export const mockPublicationsData = [
         price: "€42.00",
 
         title: {
-            es: "Una residencia narrada por: Brais Rodríguez",
-            en: "A Residency Narrated by: Brais Rodríguez",
-            pt: "Uma residência narrada por: Brais Rodríguez"
+            es: "<em>Una residencia narrada por: Brais Rodríguez</em>",
+            en: "<em>A Residency Narrated by: Brais Rodríguez</em>",
+            pt: "<em>Uma residência narrada por: Brais Rodríguez</em>"
         },
         subtitle: {
             es: "Publicación",

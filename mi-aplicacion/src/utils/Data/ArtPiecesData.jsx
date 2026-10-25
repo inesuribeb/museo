@@ -11,9 +11,9 @@ export const mockArtPiecesData = [
             pt: 'Uma obra coletiva da Residência2025:'
         },
         title: {
-            es: "Memoria sense mancha",
-            en: "Memoria sense mancha",
-            pt: "Memoria sense mancha"
+            es: "<em>Memoria sense mancha</em>",
+            en: "<em>Memoria sense mancha</em>",
+            pt: "<em>Memoria sense mancha</em>"
         },
         authors: {
             es: 'una obra de Florencia del Campo, María Esteve, Maria Gallemí, Mireya Hernández, Manolo Nieto, Gonzalo Quincoces',
@@ -95,9 +95,9 @@ export const mockArtPiecesData = [
             pt: 'Uma obra coletiva da Residência2026:'
         },
         title: {
-            es: "Una visión remota",
-            en: "Una visión remota",
-            pt: "Una visión remota"
+            es: "<em>Una visión remota: Acto I y Acto II</em>",
+            en: "<em>Una visión remota: Acto I y Acto II</em>",
+            pt: "<em>Una visión remota: Acto I y Acto II</em>"
         },
         authors: {
             es: 'una obra de Telma João Santos, Natividad Martín, Ana Mortera Herrero, Izarne Oyarzabal. <br/>Música original: Alejandro Benito Romero',

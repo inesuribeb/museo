@@ -113,6 +113,7 @@
         text-transform: none;
         font-weight: var(--futura-medium);
         color: var(--corporative-color);
+        letter-spacing: -1px;
     }
 
     .card-subtitle {
