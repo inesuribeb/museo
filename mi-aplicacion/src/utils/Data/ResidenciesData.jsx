@@ -257,9 +257,9 @@ export const mockResidencias = [
             pt: "Segunda edição do programa de residências, que reuniu a dança, a matemática e a natureza."
         },
         textR: {
-            es: "",
-            en: "",
-            pt: ""
+            es: "En enero de 2026, Fundación Azar celebró su segunda residencia artística en Finca El Azahar, dedicada al encuentro entre la danza, la matemática y las naturalezas. Durante un mes, Ana Mortera, Izarne Oyarzabal, Natividad Martín y Telma João Santos convivieron y pusieron en diálogo sus distintas prácticas y conocimientos para dar forma a una obra colectiva.<br/>Las cuatro residentes fueron seleccionadas por un jurado compuesto por Tânia Carvalho, Pedro G. Romero, Idoia Zabaleta y Luz Arcas.",
+            en: "In January 2026, Fundación Azar held its second artistic residency at Finca El Azahar, dedicated to exploring the intersection of dance, mathematics and nature. Over the course of a month, Ana Mortera, Izarne Oyarzabal, Natividad Martín and Telma João Santos lived and worked together, bringing their different practices and areas of knowledge into dialogue to create a collaborative work.<br/>The four residents were selected by a jury composed of Tânia Carvalho, Pedro G. Romero, Idoia Zabaleta and Luz Arcas.",
+            pt: "Em janeiro de 2026, a Fundación Azar realizou a sua segunda residência artística na Finca El Azahar, dedicada ao encontro entre a dança, a matemática e as naturezas. Ao longo de um mês, Ana Mortera, Izarne Oyarzabal, Natividad Martín e Telma João Santos conviveram e colocaram em diálogo as suas diferentes práticas e conhecimentos para dar forma a uma obra coletiva.<br/>As quatro residentes foram selecionadas por um júri composto por Tânia Carvalho, Pedro G. Romero, Idoia Zabaleta e Luz Arcas."
         },
         jurado: {
             es: "",
@@ -379,9 +379,9 @@ export const mockResidencias = [
         className: "residencia-card",
         year: 2026,
         textP: {
-            es: "",
-            en: "",
-            pt: ""
+            es: "Como parte de la residencia, Fundación Azar invitó al dibujante gallego Brais Rodríguez a narrar la experiencia desde su propia práctica artística.<br/><br/>A través de un juego de luces y sombras, observaciones y dibujos, Brais construyó un relato visual que recoge tanto lo cotidiano como lo extraordinario de la convivencia. El resultado es un tebeo que recorre su particular mirada sobre la residencia, donde un mes se convierte en veinticuatro horas, cada viñeta un minuto.",
+            en: "As part of the residency, Fundación Azar invited Galician comic artist Brais Rodríguez to document the experience through his own artistic practice.\<br/>\<br/>Through a play of light and shadow, observations and drawings, Brais created a visual narrative capturing both the everyday and the extraordinary aspects of communal life. The result is a comic book that traces his personal perspective on the residency, in which one month becomes twenty-four hours, and each panel a minute.",
+            pt: "Como parte da residência, a Fundación Azar convidou o ilustrador galego Brais Rodríguez a narrar a experiência a partir da sua própria prática artística.\<br/>\<br/>Através de um jogo de luzes e sombras, observações e desenhos, Brais construiu uma narrativa visual que regista tanto o quotidiano como o extraordinário da convivência. O resultado é uma banda desenhada que percorre o seu olhar particular sobre a residência, onde um mês se transforma em vinte e quatro horas e cada vinheta num minuto."
         },
         publicaciones: ["pub-2"],
         textE: {
@@ -391,9 +391,9 @@ export const mockResidencias = [
         },
         exposiciones: ["expo-3"],
         textCAP: {
-            es: "",
-            en: "",
-            pt: ""
+            es: "<em>Una visión remota</em> es la obra colectiva nacida de la Residencia2026, concebida en dos actos: una instalación y una performance.<br/><br/>Aunque independientes en su forma y presentación, ambos actos comparten un mismo origen conceptual y material: la caída de un gran ciprés durante las tormentas que marcaron la residencia. A partir de este acontecimiento inesperado, las cuatro artistas desarrollaron una obra que explora las relaciones entre cuerpo, materia, espacio y tiempo, dando lugar a encuentros, apariciones y desapariciones.",
+            en: "<em>A Remote Vision</em> is the collective work that emerged from Residency2026, conceived in two acts: an installation and a performance.<br/><br/>Although independent in form and presentation, both acts share the same conceptual and material origin: the fall of a large cypress tree during the storms that marked the residency. Inspired by this unexpected event, the four artists developed a work that explores the relationships between body, matter, space and time, giving rise to encounters, appearances and disappearances.",
+            pt: "<em>Uma Visão Remota</em> é a obra coletiva que nasceu da Residência2026, concebida em dois atos: uma instalação e uma performance.<br/><br/>Embora independentes na sua forma e apresentação, ambos os atos partilham a mesma origem conceptual e material: a queda de um grande cipreste durante as tempestades que marcaram a residência. A partir deste acontecimento inesperado, as quatro artistas desenvolveram uma obra que explora as relações entre corpo, matéria, espaço e tempo, dando origem a encontros, aparições e desaparecimentos."
         },
         collectiveArtPiece: ["artPiece-2"],
 

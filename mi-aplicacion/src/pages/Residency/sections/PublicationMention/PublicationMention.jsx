@@ -65,7 +65,8 @@ function PublicationMention({ residencia, t, currentLanguage }) {
                         )}
 
                         <div className='publication-titleM'>
-                            <h3>{publicationTitle}</h3>
+                            {/* <h3>{publicationTitle}</h3> */}
+                            <h3 dangerouslySetInnerHTML={{ __html: publicationTitle }} />
                         </div>
                     </Link>
                 </div>
