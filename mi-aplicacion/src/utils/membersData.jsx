@@ -1,6 +1,29 @@
 export const collaboratorsData = [
     {
         id: 1,
+        slug: "paula-ggener",
+        img: "/Images/Team/Pau_card.png",
+        bigImg: "/Images/Team/Pau_grande.png",
+        name: "Paula",
+        surname: "G.Gener",
+        role: {
+            es: "Directora de Fundación Azar (2024–2026)",
+            en: "Director of Fundación Azar (2024–2026)",
+            pt: "Diretora da Fundación Azar (2024–2026)",
+        },
+        quote: {
+            es: "",
+            en: "",
+            pt: "",
+        },
+        bio: {
+            es: "",
+            en: "",
+            pt: "",
+        }
+    },
+    {
+        id: 2,
         slug: "javier-rebollo",
         img: "/Images/Team/colabs/javier_card.png",
         bigImg: "/Images/Team/colabs/javier_card.png",
@@ -18,14 +41,12 @@ export const collaboratorsData = [
         },
         bio: {
             es: "Javier Rebollo es cineasta, conferenciante, performer y activista cultural. Ha dirigido los largometrajes <em>Lo que sé de Lola</em> (2006), <em>La mujer sin piano</em> (2009) y <em>El muerto y ser feliz</em> (2013). Ha obtenido, tres veces el premio FIPRESCI de la Federación Internacional de la crítica (san Sebastián, Londres y Montevideo) y la Concha de Plata al Mejor director en el Festival Internacional de San Sebastián. <em>En la alcoba del Sultán</em> (2025), su última película, estrenada en la Semana Internacional de Cine de Valladolid (SEMINCI) ha sido nominada al Premio FEROZ a la Mejor película, y ha ganado el Premio Vida en Sombras de Días de cine en TVE, entre otros. Ha sido elegida entre las Mejores películas del año por El Cultural de El Mundo, la cadena SER, o la revista Fotogramas.<br/><br/>Desde hace quince años imparte clases de Dirección y Arte contemporáneo en la Escuela de Cine de la Comunidad de Madrid (ECAM).<br/><br/>Tiene obra en el MoMa de Nueva York y en la Real Academia de Bellas Artes de San Fernando.<br/><br/>Actualmente trabaja en su nueva película, <em>La moto de Gloria Fuertes</em>, con Lola Dueñas.",
-            
             en: "Javier Rebollo is a filmmaker, lecturer, performer, and cultural activist. He has directed the feature films <em>What I Know About Lola</em> (2006), <em>The Woman Without a Piano</em> (2009), and <em>The Dead Man and Being Happy</em> (2013). He has received the FIPRESCI Prize from the International Federation of Film Critics three times (San Sebastián, London, and Montevideo), as well as the Silver Shell for Best Director at the San Sebastián International Film Festival. His latest film, <em>In the Sultan’s Chamber</em> (2025), premiered at the Valladolid International Film Week (SEMINCI), has been nominated for the FEROZ Award for Best Film, and has won the Vida en Sombras Award from Días de Cine on TVE, among others. It has been selected as one of the Best Films of the Year by El Cultural (El Mundo), Cadena SER, and Fotogramas magazine.<br/><br/>For the past fifteen years, he has taught Directing and Contemporary Art at the Madrid Film School (ECAM).<br/><br/>His work is part of the collections of MoMA in New York and the Royal Academy of Fine Arts of San Fernando.<br/><br/>He is currently working on his new film, <em>Gloria Fuertes’ Motorcycle</em>, starring Lola Dueñas.",
-            
             pt: "Javier Rebollo é cineasta, conferencista, performer e ativista cultural. Dirigiu os longas-metragens <em>O que Sei de Lola</em> (2006), <em>A Mulher sem Piano</em> (2009) e <em>O Morto e Ser Feliz</em> (2013). Recebeu, por três vezes, o Prémio FIPRESCI da Federação Internacional de Críticos de Cinema (San Sebastián, Londres e Montevidéu), além da Concha de Prata de Melhor Realizador no Festival Internacional de Cinema de San Sebastián. O seu mais recente filme, <em>Na Alcova do Sultão</em> (2025), estreado na Semana Internacional de Cinema de Valladolid (SEMINCI), foi nomeado para o Prémio FEROZ de Melhor Filme e ganhou o Prémio Vida en Sombras do programa Días de Cine na TVE, entre outros. Foi ainda selecionado entre os Melhores Filmes do Ano por El Cultural (El Mundo), pela Cadena SER e pela revista Fotogramas.<br/><br/>Há quinze anos que leciona Realização e Arte Contemporânea na Escola de Cinema da Comunidade de Madrid (ECAM).<br/><br/>Tem obra no MoMA de Nova Iorque e na Real Academia de Belas Artes de San Fernando.<br/><br/>Atualmente trabalha no seu novo filme, <em>A Moto de Gloria Fuertes</em>, com Lola Dueñas.",
         }
     },
     {
-        id: 2,
+        id: 3,
         slug: "ray-loriga",
         img: "/Images/Team/colabs/ray_card.png",
         bigImg: "/Images/Team/colabs/ray_grande.png",
@@ -50,7 +71,7 @@ export const collaboratorsData = [
         }
     },
     {
-        id: 3,
+        id: 4,
         slug: "bernardo-haumont",
         img: "/Images/Team/colabs/bernardo_card.png",
         bigImg: "/Images/Team/colabs/bernardo_grande.png",
@@ -73,7 +94,7 @@ export const collaboratorsData = [
         },
     },
     {
-        id: 4,
+        id: 5,
         slug: "carmen-gimenez",
         img: "/Images/Team/colabs/carmen_card.png",
         bigImg: "/Images/Team/colabs/carmen_card.png",
@@ -98,7 +119,7 @@ export const collaboratorsData = [
         }
     },
     {
-        id: 5,
+        id: 6,
         slug: "pedro-g-romero",
         img: "/Images/Team/colabs/pedro_card.png",
         bigImg: "/Images/Team/colabs/pedro_card.png",
@@ -123,7 +144,7 @@ export const collaboratorsData = [
         }
     },
     {
-        id: 6,
+        id: 7,
         slug: "idoia-zabaleta",
         img: "/Images/Team/colabs/idoia_card.png",
         bigImg: "/Images/Team/colabs/idoia_grande.png",
@@ -148,7 +169,7 @@ export const collaboratorsData = [
         }
     },
     {
-        id: 7,
+        id: 8,
         slug: "tania-carvalho",
         img: "/Images/Team/colabs/tania_card.png",
         bigImg: "/Images/Team/colabs/tania_grande.png",
@@ -173,7 +194,7 @@ export const collaboratorsData = [
         }
     },
     {
-        id: 8,
+        id: 9,
         slug: "luis-asin",
         img: "/Images/Team/colabs/luis_card.png",
         bigImg: "/Images/Team/colabs/luis_grande.png",
@@ -198,7 +219,7 @@ export const collaboratorsData = [
         }
     },
     {
-        id: 9,
+        id: 10,
         slug: "nacho-tirado",
         img: "/Images/Team/colabs/nacho_card.png",
         bigImg: "/Images/Team/colabs/nacho_card.png",
@@ -223,7 +244,7 @@ export const collaboratorsData = [
         }
     },
     {
-        id: 10,
+        id: 11,
         slug: "marcos-giralt",
         img: "/Images/Team/colabs/marcos_card.png",
         bigImg: "/Images/Team/colabs/marcos_grande.png",
@@ -248,7 +269,7 @@ export const collaboratorsData = [
         }
     },
     {
-        id: 11,
+        id: 12,
         slug: "diego-garcia-vega",
         img: "/Images/Team/colabs/diego_card.png",
         bigImg: "/Images/Team/colabs/diego_grande.png",
@@ -295,14 +316,14 @@ export const teamData = (t) => [
         quote: t('denisQuote'),
         slug: "denis-curty",
     },
-    {
-        id: 'paula',
-        image: '/Images/Team/Pau_card.png',
-        bigImg: "/Images/Team/Pau_grande.png",
-        name: t('paulaName'),
-        role: t('paulaRole'),
-        bio: t('paulaBio'),
-        quote: t('paulaQuote'),
-        slug: "paula-g-genner",
-    }
+    // {
+    //     id: 'paula',
+    //     image: '/Images/Team/Pau_card.png',
+    //     bigImg: "/Images/Team/Pau_grande.png",
+    //     name: t('paulaName'),
+    //     role: t('paulaRole'),
+    //     bio: t('paulaBio'),
+    //     quote: t('paulaQuote'),
+    //     slug: "paula-g-genner",
+    // }
 ]

@@ -339,6 +339,8 @@ export const mockExhibitionsData = [
         imageRef: "/Images/Exhibitions/Exhibition03/expo_resi2026.webp",
         // image: "/Images/Exhibitions/Exhibition03/cartel_expo2.webp",
         image: "/Images/Exhibitions/Exhibition03/danij1.webp",
+        // image: "/Images/Exhibitions/Exhibition03/vision_remota.jpeg",
+
 
         imageDetail: "/Images/Exhibitions/Exhibition03/danij1.webp",
         // imageDetail2: "/Images/Exhibitions/Exhibition03/danij2.webp",
@@ -347,9 +349,9 @@ export const mockExhibitionsData = [
         bgImage: "/Images/Exhibitions/Exhibition03/expo_resi2026.webp",
         imagesAuthor: "",
         title: {
-            es: "Presentación en Madrid de <em>Una visión remota</em>",
-            en: "Madrid presentation of <em>Una visión remota</em>",
-            pt: "Apresentação em Madrid de <em>Una visión remota</em>"
+            es: "Presentación en Madrid de <em>Una visión remota: Acto I y Acto II</em>",
+            en: "Madrid presentation of <em>Una visión remota: Acto I y Acto II</em>",
+            pt: "Apresentação em Madrid de <em>Una visión remota: Acto I y Acto II</em>"
         },
         subtitle: {
             es: "",

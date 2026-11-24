@@ -227,8 +227,9 @@ export const mockResidencias = [
         id: "residencia-2",
         // imageR: "/Images/Header/HeaderResidencia.jpg",
         imageR: "/Images/Residencies/Residency02/portada_interior.webp",
+        image: "/Images/Exhibitions/Exhibition03/vision_remota.jpeg",
 
-        image: "/Images/Residencies/Residency02/cartel_resi_2.webp",
+        // image: "/Images/Residencies/Residency02/cartel_resi_2.webp",
 
 
         title: {
@@ -385,9 +386,9 @@ export const mockResidencias = [
         },
         publicaciones: ["pub-2"],
         textE: {
-            es: "",
-            en: "",
-            pt: ""
+            es: "El 17 de septiembre de 2026, Fundación Azar presentó <em>Una visión remota – Acto I y Acto II</em> en la Escuela Técnica Superior de Montes de la Universidad Politécnica de Madrid. Cerca de 150 asistentes pudieron transitar la instalación y, al caer la noche, presenciar la performance en un único pase al aire libre. La presentación puso en diálogo ambos actos de la obra colectiva, concebida durante la Residencia 2026, en un entorno que acentuaba su relación con la naturaleza. La velada acogió también la presentación de la publicación <em>Una residencia narrada por Brais Rodríguez.</em>",
+            en: "On 17 September 2026, Fundación Azar presented <em>Una visión remota – Acto I y Acto II</em> at the Escuela Técnica Superior de Montes of the Universidad Politécnica de Madrid. Around 150 attendees were able to walk through the installation and, as night fell, witness the performance in a single open-air showing. The presentation brought both acts of the collective work, conceived during the Residencia 2026, into dialogue, in a setting that heightened its relationship with nature. The evening also hosted the launch of the publication <em>Una residencia narrada por Brais Rodríguez.</em>",
+            pt: "A 17 de setembro de 2026, a Fundação Azar apresentou <em>Una visión remota – Acto I y Acto II</em> na Escuela Técnica Superior de Montes da Universidad Politécnica de Madrid. Cerca de 150 pessoas puderam percorrer a instalação e, ao cair da noite, assistir à performance numa única apresentação ao ar livre. A apresentação pôs em diálogo os dois atos da obra coletiva, concebida durante a Residencia 2026, num ambiente que acentuava a sua relação com a natureza. A noite acolheu também a apresentação da publicación <em>Una residencia narrada por Brais Rodríguez.</em>"
         },
         exposiciones: ["expo-3"],
         textCAP: {
