@@ -168,7 +168,7 @@ function CoverArtPiece({ artPiece, lightHeader = {} }) {
                         </div>
                     )}
                     <div className="cover-artpiece-title">
-                        <h1>{artPiece.title}</h1>
+                        <h1 dangerouslySetInnerHTML={{ __html: artPiece.title }} />
                     </div>
                 </div>
             </div>

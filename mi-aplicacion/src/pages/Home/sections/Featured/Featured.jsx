@@ -19,7 +19,9 @@ const FeaturedItems = [
     },
     {
         id: 2,
-        img: '/Images/Residencies/Residency02/cartel_resi_2.webp',
+        // img: '/Images/Residencies/Residency02/cartel_resi_2.webp',
+        img: "/Images/Exhibitions/Exhibition03/vision_remota.jpeg",
+
         tab: { es: "Residencias", en: "Residencies", pt: "Residências" },
         title: { es: "Residencia2026: Danza, Matemática, y Naturaleza", en: "2026Residency: mathematics, and nature", pt: "Residência2026: Dança, matemática e natureza" },
         description: { es: 'Danza, Matemática, y Naturaleza', en: 'Dance, mathematics, and nature', pt: 'Dança, matemática e natureza' },
